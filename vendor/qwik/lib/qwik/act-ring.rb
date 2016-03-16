@@ -6,8 +6,6 @@
 
 $LOAD_PATH.unshift '..' unless $LOAD_PATH.include? '..'
 
-$KCODE = 's'
-
 module Qwik
   class Action
     NotUse_D_ExtRing = {
@@ -156,7 +154,7 @@ module Qwik
 	return ring_invite_goback(href)
       end
 
-      if guest_mails.to_s == 'guest@example.com' 
+      if guest_mails.to_s == 'guest@example.com'
 	return ring_invite_goback(href)
       end
 
@@ -618,7 +616,7 @@ http://ring.sfc.keio.ac.jp/.getpass?mail=#{guest_mail}
       if userpage.nil?
 	return span << user
       end
-      
+
       return span << [:a, {:href=>"#{userpage}.html"}, user]
     end
 

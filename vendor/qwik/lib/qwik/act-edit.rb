@@ -307,7 +307,7 @@ if defined?($test) && $test
       ok_xp [:input, {:value=>'98bf7d8c15784f0a3d63204441e1e2aa',
 		:type=>'hidden', :name=>'md5hex'}], '//input'
       ok_xp [:input, {:value=>'Save', :type=>'submit', :class=>'submit',
-		:class=>'submit', :name=>'save'}], '//input[2]'
+		:name=>'save'}], '//input[2]'
 #      ok_xp [:a, {:href=>'_SiteMenu.html'}, 'SiteMenu'],
 #	    '//div[@class='sidebar']//a'
 #      ok_xp [:a, {:href=>'1.presen'}, 'Presentation mode'],
