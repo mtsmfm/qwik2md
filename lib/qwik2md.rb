@@ -4,6 +4,12 @@ require "qwik/tokenizer"
 require "qwik/parser"
 require 'qwik/wabisabi-format-xml'
 require 'reverse_markdown'
+require 'qwik/action'
+require 'qwik/loadlib'
+
+require 'ostruct'
+
+Qwik::LoadLibrary.load_libs_here('qwik/act-*')
 
 module Qwik2md
   class << self
@@ -33,6 +39,15 @@ module Qwik2md
 
       tokens = Qwik::TextTokenizer.tokenize(str)
       tree = Qwik::TextParser.make_tree(tokens)
+      action = Qwik::Action.new
+      action.init(OpenStruct.new(test: true), nil, nil, nil)
+      action.instance_eval do
+        @site = Object.new
+        def @site.resolve_all_ref(tree)
+          tree
+        end
+      end
+      tree = action.resolve_all_plugin(tree)
       tree.format_xml
     end
   end
