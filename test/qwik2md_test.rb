@@ -1,16 +1,8 @@
 require 'test_helper'
 
-class String
-  def strip_heredoc
-    min = scan(/^[ \t]*(?=\S)/).min
-    indent = min ? min.size : 0
-    gsub(/^[ \t]{#{indent}}/, '')
-  end
-end
-
 class Qwik2mdTest < Minitest::Test
   def test_hoge
-    expected = <<-HTML.strip_heredoc.chomp
+    expected = <<~HTML.chomp
       <h2
       >h2</h2
       ><h3
@@ -18,7 +10,7 @@ class Qwik2mdTest < Minitest::Test
       >
     HTML
 
-    actual = Qwik2md.convert(<<-QWIK.strip_heredoc)
+    actual = Qwik2md.convert(<<~QWIK)
       * h2
       ** h3
     QWIK

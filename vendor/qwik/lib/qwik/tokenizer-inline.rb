@@ -44,7 +44,7 @@ module Qwik
 
 	when ?[		# [[t]]
 
-	  if /\A\[\[(.+?)\]\]/s =~ str	# [[title|url]] format
+	  if /\A\[\[(.+?)\]\]/ =~ str	# [[title|url]] format
 	    line_ar << [:ref, $1]
 	    str = $'
 
@@ -70,12 +70,12 @@ module Qwik
 	  end
 
 	else
-	  if /\A#{URL}/s =~ str
+	  if /\A#{URL}/ =~ str
 	    href = $&
 	    line_ar << [:url, href]
 	    str  = $'
 
-	  elsif /\A[^#{SPECIAL}]+/s =~ str
+	  elsif /\A[^#{SPECIAL}]+/ =~ str
 	    m = $&
 	    after = $'
 
@@ -89,7 +89,7 @@ module Qwik
 	    end
 
 	  else
-	    if /\A(.+?)([^#{SPECIAL}])/s =~ str
+	    if /\A(.+?)([^#{SPECIAL}])/ =~ str
 	      line_ar << $1
 	      str = $2 + $'
 	    else
@@ -124,10 +124,10 @@ module Qwik
 	elsif s.scan(/==/)
 	  line_ar << :'=='
 
-	elsif s.scan(/\[\[(.+?)\]\]/s)	# [[title|url]] format
+	elsif s.scan(/\[\[(.+?)\]\]/)	# [[title|url]] format
 	  line_ar << [:ref, s[1]]
 
-	elsif s.scan(/\[([^\[\]\s]+?) ([^\[\]\s]+?)\]/s) # [url title] format
+	elsif s.scan(/\[([^\[\]\s]+?) ([^\[\]\s]+?)\]/) # [url title] format
 	  line_ar << [:ref, s[2]+'|'+s[1]]
 
 	elsif s.scan(/\{\{([^\(\)]+?)(?:\((.*?)\))?\s*\}\}/)	# {{t(a)}}
@@ -135,11 +135,11 @@ module Qwik
 	  ar << s[2] if s[2]
 	  line_ar << ar
 
-	elsif s.scan(/#{URL}/s)
-	  href = s.matched 
+	elsif s.scan(/#{URL}/)
+	  href = s.matched
 	  line_ar << [:url, href]
 
-	elsif s.scan(/[^#{SPECIAL}]+/s)
+	elsif s.scan(/[^#{SPECIAL}]+/)
 	  m = s.matched
 
 	  if /([^a-zA-Z\d]+)(#{URL})/ =~ m
@@ -149,13 +149,13 @@ module Qwik
 
 	    skip_str = ss
 	    s.unscan
-	    s.pos = s.pos + skip_str.length
+	    s.pos = s.pos + skip_str.bytesize
 
 	  else
 	    line_ar << m
 	  end
 
-	elsif s.scan(/(.+?)([^#{SPECIAL}])/s)
+	elsif s.scan(/(.+?)([^#{SPECIAL}])/)
 	  ss = s[1]
 	  line_ar << ss
 	  s.unscan

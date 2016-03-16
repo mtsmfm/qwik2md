@@ -36,7 +36,7 @@ module Qwik
 	# At the first, check if it is in a multiline block.
 	last_token = tokens.last
 	if last_token
-	  last_tag = last_token[0] 
+	  last_tag = last_token[0]
 	  if in_multiline[last_tag]
 	    if MULTILINE[last_tag][1] =~ line
 	      in_multiline[last_tag] = nil
@@ -77,7 +77,7 @@ module Qwik
 	when '', /\A#/					# '', or comment.
 	  tokens << [:empty]				# empty line
 	when /\A([,|])(.*)\z/				# pre
-	  re = Regexp.new(Regexp.quote($1), nil, 's')
+	  re = Regexp.new(Regexp.quote($1), nil)
 	  ar = [:table] + $2.split(re).map {|a| a.to_s }
 	  tokens << ar
 	when /\A:(.*)\z/				# dl
@@ -112,8 +112,8 @@ module Qwik
     private
 
     def self.inline(tokens, line, br_mode)
-      if /~\z/s =~ line
-	line = line.sub(/~\z/s, '{{br}}')	# //s means shift_jis
+      if /~\z/ =~ line
+	line = line.sub(/~\z/, '{{br}}')	# //s means shift_jis
       elsif br_mode
 	line = "#{line}{{br}}"
       end

@@ -2,7 +2,7 @@
 # This is free software with ABSOLUTELY NO WARRANTY.
 # You can redistribute it and/or modify it under the terms of the GNU GPL 2.
 
-require 'md5'
+require 'digest/md5'
 
 $LOAD_PATH << 'compat' unless $LOAD_PATH.include? 'compat'
 require 'base64'
@@ -33,11 +33,11 @@ class String
   end
 
   def md5
-    return MD5.digest(self)
+    return Digest::MD5.digest(self)
   end
 
   def md5hex
-    return MD5.hexdigest(self)
+    return Digest::MD5.hexdigest(self)
   end
 
   def base64
@@ -89,7 +89,7 @@ class String
     end
     return self[s...e]
   end
- 
+
   # Copied from gonzui-0.1
   # Use this method instead of WEBrick::HTMLUtils.escape for performance reason.
   EscapeTable = {
@@ -100,7 +100,7 @@ class String
   }
   def escapeHTML
     string = self
-    return string.gsub(/[&"<>]/n) {|x| EscapeTable[x] }
+    return string.gsub(/[&"<>]/) {|x| EscapeTable[x] }
   end
 end
 

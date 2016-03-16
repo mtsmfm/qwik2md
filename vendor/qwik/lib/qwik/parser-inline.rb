@@ -73,7 +73,7 @@ module Qwik
     end
 
     def self.parse_ref(uri)
-      text, uri = $1, $2 if /\A([^|]*)\|(.+)\z/s =~ uri
+      text, uri = $1, $2 if /\A([^|]*)\|(.+)\z/ =~ uri
       if text.nil? or text.empty?
         text = uri
       end

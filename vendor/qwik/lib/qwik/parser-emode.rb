@@ -27,7 +27,7 @@ module Qwik
 	  if next_line == 'h2'
 	    num += 1
 	  end
-	  if /\A([●■])(.*)\z/s =~ line
+	  if /\A([●■])(.*)\z/ =~ line
 	    ar << HMARK[next_line] + $2
 	  else
 	    if next_line == 'h2'
@@ -51,10 +51,10 @@ module Qwik
 	return 'h2'
       when /\A(------+)/	# only -
 	return 'h3'
-      when /\A([→・])(.*)\z/s
+      when /\A([→・])(.*)\z/
 	ar << '-'+$2
 	return next_line
-      when /\A([●■])(.*)\z/s
+      when /\A([●■])(.*)\z/
 	ar << '***'+$2
 	return next_line
       end
