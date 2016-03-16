@@ -109,9 +109,6 @@ module Qwik
     def self.tokenize(str)
       line_ar = []
 
-      org_kcode = $KCODE
-      $KCODE = 's'
-
       s = StringScanner.new(str)
 
       while ! s.eos?
@@ -168,8 +165,6 @@ module Qwik
 
 	end
       end
-
-      $KCODE = org_kcode
 
       line_ar
     end
