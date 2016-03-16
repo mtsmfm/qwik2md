@@ -1,4 +1,4 @@
-# -*- coding: shift_jis -*-
+
 # Copyright (C) 2008 National Institute of
 #                    Advanced Industrial Science and Technology (AIST)
 # All rights reserved.

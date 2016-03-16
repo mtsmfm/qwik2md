@@ -2,8 +2,6 @@
 # This is free software with ABSOLUTELY NO WARRANTY.
 # You can redistribute it and/or modify it under the terms of the GNU GPL 2.
 
-require 'parsedate'
-
 class Time
   def md
     return strftime('%m-%d')	# 01-01

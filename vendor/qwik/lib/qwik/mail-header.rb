@@ -1,11 +1,10 @@
-# -*- coding: shift_jis -*-
 #
-# Copyright (C) 2002-2004 Satoru Takabayashi <satoru@namazu.org> 
+# Copyright (C) 2002-2004 Satoru Takabayashi <satoru@namazu.org>
 # Copyright (C) 2003-2006 Kouichirou Eto
 #     All rights reserved.
 #     This is free software with ABSOLUTELY NO WARRANTY.
 #
-# You can redistribute it and/or modify it under the terms of 
+# You can redistribute it and/or modify it under the terms of
 # the GNU General Public License version 2.
 #
 
@@ -101,7 +100,7 @@ module QuickML
 
     # ==================== Class methods.
     def self.collect_address (field)
-      address_regex = 
+      address_regex =
 	/(("?)[-0-9a-zA-Z_.+?\/]+\2@[-0-9a-zA-Z]+\.[-0-9a-zA-Z.]+)/ #/
       addresses = []
       parts = Mail.remove_comment_in_field(field).split(',')
@@ -355,7 +354,7 @@ if defined?($test) && $test
       # test_add_recipient
       mail.add_recipient('b@e.com')
       ok_eq(false, mail.valid?)
-      
+
       # test_clear_recipients
       mail.clear_recipients
 

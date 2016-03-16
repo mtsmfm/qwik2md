@@ -88,9 +88,9 @@ TextFormatページの一覧が表示されます。
 	feature = n.getFeature.set_euc.to_sjis
 	if ! surface.empty? &&
 	    RE_SJIS =~ surface &&
-	    /\A([ぁ-んー～]+)\z/s !~ surface &&
-	    /\A[．-→、。]/s !~ surface &&
-	    /\A[，←]/s !~ surface
+	    /\A([ぁ-んー～]+)\z/ !~ surface &&
+	    /\A[．→、。]/ !~ surface &&
+	    /\A[，←]/ !~ surface
 #	    /\A[　０-９→「」（）、。]/s !~ surface
 	  nodes << [surface, feature]
 	end

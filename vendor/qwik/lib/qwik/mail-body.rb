@@ -1,4 +1,3 @@
-# -*- coding: shift_jis -*-
 #
 # Copyright (C) 2002-2004 Satoru Takabayashi <satoru@namazu.org> 
 # Copyright (C) 2003-2006 Kouichirou Eto
