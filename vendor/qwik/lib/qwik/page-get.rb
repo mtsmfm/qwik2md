@@ -219,10 +219,10 @@ if defined?($test) && $test
       ok_title('- t', '*- t')	# uum...
       ok_title('t', "* t\nb")
       ok_title('t', "# c\n* t\nb")
-      ok_title('éö', '*éö')
-      ok_title('Ç†', '*Ç†')
-      ok_title('ÉR', '* ÉR')
-      ok_title('ÉR', "* ÉR\n{{mail(user@e.com)\nÇ†\n\n}}\n")
+      ok_title('Â≠ó', '*Â≠ó')
+      ok_title('„ÅÇ', '*„ÅÇ')
+      ok_title('„Ç≥', '* „Ç≥')
+      ok_title('„Ç≥', "* „Ç≥\n{{mail(user@e.com)\n„ÅÇ\n\n}}\n")
 
       # The title line can contain tag data.
       ok_get_title(['t', ['tag']],	'* [tag] t')

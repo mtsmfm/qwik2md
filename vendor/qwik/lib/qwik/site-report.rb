@@ -130,8 +130,8 @@ module Qwik
 
       lang = get_lang
       if lang == 'ja'
-	mail[:subject] = "#{siteurl} ƒŒƒ|[ƒg"
-	mail[:content] = "#{siteurl} ‚É‚¨‚¯‚éA–{“ú‚Ì•ÒW‹L˜^‚Å‚·B\n\n#{rep}"
+	mail[:subject] = "#{siteurl} ãƒ¬ãƒãƒ¼ãƒˆ"
+	mail[:content] = "#{siteurl} ã«ãŠã‘ã‚‹ã€æœ¬æ—¥ã®ç·¨é›†è¨˜éŒ²ã§ã™ã€‚\n\n#{rep}"
       end
 
       return mail
@@ -226,8 +226,8 @@ test', mail[:content]
       mail = @site.generate_report_mail('user@e.com', 'test')
       eq 'test@q.example.com', mail[:from]
       eq 'user@e.com', mail[:to]
-      eq 'http://example.com/test/ ƒŒƒ|[ƒg', mail[:subject]
-      eq 'http://example.com/test/ ‚É‚¨‚¯‚éA–{“ú‚Ì•ÒW‹L˜^‚Å‚·B
+      eq 'http://example.com/test/ ãƒ¬ãƒãƒ¼ãƒˆ', mail[:subject]
+      eq 'http://example.com/test/ ã«ãŠã‘ã‚‹ã€æœ¬æ—¥ã®ç·¨é›†è¨˜éŒ²ã§ã™ã€‚
 
 test', mail[:content]
 
@@ -269,7 +269,7 @@ Content-Type: text/plain; charset=\"ISO-2022-JP\"
 
 "
       body =
-'http://example.com/test/ ‚É‚¨‚¯‚éA–{“ú‚Ì•ÒW‹L˜^‚Å‚·B
+'http://example.com/test/ ã«ãŠã‘ã‚‹ã€æœ¬æ—¥ã®ç·¨é›†è¨˜éŒ²ã§ã™ã€‚
 
 09:00 user@e... save http://example.com/test/1.html
 09:00 anonymous save http://example.com/test/1.html

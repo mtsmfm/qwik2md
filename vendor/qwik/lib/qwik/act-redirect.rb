@@ -21,16 +21,16 @@ nobody can see the referere to know where the link come from.
     }
 
     D_ExtRedirect_ja = {
-      :dt => '���_�C���N�g�E���[�h',
-      :dd => '�O�������N��S�ă��_�C���N�g�ɂ��܂��B',
-      :dc => '* �g����
-[[_SiteConfig]]�̃y�[�W�ɂ����A
+      :dt => 'リダイレクト・モード',
+      :dd => '外部リンクを全てリダイレクトにします。',
+      :dc => '* 使い方
+[[_SiteConfig]]のページにいき、
  :redirect:false
-�Ƃ����s���A
+という行を、
  :redirect:true
-�Ƃ��Ă��������B�T�C�g���̊O��URL�ւ̃����N���A��U���_�C���N�g�����
-�����Ԃ悤�ɂȂ�܂��B��������ƁA�ǂ�Wiki�y�[�W���烊���N����Ă���
-�̂����A���t�@�������Ă��킩��Ȃ��悤�ɂȂ�܂��B
+としてください。サイト内の外部URLへのリンクが、一旦リダイレクトされて
+から飛ぶようになります。こうすると、どのWikiページからリンクされている
+のかが、リファラを見てもわからないようになります。
 '
     }
 

@@ -42,8 +42,8 @@ if defined?($test) && $test
       set_catalog(catalog_ja)
 
       # test_gettext_ja
-      t.assert_equal '‚±‚ñ‚É‚¿‚Í', gettext('hello')
-      t.assert_equal '‚±‚ñ‚É‚¿‚Í', _('hello')
+      t.assert_equal 'ã“ã‚“ã«ã¡ã¯', gettext('hello')
+      t.assert_equal 'ã“ã‚“ã«ã¡ã¯', _('hello')
     end
   end
 

@@ -21,7 +21,7 @@ class BenchMD5Session < Test::Unit::TestCase
     repeat.times {
       res = session('/test/TextFormat.md5')
       #body = res.body.format_xml
-      #ok_title("‘Ž®ˆê——Ú×”Å")
+      #ok_title("æ›¸å¼ä¸€è¦§è©³ç´°ç‰ˆ")
       ok_eq('2ee66272e916d3c21c151920c94334aa', res.body)
     }
   end

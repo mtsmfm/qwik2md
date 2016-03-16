@@ -51,39 +51,39 @@ You can make block quote of the string.
     }
 
     D_PluginSample_ja = {
-      :dt => 'ƒTƒ“ƒvƒ‹Eƒvƒ‰ƒOƒCƒ“',
-      :dd => 'ƒvƒ‰ƒOƒCƒ“‚ÌƒTƒ“ƒvƒ‹‚Å‚·B',
+      :dt => 'ã‚µãƒ³ãƒ—ãƒ«ãƒ»ãƒ—ãƒ©ã‚°ã‚¤ãƒ³',
+      :dd => 'ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã®ã‚µãƒ³ãƒ—ãƒ«ã§ã™ã€‚',
       :dc => '
-qwikWeb‚Ìƒvƒ‰ƒOƒCƒ“‚ðŽ©•ª‚Åì‚Á‚Ä‚Ý‚éÛ‚ÌŽQl‚Æ‚È‚éƒvƒ‰ƒOƒCƒ“‚ð’ñ‹Ÿ‚µ
-‚Ä‚¢‚Ü‚·B‚±‚Ìƒvƒ‰ƒOƒCƒ“‚ð‰ü‘¢‚µ‚ÄAŽ©—R‚ÉŽ©•ª‚È‚è‚Ìƒvƒ‰ƒOƒCƒ“‚ðì‚Á‚Ä
-‚Ý‚Ä‚­‚¾‚³‚¢B
+qwikWebã®ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã‚’è‡ªåˆ†ã§ä½œã£ã¦ã¿ã‚‹éš›ã®å‚è€ƒã¨ãªã‚‹ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã‚’æä¾›ã—
+ã¦ã„ã¾ã™ã€‚ã“ã®ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã‚’æ”¹é€ ã—ã¦ã€è‡ªç”±ã«è‡ªåˆ†ãªã‚Šã®ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã‚’ä½œã£ã¦
+ã¿ã¦ãã ã•ã„ã€‚
 
-Ú‚µ‚­‚ÍA‚±‚¿‚ç‚ÌURL‚ð‚²‚ç‚ñ‚­‚¾‚³‚¢B
+è©³ã—ãã¯ã€ã“ã¡ã‚‰ã®URLã‚’ã”ã‚‰ã‚“ãã ã•ã„ã€‚
 http://qwik.jp/HowToMakePlugin.html
-* —á
-** ƒnƒ[ƒ[ƒ‹ƒhEƒvƒ‰ƒOƒCƒ“
+* ä¾‹
+** ãƒãƒ­ãƒ¼ãƒ¯ãƒ¼ãƒ«ãƒ‰ãƒ»ãƒ—ãƒ©ã‚°ã‚¤ãƒ³
 {{hello}}
  {{hello}}
-—L–¼‚Èuhello, world!v‚ð‰æ–Ê‚É•\Ž¦‚³‚¹‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+æœ‰åãªã€Œhello, world!ã€ã‚’ç”»é¢ã«è¡¨ç¤ºã•ã›ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 {{hello(\"qwik users\")}}
  {{hello(\"qwik users\")}}
-ˆø”‚ð‚Æ‚é‚±‚Æ‚à‚Å‚«‚Ü‚·B
-** ƒnƒ[ƒ[ƒ‹ƒhEƒAƒNƒVƒ‡ƒ“
+å¼•æ•°ã‚’ã¨ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ã€‚
+** ãƒãƒ­ãƒ¼ãƒ¯ãƒ¼ãƒ«ãƒ‰ãƒ»ã‚¢ã‚¯ã‚·ãƒ§ãƒ³
 [[.hello]]
  [[.hello]]
-uhello, world!v‚Æ•\Ž¦‚³‚ê‚Ü‚·B
-** “™•ƒvƒ‰ƒOƒCƒ“
+ã€Œhello, world!ã€ã¨è¡¨ç¤ºã•ã‚Œã¾ã™ã€‚
+** ç­‰å¹…ãƒ—ãƒ©ã‚°ã‚¤ãƒ³
 {{tt(\"This is a test.\")}}
  {{tt(\"This is a test.\")}}
-“™•‚ðŽw’è‚µ‚Ü‚·B
-** ˆø—pƒvƒ‰ƒOƒCƒ“
+ç­‰å¹…ã‚’æŒ‡å®šã—ã¾ã™ã€‚
+** å¼•ç”¨ãƒ—ãƒ©ã‚°ã‚¤ãƒ³
 {{quote
 This is a text to quote.
 }}
  {{quote
  This is a text to quote.
  }}
-ˆø—p‚Å‚«‚Ü‚·B
+å¼•ç”¨ã§ãã¾ã™ã€‚
 '
     }
 

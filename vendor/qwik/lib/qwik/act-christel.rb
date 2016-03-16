@@ -44,30 +44,30 @@ You can see bigger one.
     }
 
     D_PluginChristel_ja = {
-      :dt => '���N���X�e���v���O�C��',
-      :dd => '���N���X�e������ɑ��ɂ���ׂ��Ă��炢�܂��B',
+      :dt => '滝川クリステルプラグイン',
+      :dd => '滝川クリステルさんに代りにしゃべってもらいます。',
       :dc => "* Example
 {{christel
-���N���X�e���v���O�C���ł�
+滝川クリステルプラグインです
 }}
  {{christel
- ���N���X�e���v���O�C���ł�
+ 滝川クリステルプラグインです
  }}
 
 {{christel
-�摜�����ߍ��߂܂�
+画像も埋め込めます
 http://qwik.jp/.theme/i/login_qwik_logo.gif
 }}
  {{christel
- �摜�����ߍ��߂܂�
+ 画像も埋め込めます
  http://qwik.jp/.theme/i/login_qwik_logo.gif
  }}
 
 {{christel(640)
-�傫�����Ă݂܂���
+大きくしてみました
 }}
  {{christel(640)
- �傫�����Ă݂܂���
+ 大きくしてみました
  }}
 "
     }

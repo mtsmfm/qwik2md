@@ -34,12 +34,12 @@ Content-Transfer-Encoding: quoted-printable
 user
 ' }
     ok_eq('quoted-printable', mail['Content-Transfer-Encoding'])
-    ok_eq('[qwik-users:217] Gmail��JIS�G���R�[�f�B���O�Ɏd�l�ύX'.set_sourcecode_charset.to_mail_charset, mail['Subject'])
-#    ok_eq('Gmail��JIS�G���R�[�f�B���O�Ɏd�l�ύX',
+    ok_eq('[qwik-users:217] GmailがJISエンコーディングに仕様変更'.set_sourcecode_charset.to_mail_charset, mail['Subject'])
+#    ok_eq('GmailがJISエンコーディングに仕様変更',
 #	  mail.get_clean_subject)
-    ok_eq("����ɂ��́B\n\n-- \nuser\n".set_sourcecode_charset.to_mail_charset, mail.decoded_body)
+    ok_eq("こんにちは。\n\n-- \nuser\n".set_sourcecode_charset.to_mail_charset, mail.decoded_body)
     page = @site['1']
-    ok_eq('Gmail��JIS�G���R�[�f�B���O�Ɏd�l�ύX', page.get_title)
-#    ok_eq("* Gmail��JIS�G���R�[�f�B���O�Ɏd�l�ύX\n{{mail(user@gmail.com,0)\n����ɂ��́B\n\n-- \nuser\n}}\n", page.load)
+    ok_eq('GmailがJISエンコーディングに仕様変更', page.get_title)
+#    ok_eq("* GmailがJISエンコーディングに仕様変更\n{{mail(user@gmail.com,0)\nこんにちは。\n\n-- \nuser\n}}\n", page.load)
   end
 end

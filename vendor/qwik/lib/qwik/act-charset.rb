@@ -112,19 +112,19 @@ if defined?($test) && $test
 
       str = "{{define_char
 :my:1
-:ids:#0–ØX
+:ids:#0æœ¨æ£®
 }}
 
 {{define_char
 :my:2
-:ids:#0XX
+:ids:#0æ£®æ£®
 }}
 "
       page.store(str)
 
       ok_wi('', page.load)
-      ok_eq("#0–ØX", "&my-1;".de_er.char.ids)
-      ok_eq("#0XX", "&my-2;".de_er.char.ids)
+      ok_eq("#0æœ¨æ£®", "&my-1;".de_er.char.ids)
+      ok_eq("#0æ£®æ£®", "&my-2;".de_er.char.ids)
 
       url = @action.my_char_kage_url
       page.store("{{my_char(1)}}")
@@ -144,9 +144,9 @@ if defined?($test) && $test
       #ok_wi("<p></p>\n", page.load)	# It's empty.
 
       page.store("{{my_char_ids(1)}}")
-      ok_wi("<p>#0–ØX</p>\n", page.load)
+      ok_wi("<p>#0æœ¨æ£®</p>\n", page.load)
       page.store("{{my_char_ids(2)}}")
-      ok_wi("<p>#0XX</p>\n", page.load)
+      ok_wi("<p>#0æ£®æ£®</p>\n", page.load)
 
       @site.delete(n)
       ok_eq(false, @site.exist?(n))
@@ -157,27 +157,27 @@ if defined?($test) && $test
       page = @site.create(n)
       str = "{{define_char
 :my:1
-:ids:#0–ØX
+:ids:#0æœ¨æ£®
 }}
 
 {{define_char
 :my:2
-:ids:#0XX
+:ids:#0æ£®æ£®
 }}
 
 {{define_char
 :my:3
-:ids:#1&U-6728;X
+:ids:#1&U-6728;æ£®
 }}
 "
       page.store(str)
 
       ok_wi('', page.load)	# Eval the _chartest here.
-      ok_eq("#0–ØX", "&my-1;".de_er.char.ids)
-      ok_eq("#0XX", "&my-2;".de_er.char.ids)
-      ok_eq("–Ø", "&U-6728;".de_er)
-     #ok_eq("#1–ØX", "&my-3;".de_er.char.ids)
-     #ok_eq("OVsd", "&my-2;".de_er.char.ids)
+      ok_eq("#0æœ¨æ£®", "&my-1;".de_er.char.ids)
+      ok_eq("#0æ£®æ£®", "&my-2;".de_er.char.ids)
+      ok_eq("æœ¨", "&U-6728;".de_er)
+     #ok_eq("#1æœ¨æ£®", "&my-3;".de_er.char.ids)
+     #ok_eq("OVè¡Œé‡", "&my-2;".de_er.char.ids)
       page.store("&my-1;")
       url = @action.my_char_kage_url
       ok_wi("<img src='#{url}u2ff0u6728u68ee.gothic.png' style='width:1em;'/>",
@@ -193,33 +193,33 @@ if defined?($test) && $test
     include TestSession
 
     def test_utf8
-      @char = "š".su.char
-      assert_equal "\273\372", "š".se
-      assert_equal "\345\255\227", "š".su
-      assert_equal "\273\372", "š".su.ue
-      assert_equal "\216\232", "š"
-      assert_equal "\273\372", "š".se
-      assert_equal "\345\255\227", "š".su
-      assert_equal "\216\232", "š".su.us
+      @char = "å­—".su.char
+      assert_equal "\273\372", "å­—".se
+      assert_equal "\345\255\227", "å­—".su
+      assert_equal "\273\372", "å­—".su.ue
+      assert_equal "\216\232", "å­—"
+      assert_equal "\273\372", "å­—".se
+      assert_equal "\345\255\227", "å­—".su
+      assert_equal "\216\232", "å­—".su.us
     end
 
     def test_er
-      @char = "š".su.char
-      assert_equal 23383, "š".su.ucs
+      @char = "å­—".su.char
+      assert_equal 23383, "å­—".su.ucs
       assert_equal @char, CHISE::Character.get("&J90-3B7A;")
       assert_equal @char, CHISE::Character.get("&MCS-00005B57;")
       assert_equal @char, CHISE::Character.get("&M-06942;")
-      assert_equal "š", "&J90-3B7A;".de_er.us
-      assert_equal "š", "&U5B57;".de_er.us
-      assert_equal "š", "&U-5B57;".de_er.us
-      assert_equal "š", "&U+5B57;".de_er.us
-      assert_equal "š", "&#x5B57;".de_er.us
-      assert_equal "š", "&#23383;".de_er.us
+      assert_equal "å­—", "&J90-3B7A;".de_er.us
+      assert_equal "å­—", "&U5B57;".de_er.us
+      assert_equal "å­—", "&U-5B57;".de_er.us
+      assert_equal "å­—", "&U+5B57;".de_er.us
+      assert_equal "å­—", "&#x5B57;".de_er.us
+      assert_equal "å­—", "&#23383;".de_er.us
     end
 
     def test_my
-      @char = "š".su.char
-      # private use area: 0xe000`0xf8ff
+      @char = "å­—".su.char
+      # private use area: 0xe000ï½0xf8ff
       k = CHISE::Character.get(0xe001)
       assert_equal 0xe001, k.ucs
       assert_equal "<\356\200\201,\#xe001>", k.inspect
@@ -229,21 +229,21 @@ if defined?($test) && $test
 
       k = "&my-0001;".de_er.char
       assert_equal 0xe001, k.ucs
-      k.ids = CHISE::IDC_LR+"–ØX"
-      assert_equal CHISE::IDC_LR+"–ØX", k.ids
-      assert_equal CHISE::IDC_LR+"–ØX", "&my-0001;".de_er.ids
+      k.ids = CHISE::IDC_LR+"æœ¨æ£®"
+      assert_equal CHISE::IDC_LR+"æœ¨æ£®", k.ids
+      assert_equal CHISE::IDC_LR+"æœ¨æ£®", "&my-0001;".de_er.ids
       u = 'http://home.fonts.jp:5100/'
       k.kage_url = u
       assert_equal u, "&my-0001;".de_er.kage_url
 
       k = "&my-0002;".de_er.char
       assert_equal 0xe002, k.ucs
-      k.ids = CHISE::IDC_LR+"XX"
-      assert_equal CHISE::IDC_LR+"XX", k.ids
-      assert_equal CHISE::IDC_LR+"XX", "&my-0002;".de_er.ids
+      k.ids = CHISE::IDC_LR+"æ£®æ£®"
+      assert_equal CHISE::IDC_LR+"æ£®æ£®", k.ids
+      assert_equal CHISE::IDC_LR+"æ£®æ£®", "&my-0002;".de_er.ids
 
-      "š".eu.mydepth = 1
-      assert_equal 1, "š".eu.mydepth
+      "å­—".eu.mydepth = 1
+      assert_equal 1, "å­—".eu.mydepth
     end
   end
 end

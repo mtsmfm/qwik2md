@@ -129,26 +129,26 @@ This plugin specifies style sheet for ascii art.
 
 {{{
 {{aa
-@@ ÈQÈ@@^PPPPP
-@@i@LÍMjƒ@monar
-@@i@@@@j @_QQQQQ
-@@b b@|
-@@i_QjQj
+ã€€ã€€ âˆ§ï¼¿âˆ§ã€€ã€€ï¼ï¿£ï¿£ï¿£ï¿£ï¿£
+ã€€ã€€ï¼ˆã€€Â´âˆ€ï½€ï¼‰ï¼œã€€monar
+ã€€ã€€ï¼ˆã€€ã€€ã€€ã€€ï¼‰ ã€€ï¼¼ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿
+ã€€ã€€ï½œ ï½œã€€|
+ã€€ã€€ï¼ˆ_ï¼¿ï¼‰ï¼¿ï¼‰
 }}
 }}}
 {{aa
-@@ ÈQÈ@@^PPPPP
-@@i@LÍMjƒ@monar
-@@i@@@@j @_QQQQQ
-@@b b@|
-@@i_QjQj
+ã€€ã€€ âˆ§ï¼¿âˆ§ã€€ã€€ï¼ï¿£ï¿£ï¿£ï¿£ï¿£
+ã€€ã€€ï¼ˆã€€Â´âˆ€ï½€ï¼‰ï¼œã€€monar
+ã€€ã€€ï¼ˆã€€ã€€ã€€ã€€ï¼‰ ã€€ï¼¼ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿
+ã€€ã€€ï½œ ï½œã€€|
+ã€€ã€€ï¼ˆ_ï¼¿ï¼‰ï¼¿ï¼‰
 }}
 
 {{aa
-@@@ZQZ 
-@@ i@E(ª)Ej @ƒKumar!
-@@/J@¤J 
-@@‚µ\-J 
+ã€€ã€€ã€€ã€‡ï¼¿ã€‡ 
+ã€€ã€€ ï¼ˆã€€ãƒ»(ï½ª)ãƒ»ï¼‰ ã€€ï¼œKumar!
+ã€€ã€€/Jã€€â–½J 
+ã€€ã€€ã—â€•-J 
 }}
 
 The style sheet simply set "MS P Gothic" font and the line height.
@@ -182,10 +182,10 @@ You can hide a part of text.  Click black box and you\'ll see the text.
     }
 
     D_PluginStyle_ja = {
-      :dt => 'ƒXƒ^ƒCƒ‹ƒvƒ‰ƒOƒCƒ“',
-      :dd => '•¶š‚â’i—‚Ì•\¦ƒXƒ^ƒCƒ‹‚ğ‘I‚×‚Ü‚·B',
-      :dc => '* —á
-** CSS–„‚ß‚İ
+      :dt => 'ã‚¹ã‚¿ã‚¤ãƒ«ãƒ—ãƒ©ã‚°ã‚¤ãƒ³',
+      :dd => 'æ–‡å­—ã‚„æ®µè½ã®è¡¨ç¤ºã‚¹ã‚¿ã‚¤ãƒ«ã‚’é¸ã¹ã¾ã™ã€‚',
+      :dc => '* ä¾‹
+** CSSåŸ‹ã‚è¾¼ã¿
  {{css
  body {
   background: #efe;
@@ -197,13 +197,13 @@ body {
 }
 }}
 
-‹Ö~ƒpƒ^[ƒ“ˆÈŠO‚Ì”CˆÓ‚ÌCSS‚ğ–„‚ß‚Ü‚·B
-‚±‚±‚Å‚Íƒy[ƒW‚Ì”wŒi‚ğ—ÎF‚Éİ’è‚µ‚Ä‚Ü‚·B
+ç¦æ­¢ãƒ‘ã‚¿ãƒ¼ãƒ³ä»¥å¤–ã®ä»»æ„ã®CSSã‚’åŸ‹è¾¼ã‚ã¾ã™ã€‚
+ã“ã“ã§ã¯ãƒšãƒ¼ã‚¸ã®èƒŒæ™¯ã‚’ç·‘è‰²ã«è¨­å®šã—ã¦ã¾ã™ã€‚
 
-*** ‹Ö~ƒpƒ^[ƒ“ˆê——
+*** ç¦æ­¢ãƒ‘ã‚¿ãƒ¼ãƒ³ä¸€è¦§
 {{css_inhibit_pattern}}
 
-** ’i—‚Ö‚ÌƒXƒ^ƒCƒ‹w’è
+** æ®µè½ã¸ã®ã‚¹ã‚¿ã‚¤ãƒ«æŒ‡å®š
  {{style_div("font-size:200%;")
  This is a test.
  }}
@@ -211,16 +211,16 @@ body {
 This is a test.
 }}
 
-** ’i—‚Ö‚ÌƒNƒ‰ƒXw’è
+** æ®µè½ã¸ã®ã‚¯ãƒ©ã‚¹æŒ‡å®š
 {{block_div("notice")
 This is a test.
 }}
  {{block_div("notice")
  This is a test.
  }}
-”CˆÓ‚ÌƒNƒ‰ƒX‚ğw’è‚Å‚«‚Ü‚·B
+ä»»æ„ã®ã‚¯ãƒ©ã‚¹ã‚’æŒ‡å®šã§ãã¾ã™ã€‚
 
-** ’†SŠñ‚¹
+** ä¸­å¿ƒå¯„ã›
  {{center
  This is a test.~
  This is a test too.
@@ -230,7 +230,7 @@ This is a test.~
 This is a test too.
 }}
 
-** ‰EŠñ‚¹
+** å³å¯„ã›
  {{right
  This is a test.~
  This is a test too.
@@ -240,7 +240,7 @@ This is a test.~
 This is a test too.
 }}
 
-** ¶Šñ‚¹
+** å·¦å¯„ã›
  {{left
  This is a test.~
  This is a test too.
@@ -250,10 +250,10 @@ This is a test.~
 This is a test too.
 }}
 
-¶Šñ‚¹‚Í‚ ‚Ü‚èg‚í‚ê‚È‚¢‚Æv‚¢‚Ü‚·‚ªA
-ƒvƒ‰ƒOƒCƒ“‚Ì‘ÎÌ«‚©‚çc‚µ‚Ä‚¢‚Ü‚·B
+å·¦å¯„ã›ã¯ã‚ã¾ã‚Šä½¿ã‚ã‚Œãªã„ã¨æ€ã„ã¾ã™ãŒã€
+ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã®å¯¾ç§°æ€§ã‹ã‚‰æ®‹ã—ã¦ã„ã¾ã™ã€‚
 
-** ¶‚É‰ñ‚è‚±‚İ
+** å·¦ã«å›ã‚Šã“ã¿
 {{float_left
 This is a test.
 }}
@@ -264,7 +264,7 @@ This is a dummy text.~
  This is a test.
  }}
 
-** ‰E‚É‰ñ‚è‚±‚İ
+** å³ã«å›ã‚Šã“ã¿
 {{float_right
 This is a test.
 }}
@@ -275,57 +275,57 @@ This is a dummy text.~
  This is a test.
  }}
 
-** ƒeƒLƒXƒg‚Ìˆê•”‚ÉƒXƒ^ƒCƒ‹w’è
+** ãƒ†ã‚­ã‚¹ãƒˆã®ä¸€éƒ¨ã«ã‚¹ã‚¿ã‚¤ãƒ«æŒ‡å®š
  This is a {{style_span("font-size:200%;", "very big")}} test string.
 This is a {{style_span("font-size:200%;", "very big")}} test string.
 
-** ƒeƒLƒXƒg‚ğ¬‚³‚­
+** ãƒ†ã‚­ã‚¹ãƒˆã‚’å°ã•ã
  This is a {{small("small")}} string.
 This is a {{small("small")}} string.
 
-** ‰æ‘œ–„‚İ
+** ç”»åƒåŸ‹è¾¼ã¿
  {{img(".theme/i/login_qwik_logo.gif")}}
 {{img(".theme/i/login_qwik_logo.gif")}}
-ƒŠƒ“ƒN‚ğ‚Í‚é‚±‚Æ‚à‚Å‚«‚Ü‚·B
+ãƒªãƒ³ã‚¯ã‚’ã¯ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ã€‚
  {{img(".theme/i/login_qwik_logo.gif", "qwikWeb", "http://qwik.jp/")}}
 {{img(".theme/i/login_qwik_logo.gif", "qwikWeb", "http://qwik.jp/")}}
 
-** ƒy[ƒW‚Ö‚ÌƒŠƒ“ƒN
+** ãƒšãƒ¼ã‚¸ã¸ã®ãƒªãƒ³ã‚¯
  {{a(FrontPage)}}
 {{a(FrontPage)}}
  {{a(FrontPage, go back)}}
 {{a(FrontPage, go back)}}
 
-** ƒAƒXƒL[EƒA[ƒgEƒvƒ‰ƒOƒCƒ“
-ƒAƒXƒL[EƒA[ƒg‚ğ‘‚­‚Æ‚«‚É‚²—˜—p‰º‚³‚¢B
+** ã‚¢ã‚¹ã‚­ãƒ¼ãƒ»ã‚¢ãƒ¼ãƒˆãƒ»ãƒ—ãƒ©ã‚°ã‚¤ãƒ³
+ã‚¢ã‚¹ã‚­ãƒ¼ãƒ»ã‚¢ãƒ¼ãƒˆã‚’æ›¸ãã¨ãã«ã”åˆ©ç”¨ä¸‹ã•ã„ã€‚
 {{{
 {{aa
-@@ ÈQÈ@@^PPPPP
-@@i@LÍMjƒ@monar
-@@i@@@@j @_QQQQQ
-@@b b@|
-@@i_QjQj
+ã€€ã€€ âˆ§ï¼¿âˆ§ã€€ã€€ï¼ï¿£ï¿£ï¿£ï¿£ï¿£
+ã€€ã€€ï¼ˆã€€Â´âˆ€ï½€ï¼‰ï¼œã€€monar
+ã€€ã€€ï¼ˆã€€ã€€ã€€ã€€ï¼‰ ã€€ï¼¼ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿
+ã€€ã€€ï½œ ï½œã€€|
+ã€€ã€€ï¼ˆ_ï¼¿ï¼‰ï¼¿ï¼‰
 }}
 }}}
 {{aa
-@@ ÈQÈ@@^PPPPP
-@@i@LÍMjƒ@monar
-@@i@@@@j @_QQQQQ
-@@b b@|
-@@i_QjQj
+ã€€ã€€ âˆ§ï¼¿âˆ§ã€€ã€€ï¼ï¿£ï¿£ï¿£ï¿£ï¿£
+ã€€ã€€ï¼ˆã€€Â´âˆ€ï½€ï¼‰ï¼œã€€monar
+ã€€ã€€ï¼ˆã€€ã€€ã€€ã€€ï¼‰ ã€€ï¼¼ï¼¿ï¼¿ï¼¿ï¼¿ï¼¿
+ã€€ã€€ï½œ ï½œã€€|
+ã€€ã€€ï¼ˆ_ï¼¿ï¼‰ï¼¿ï¼‰
 }}
 
 {{aa
-@@@ZQZ 
-@@ i@E(ª)Ej @ƒKumar!
-@@/J@¤J 
-@@‚µ\-J 
+ã€€ã€€ã€€ã€‡ï¼¿ã€‡ 
+ã€€ã€€ ï¼ˆã€€ãƒ»(ï½ª)ãƒ»ï¼‰ ã€€ï¼œKumar!
+ã€€ã€€/Jã€€â–½J 
+ã€€ã€€ã—â€•-J 
 }}
 
-’P‚ÉƒtƒHƒ“ƒg‚ğuMS PƒSƒVƒbƒNv‚Éw’è‚µ‚Ä‚¢‚é‚¾‚¯‚Å‚·B
+å˜ã«ãƒ•ã‚©ãƒ³ãƒˆã‚’ã€ŒMS Pã‚´ã‚·ãƒƒã‚¯ã€ã«æŒ‡å®šã—ã¦ã„ã‚‹ã ã‘ã§ã™ã€‚
 
-** ƒR[ƒhEƒvƒ‰ƒOƒCƒ“
-ƒR[ƒh‚ğ–„‚Ş‚Æ‚«‚Ég‚¢‚Ü‚·B
+** ã‚³ãƒ¼ãƒ‰ãƒ»ãƒ—ãƒ©ã‚°ã‚¤ãƒ³
+ã‚³ãƒ¼ãƒ‰ã‚’åŸ‹è¾¼ã‚€ã¨ãã«ä½¿ã„ã¾ã™ã€‚
  {{code
  puts "hello, world!"
  puts "hello, qwik users!"
@@ -334,10 +334,10 @@ This is a {{small("small")}} string.
 puts "hello, world!"
 puts "hello, qwik users!"
 }}
-s”Ô†‚ª–„‚Ü‚ê‚Ü‚·B
+è¡Œç•ªå·ãŒåŸ‹è¾¼ã¾ã‚Œã¾ã™ã€‚
 
-** ’ˆÓ–€•\¦ƒvƒ‰ƒOƒCƒ“
-’ˆÓ–€‚ğ•\¦‚·‚é‚Ì‚Ég‚¦‚Ü‚·B
+** æ³¨æ„äº‹é …è¡¨ç¤ºãƒ—ãƒ©ã‚°ã‚¤ãƒ³
+æ³¨æ„äº‹é …ã‚’è¡¨ç¤ºã™ã‚‹ã®ã«ä½¿ãˆã¾ã™ã€‚
 {{notice
 \'\'\'WARNING\'\'\': This is just a sample!
 }}
@@ -345,8 +345,8 @@ puts "hello, qwik users!"
  \'\'\'WARNING\'\'\': This is just a sample!
  }}
 
-* ƒ‚ƒ“ƒ^Eƒƒ\ƒbƒhEƒvƒ‰ƒOƒCƒ“
-ƒeƒLƒXƒg‚Ìˆê•”‚ğ‰B‚µ‚Ü‚·BƒNƒŠƒbƒN‚·‚é‚Æ•\¦‚³‚ê‚Ü‚·B
+* ãƒ¢ãƒ³ã‚¿ãƒ»ãƒ¡ã‚½ãƒƒãƒ‰ãƒ»ãƒ—ãƒ©ã‚°ã‚¤ãƒ³
+ãƒ†ã‚­ã‚¹ãƒˆã®ä¸€éƒ¨ã‚’éš ã—ã¾ã™ã€‚ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã¨è¡¨ç¤ºã•ã‚Œã¾ã™ã€‚
  {{monta("This is an example.")}}
 {{monta("This is an example.")}}
 '

@@ -17,11 +17,11 @@ You see the interactive history of the page.
     }
 
     D_ExtHistory_ja = {
-      :dt => '�y�[�W�̗��j���[�h',
-      :dd => '�y�[�W�̗��j���C���^���N�e�B�u�Ɍ��邱�Ƃ��ł��܂��B',
-      :dc => "* �g����
-�ҏW��ʂ̉E���Ɂu�^�C���}�V�[���v�Ƃ��������N������܂��B
-���̃����N���A�y�[�W�̕ҏW�������C���^���N�e�B�u�Ɍ��邱�Ƃ��ł��܂��B
+      :dt => 'ページの歴史モード',
+      :dd => 'ページの歴史をインタラクティブに見ることができます。',
+      :dc => "* 使い方
+編集画面の右側に「タイムマシーン」というリンクがあります。
+そのリンクより、ページの編集履歴をインタラクティブに見ることができます。
 "
     }
 

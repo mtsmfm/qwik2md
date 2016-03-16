@@ -274,35 +274,35 @@ if defined?($test) && $test
 
     def test_1
       input = "[smd:30] =?ISO-2022-JP?B?GyRCRnxLXDhsJTUlViU4JSclLyVIGyhC?="
-      expected = "[smd:30] “ú–{ŒêƒTƒuƒWƒFƒNƒg"
+      expected = "[smd:30] æ—¥æœ¬èªã‚µãƒ–ã‚¸ã‚§ã‚¯ãƒˆ"
       actual = QuickML::SubjectDecoder.decode(input)
       ok_eq(expected, actual)
     end
 
     def test_2
       input = "=?ISO-2022-JP?B?UmU6IFtzbWQ6MzA=?==?ISO-2022-JP?B?XSAbJEJGfEtcOGwlNSVWJTglJyUvJUgbKEI=?="
-      expected = "Re: [smd:30] “ú–{ŒêƒTƒuƒWƒFƒNƒg"
+      expected = "Re: [smd:30] æ—¥æœ¬èªã‚µãƒ–ã‚¸ã‚§ã‚¯ãƒˆ"
       actual = QuickML::SubjectDecoder.decode(input)
       ok_eq(expected, actual)
     end
 
     def test_3
       input = "[smd:31] Re: =?ISO-2022-JP?B?GyRCRnxLXDhsJTUlViU4JSclLyVIGyhC?="
-      expected = "[smd:31] Re: “ú–{ŒêƒTƒuƒWƒFƒNƒg"
+      expected = "[smd:31] Re: æ—¥æœ¬èªã‚µãƒ–ã‚¸ã‚§ã‚¯ãƒˆ"
       actual = QuickML::SubjectDecoder.decode(input)
       ok_eq(expected, actual)
     end
 
     def test_4
       input = "[smd:32] =?CP932?Q?Re: __=93=FA=96{=8C=EA=83T=83u=83W=83F=83N=83g?="
-      expected = "[smd:32] Re:   “ú–{ŒêƒTƒuƒWƒFƒNƒg"
+      expected = "[smd:32] Re:   æ—¥æœ¬èªã‚µãƒ–ã‚¸ã‚§ã‚¯ãƒˆ"
       actual = QuickML::SubjectDecoder.decode(input)
       ok_eq(expected, actual)
     end
 
     def test_5
       input = "=?ISO-2022-JP?B?UmU6IFtzbWQ6MzBdIBskQkZ8S1w4bCU1JVYlOBsoQg==?==?ISO-2022-JP?B?GyRCJSclLyVIGyhC?="
-      expected = "Re: [smd:30] “ú–{ŒêƒTƒuƒWƒFƒNƒg"
+      expected = "Re: [smd:30] æ—¥æœ¬èªã‚µãƒ–ã‚¸ã‚§ã‚¯ãƒˆ"
       actual = QuickML::SubjectDecoder.decode(input)
       ok_eq(expected, actual)
     end
@@ -386,7 +386,7 @@ if defined?($test) && $test
       ok_eq('t t t', c.get_unified_subject('t t t', 'test'))
       ok_eq('t t t', c.get_unified_subject('t  t  t', 'test'))
       ok_eq('Test Mail', c.get_unified_subject('Re: [test:1] Test Mail', 'test'))
-      ok_eq('ƒeƒXƒg', c.get_unified_subject('Re: [test:1] ƒeƒXƒg ', 'test'))
+      ok_eq('ãƒ†ã‚¹ãƒˆ', c.get_unified_subject('Re: [test:1] ãƒ†ã‚¹ãƒˆ ', 'test'))
 
       # test_remove_comment_in_field
       ok_eq('', c.remove_comment_in_field(''))
@@ -409,27 +409,27 @@ if defined?($test) && $test
 	    c.get_content_type("multipart/alternative; boundary='b'"))
 
       # test_encode_field
-      ok_eq("\201@", '@')
-      ok_eq("\352\242", 'ê¢')
+      ok_eq("\201@", 'ã€€')
+      ok_eq("\352\242", 'ç‘¤')
       ok_eq('t', c.encode_field('t'))
-      ok_eq('=?ISO-2022-JP?B?GyRCJCIbKEI=?=', c.encode_field('‚ '))
-      ok_eq('=?ISO-2022-JP?B?GyRCJCIkJBsoQg==?=', c.encode_field('‚ ‚¢'))
+      ok_eq('=?ISO-2022-JP?B?GyRCJCIbKEI=?=', c.encode_field('ã‚'))
+      ok_eq('=?ISO-2022-JP?B?GyRCJCIkJBsoQg==?=', c.encode_field('ã‚ã„'))
       ok_eq('=?ISO-2022-JP?B?GyRCJCIkJCQmJCgkKiQrJC0kLyQxJDMbKEI=?=
  =?ISO-2022-JP?B?GyRCJDUkNyQ5JDskPRsoQg==?=',
-	 c.encode_field('‚ ‚¢‚¤‚¦‚¨‚©‚«‚­‚¯‚±‚³‚µ‚·‚¹‚»'))
+	 c.encode_field('ã‚ã„ã†ãˆãŠã‹ããã‘ã“ã•ã—ã™ã›ã'))
       ok_eq('[test:1] Re: =?ISO-2022-JP?B?GyRCJUYlOSVIGyhCICA=?=',
-	 c.encode_field('[test:1] Re: ƒeƒXƒg  '))
+	 c.encode_field('[test:1] Re: ãƒ†ã‚¹ãƒˆ  '))
       ok_eq('[test:1] Re: =?ISO-2022-JP?B?GyRCJUYlOSVIGyhCIA==?=',
-	 c.encode_field('[test:1] Re: ƒeƒXƒg '))
+	 c.encode_field('[test:1] Re: ãƒ†ã‚¹ãƒˆ '))
       ok_eq('[test:1] Re: =?ISO-2022-JP?B?GyRCJCIbKEI=?=',
-	 c.encode_field('[test:1] Re: ‚ '))
+	 c.encode_field('[test:1] Re: ã‚'))
 
       # test_decode_subject
       ok_eq('t', c.decode_subject('t'))
       ok_eq('st', c.decode_subject("s\nt"))
       ok_eq('s t', c.decode_subject("s\n t"))
       ok_eq("\202\240 ", c.decode_subject('=?iso-2022-jp?B?GyRCJCIbKEI=?= '))
-      ok_eq( '[test:33] ‚Æ‚Ä‚à‚Æ‚Ä‚à‚Æ‚Ä‚à‚Æ‚Ä‚à‚Æ‚Ä‚à‚Æ‚Ä‚à’·‚¢’·‚¢’·‚¢’·‚¢’·‚¢’·‚¢’·‚¢’·‚¢’·‚¢‚Æ‚Ä‚à‚Æ‚Ä‚à‚Æ‚Ä‚à‚Æ‚Ä‚à‚Æ‚Ä‚à‚Æ‚Ä‚à’·‚¢’·‚¢’·‚¢’·‚¢’·‚¢’·‚¢’·‚¢’·‚¢’·‚¢“ú–{ŒêƒTƒuƒWƒFƒNƒg‚ÌƒeƒXƒg',
+      ok_eq( '[test:33] ã¨ã¦ã‚‚ã¨ã¦ã‚‚ã¨ã¦ã‚‚ã¨ã¦ã‚‚ã¨ã¦ã‚‚ã¨ã¦ã‚‚é•·ã„é•·ã„é•·ã„é•·ã„é•·ã„é•·ã„é•·ã„é•·ã„é•·ã„ã¨ã¦ã‚‚ã¨ã¦ã‚‚ã¨ã¦ã‚‚ã¨ã¦ã‚‚ã¨ã¦ã‚‚ã¨ã¦ã‚‚é•·ã„é•·ã„é•·ã„é•·ã„é•·ã„é•·ã„é•·ã„é•·ã„é•·ã„æ—¥æœ¬èªã‚µãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ãƒ†ã‚¹ãƒˆ',
 	     c.decode_subject('[test:33] =?ISO-2022-JP?B?GyRCJEgkRiRiJEgkRiRiJEgkRiRiJEgbKEI=?=
  =?ISO-2022-JP?B?GyRCJEYkYiRIJEYkYiRIJEYkYkQ5JCQbKEI=?=
  =?ISO-2022-JP?B?GyRCRDkkJEQ5JCREOSQkRDkkJEQ5JCQbKEI=?=
@@ -440,7 +440,7 @@ if defined?($test) && $test
  =?ISO-2022-JP?B?GyRCRDkkJEZ8S1w4bCU1JVYlOCUnJS8bKEI=?=
  =?ISO-2022-JP?B?GyRCJUgkTiVGJTklSBsoQg==?=
 '))
-      ok_eq('[test:34] very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long ‚ÈƒTƒuƒWƒFƒNƒg‚ÌƒeƒXƒg',
+      ok_eq('[test:34] very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long ãªã‚µãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ãƒ†ã‚¹ãƒˆ',
 	    c.decode_subject('[test:34] very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long =?ISO-2022-JP?B?GyRCJEolNSVWJTglJyUvJUgkTiVGJTkbKEI=?=
  =?ISO-2022-JP?B?GyRCJUgbKEI=?=
 '))
@@ -448,9 +448,9 @@ if defined?($test) && $test
       # test_clean_subject
       ok_eq('t', c.clean_subject('t', 'test'))
       ok_eq(' Re: Test ', c.clean_subject('[test:1] Re: Test ', 'test'))
-      ok_eq('Re: ƒeƒXƒg ', c.clean_subject('Re: [test:1] ƒeƒXƒg ', 'test'))
-      ok_eq('[hoge:2] ‚Ä‚·‚Æ ', c.clean_subject('[hoge:2] ‚Ä‚·‚Æ ', 'test'))
-      ok_eq('[ttt:3] ‚Ä‚·‚Æ ', c.clean_subject('[ttt:3] ‚Ä‚·‚Æ ', 'test'))
+      ok_eq('Re: ãƒ†ã‚¹ãƒˆ ', c.clean_subject('Re: [test:1] ãƒ†ã‚¹ãƒˆ ', 'test'))
+      ok_eq('[hoge:2] ã¦ã™ã¨ ', c.clean_subject('[hoge:2] ã¦ã™ã¨ ', 'test'))
+      ok_eq('[ttt:3] ã¦ã™ã¨ ', c.clean_subject('[ttt:3] ã¦ã™ã¨ ', 'test'))
 
       # test_rewrite_subject
       ok_eq('[n:2] t', c.rewrite_subject('t', 'n', '2'))
@@ -458,7 +458,7 @@ if defined?($test) && $test
       ok_eq('[test:2] Re: Test Mail',
 	    c.rewrite_subject('Re: [test:1] Test Mail', 'test', 2))
       ok_eq('[test:2] Re: =?ISO-2022-JP?B?GyRCJUYlOSVIGyhCIA==?=',
-	    c.rewrite_subject('Re: [test:1] ƒeƒXƒg ', 'test', 2))
+	    c.rewrite_subject('Re: [test:1] ãƒ†ã‚¹ãƒˆ ', 'test', 2))
 
       # test_address_of_domain?
       ok_eq(true,  c.address_of_domain?('user@example.net', 'example.net'))

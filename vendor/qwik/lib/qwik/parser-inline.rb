@@ -185,7 +185,7 @@ if defined?($test) && $test
 	 "[[&{alert('hello');};]]")
 
       # test_bug
-      ok([[:a, {:href=>"\226].html"}, "\226]"]], '[[–]]]')
+      ok([[:a, {:href=>"\226].html"}, "\226]"]], '[[æœ›]]')
     end
   end
 
@@ -224,12 +224,12 @@ if defined?($test) && $test
 	 "&{alert('hello');};")
 
       # test_sjis_bug
-      ok_eq("\203|\203X", 'ƒ|ƒX')
-      ok([:a, {:href=>"\203|\203X.html"}, "\203|\203X"], 'ƒ|ƒX')
+      ok_eq("\203|\203X", 'ãƒã‚¹')
+      ok([:a, {:href=>"\203|\203X.html"}, "\203|\203X"], 'ãƒã‚¹')
 
       # test_bug
-      ok_eq("\226]", '–]')
-      ok([:a, {:href=>"\226].html"}, "\226]"], '–]')
+      ok_eq("\226]", 'æœ›')
+      ok([:a, {:href=>"\226].html"}, "\226]"], 'æœ›')
 
       # abnormal cases
       ok([:a, {:href=>'|.html'}, '|'],      '|')

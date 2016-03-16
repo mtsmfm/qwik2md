@@ -21,13 +21,13 @@ You can see the list below.
     }
 
     NotNecessary_D_ExtDescribe_ja = {
-      :dt => '�@�\����',
-      :dd => 'qwikWeb�̋@�\���������邱�Ƃ��ł��܂��B',
-      :dc => '* ��
+      :dt => '機能説明',
+      :dd => 'qwikWebの機能説明を見ることができます。',
+      :dc => '* 例
  [[QwikWeb.describe]]
 [[QwikWeb.describe]]
 
-�@�\�����̈ꗗ�́A���̉��ɂ��Ă��܂��B
+機能説明の一覧は、この下についてきます。
 '
     }
 

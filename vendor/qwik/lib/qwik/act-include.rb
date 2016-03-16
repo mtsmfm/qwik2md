@@ -17,10 +17,10 @@ You can see the FrontPage is included here.
     }
 
     D_PluginInclude_ja = {
-      :dt => 'Žæ‚èž‚Ýƒvƒ‰ƒOƒCƒ“',
-      :dd => '‘¼‚Ìƒy[ƒW‚Ì“à—e‚ð‚Æ‚è‚±‚Ý‚Ü‚·B',
-      :dc => "* —á
-FrontPage‚Ì“à—e‚ð–„‚ßž‚ñ‚Å‚Ý‚Ü‚·B
+      :dt => 'å–ã‚Šè¾¼ã¿ãƒ—ãƒ©ã‚°ã‚¤ãƒ³',
+      :dd => 'ä»–ã®ãƒšãƒ¼ã‚¸ã®å†…å®¹ã‚’ã¨ã‚Šã“ã¿ã¾ã™ã€‚',
+      :dc => "* ä¾‹
+FrontPageã®å†…å®¹ã‚’åŸ‹ã‚è¾¼ã‚“ã§ã¿ã¾ã™ã€‚
 {{include('FrontPage')}}
  {{include('FrontPage')}}
 "
@@ -107,7 +107,7 @@ if defined?($test) && $test
 		   {:class=>'day'},
 		   [:h2,
 		     [:a, {:href=>"2.html#t2", :name=>'t2', :class=>'label'},
-		       "¡"],
+		       "â– "],
 		     't2'],
 		   [:div, {:class=>'body'},
 		     [:div, {:class=>'section'}, []]]]]]]],
@@ -135,7 +135,7 @@ if defined?($test) && $test
       res = session('/test/t1.html')
       ok_in([[:a, {:href=>"t2.html#6b9e49fa28900683969f489ac35161e6",
 		  :name=>'6b9e49fa28900683969f489ac35161e6',
-		  :class=>'label'}, "¡"], "t2!"],
+		  :class=>'label'}, "â– "], "t2!"],
 	    "//div[@class='day']/h2")
     end
   end

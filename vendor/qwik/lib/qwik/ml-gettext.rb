@@ -108,23 +108,23 @@ if defined?($test) && $test
       t.is "If you agree, then,\n", gettext("If you agree, then,\n")
 
       # test_codeconv
-      t.is '‚ ', codeconv('‚ ')
+      t.is 'ã‚', codeconv('ã‚')
 
       # test after set catalog
       @catalog		= catalog_ja
       @message_charset	= 'iso-2022-jp'
       set_catalog(catalog_ja)
       set_charset('iso-2022-jp')
-      t.is '‚±‚ñ‚É‚¿‚Í'.set_sourcecode_charset.to_mail_charset, gettext('hello')
-      t.is '‚±‚ñ‚É‚¿‚Í'.set_sourcecode_charset.to_mail_charset, _('hello')
-      t.is '‚±‚ñ‚É‚¿‚Í'.set_sourcecode_charset.to_mail_charset, gettext2('hello')
-      t.is '‚±‚ñ‚É‚¿‚Í'.set_sourcecode_charset.to_mail_charset, gettext('hello')
-      t.is "g‚¢•û: a\n".set_sourcecode_charset.to_mail_charset, gettext("Info: %s\n", 'a')
-      t.is "‚à‚µ³”F‚·‚éê‡A\n".set_sourcecode_charset.to_mail_charset,
+      t.is 'ã“ã‚“ã«ã¡ã¯'.set_sourcecode_charset.to_mail_charset, gettext('hello')
+      t.is 'ã“ã‚“ã«ã¡ã¯'.set_sourcecode_charset.to_mail_charset, _('hello')
+      t.is 'ã“ã‚“ã«ã¡ã¯'.set_sourcecode_charset.to_mail_charset, gettext2('hello')
+      t.is 'ã“ã‚“ã«ã¡ã¯'.set_sourcecode_charset.to_mail_charset, gettext('hello')
+      t.is "ä½¿ã„æ–¹: a\n".set_sourcecode_charset.to_mail_charset, gettext("Info: %s\n", 'a')
+      t.is "ã‚‚ã—æ‰¿èªã™ã‚‹å ´åˆã€\n".set_sourcecode_charset.to_mail_charset,
 	gettext("If you agree, then,\n")
 
       # test_codeconv_ja
-      t.is "\e$B$\"\e(B", codeconv('‚ ')
+      t.is "\e$B$\"\e(B", codeconv('ã‚')
     end
   end
 

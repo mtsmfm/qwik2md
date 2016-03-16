@@ -24,23 +24,23 @@ class TestSubmitJapanese < Test::Unit::TestCase
 'Date: Mon, 3 Feb 2001 12:34:56 +0900
 From: "Test User" <bob@example.net>
 To: "Test Mailing List" <test@example.com>
-Subject: Re: [test:1] ƒeƒXƒg 
+Subject: Re: [test:1] ãƒ†ã‚¹ãƒˆ 
 
-ƒeB
+ãƒ†ã€‚
 ' }
-    ok_eq("ƒeƒXƒg", @site['1'].get_title)
-    ok_eq("* ƒeƒXƒg\n{{mail(bob@example.net,0)\nƒeB\n}}\n", @site['1'].load)
+    ok_eq("ãƒ†ã‚¹ãƒˆ", @site['1'].get_title)
+    ok_eq("* ãƒ†ã‚¹ãƒˆ\n{{mail(bob@example.net,0)\nãƒ†ã€‚\n}}\n", @site['1'].load)
 
     mail = post_mail(qml) { # 2nd mail
 'Date: Mon, 4 Feb 2001 12:34:56 +0900
 From: "Guest User" <guest@example.com>
 To: "Test Mailing List" <test@example.com>
-Subject: Re: [test:2] ƒeƒXƒg 
+Subject: Re: [test:2] ãƒ†ã‚¹ãƒˆ 
 
-‚±‚ê‚àƒeB
+ã“ã‚Œã‚‚ãƒ†ã€‚
 ' }
-    ok_eq("ƒeƒXƒg", @site['1'].get_title)
-    ok_eq("* ƒeƒXƒg\n{{mail(bob@example.net,0)\nƒeB\n}}\n{{mail(guest@example.com,0)\n‚±‚ê‚àƒeB\n}}\n", @site['1'].load) # the new mail is added.
+    ok_eq("ãƒ†ã‚¹ãƒˆ", @site['1'].get_title)
+    ok_eq("* ãƒ†ã‚¹ãƒˆ\n{{mail(bob@example.net,0)\nãƒ†ã€‚\n}}\n{{mail(guest@example.com,0)\nã“ã‚Œã‚‚ãƒ†ã€‚\n}}\n", @site['1'].load) # the new mail is added.
   end
 
   def test_submit_with_attach_image
@@ -61,7 +61,7 @@ Content-Transfer-Encoding: 7bit
 Content-Type: text/plain; charset='ISO-2022-JP'
 Content-Transfer-Encoding: 7bit
 
-ƒeB
+ãƒ†ã€‚
 --------_410DDC04C7AD046D3600_MULTIPART_MIXED_
 Content-Type: image/png; name=\"1x1.png\"
 Content-Disposition: attachment;
@@ -74,10 +74,10 @@ AAAAAElFTkSuQmCC
 --------_410DDC04C7AD046D3600_MULTIPART_MIXED_--
 " }
     page = @site['1']
-    ok_eq("“Y•tƒeƒXƒg", page.get_title)
-    ok_eq("* “Y•tƒeƒXƒg
+    ok_eq("æ·»ä»˜ãƒ†ã‚¹ãƒˆ", page.get_title)
+    ok_eq("* æ·»ä»˜ãƒ†ã‚¹ãƒˆ
 {{mail(bob@example.net,0)
-ƒeB
+ãƒ†ã€‚
 
 {{file(1x1.png)}}
 }}
@@ -129,7 +129,7 @@ Subject: test
     mail.store_addresses
     qml.site_post(mail, true)
     ok_eq("test", @site['test'].get_title)
-    ok_eq("* test\n{{mail(bob@example.net,0)\n•ÔM\n}}\n", @site['test'].load)
+    ok_eq("* test\n{{mail(bob@example.net,0)\nè¿”ä¿¡\n}}\n", @site['test'].load)
   end
 end
 

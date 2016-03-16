@@ -96,12 +96,12 @@ http://example.com/test/plan_19700115.html
     eq '[test]: New ML by bob@example.net', logs[0]
 
     # Bob send a mail with a date tag.
-    res = sm('plan_19700115') { '‚¢' }
+    res = sm('plan_19700115') { 'ã„' }
     ok_log "[test]: QwikPost: plan_19700115\n[test:2]: Send:"
     page = @site['plan_19700115']
     eq "* plan_19700115
 {{mail(bob@example.net,0)
-‚¢
+ã„
 }}
 ", page.load
 
@@ -112,11 +112,11 @@ http://example.com/test/plan_19700115.html
 ", @site.get_footer(Time.at(0))
 
     # Bob send a mail.
-    res = sm('‚¤‚¤') { '‚¦‚¦' }
+    res = sm('ã†ã†') { 'ãˆãˆ' }
     ok_log "[test]: QwikPost: 1\n[test:3]: Send:"
     str = $ml_sm.buffer[-12..-3].join("\n")
     eq '
-‚¦‚¦
+ãˆãˆ
 
 -- 
 archive-> http://example.com/test/1.html 

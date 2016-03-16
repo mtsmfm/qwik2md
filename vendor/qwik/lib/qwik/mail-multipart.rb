@@ -146,17 +146,17 @@ b
 ', '----=_NextPart_000_006A_01C5C34A.53A389F0'))
 
       # test_get_filename
-      ok_eq("\e$B$\"\e(B", '‚ '.set_sourcecode_charset.to_mail_charset)
+      ok_eq("\e$B$\"\e(B", 'ã‚'.set_sourcecode_charset.to_mail_charset)
       ok_eq('t', c.get_filename("Content-Disposition: attachment; filename=\"t\""))
       ok_eq("\343\201\202", c.get_filename("Content-Disposition: attachment; filename=\"\e$B$\"\e(B\""))
       ok_eq('sounds.zip', c.get_filename("Content-Disposition: attachment;
 	filename=sounds.zip"))
       # $KCODE = 's'
-      ok_eq('17fy—\ZƒR[ƒh‚Ìw’è‚É‚Â‚¢‚Ä.doc'.set_sourcecode_charset.to_filename_charset,
+      ok_eq('17fyäºˆç®—ã‚³ãƒ¼ãƒ‰ã®æŒ‡å®šã«ã¤ã„ã¦.doc'.set_sourcecode_charset.to_filename_charset,
 	    c.get_filename('Content-Disposition: attachment;
  filename="=?ISO-2022-JP?B?MTdmeRskQk09OzslMyE8JUkkTjtYRGokSxsoQg==?=
  =?ISO-2022-JP?B?GyRCJEQkJCRGGyhCLmRvYw==?="'))
-      ok_eq('î•ñ—¬ƒfƒUƒCƒ“ƒOƒ‹[ƒv.xls'.set_sourcecode_charset.to_filename_charset,
+      ok_eq('æƒ…å ±æµãƒ‡ã‚¶ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—.xls'.set_sourcecode_charset.to_filename_charset,
 	    c.get_filename('Content-Disposition: attachment;
  filename="=?ISO-2022-JP?B?GyRCPnBKc04uJUclNiUkJXMlMCVrITwlVxsoQg==?=
  =?ISO-2022-JP?B?Lnhscw==?="'))

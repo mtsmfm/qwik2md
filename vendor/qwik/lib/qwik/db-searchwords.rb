@@ -182,7 +182,7 @@ if defined?($test) && $test
       assert_equal 2, ems[1].count
 
       # put Jpanaese name
-      word = "ÇŸÇ∞"
+      word = "„Åª„Åí"
       db.put(word)
       ems = db.get
       assert_equal 3, ems.size

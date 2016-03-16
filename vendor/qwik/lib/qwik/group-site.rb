@@ -267,10 +267,10 @@ test.
 
       # test_attach
       eq '
-{{file(Ç†.txt)}}
+{{file(„ÅÇ.txt)}}
 
 ',
-	c.attach(@site, 'FrontPage', 'Ç†.txt', 'test.')
+	c.attach(@site, 'FrontPage', '„ÅÇ.txt', 'test.')
       eq true, files.exist?('t.txt')
       #eq true, files.exist?('=82=A0.txt')
       #eq ['1-t.txt', '=82=A0.txt', 't.txt'], files.list

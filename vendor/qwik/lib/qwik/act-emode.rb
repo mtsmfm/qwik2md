@@ -119,7 +119,7 @@ if defined?($test) && $test
 		   {:class=>'day'},
 		   [:h2,
 		     [:a, {:href=>"2.html#t2", :name=>'t2', :class=>'label'},
-		       "¡"],
+		       "â– "],
 		     't2'],
 		   [:div, {:class=>'body'},
 		     [:div, {:class=>'section'}, []]]]]]]],
@@ -143,7 +143,7 @@ if defined?($test) && $test
       res = session('/test/t1.html')
       ok_in([[:a, {:href=>"t2.html#Xb_M6_lBLMaGGH88jpd-rQ",
 		  :name=>'Xb_M6_lBLMaGGH88jpd-rQ',
-		  :class=>'label'}, "¡"], "t2!"],
+		  :class=>'label'}, "â– "], "t2!"],
 	    "//div[@class='day']/h2")
     end
   end

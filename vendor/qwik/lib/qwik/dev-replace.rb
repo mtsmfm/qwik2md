@@ -48,7 +48,7 @@ def main
 
     replace, newcontent, dryrun = replace_content_by_line(content, dryrun) {
       if last_fname != fname
-	puts "Å°#{fname}"
+	puts "‚ñ†#{fname}"
 	last_fname = fname
       end
     }

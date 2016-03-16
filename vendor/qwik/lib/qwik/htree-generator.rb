@@ -111,7 +111,7 @@ if defined?($test) && $test
 
       html = g.html {[
 	  g.head {[
-	      g.title {"タイトル"},
+	      g.title {"繧ｿ繧､繝医Ν"},
 	    ]},
 	  g.body {[
 	      g.pre {[g.b {'world'},  'hello']},
@@ -120,7 +120,7 @@ if defined?($test) && $test
 	      g.p {['This is ', g.a(:href=>'hoge'){'anchor'}, ' text.']},
 	    ]}
 	]}
-      ok("<html><head><title>タイトル</title></head><body><pre><b>world</b>hello</pre><pre>This is <b>bold</b> text.</pre><pre>This is <i>italic</i> text.</pre><p>This is <a href=\"hoge\">anchor</a> text.</p></body></html>", html)
+      ok("<html><head><title>繧ｿ繧､繝医Ν</title></head><body><pre><b>world</b>hello</pre><pre>This is <b>bold</b> text.</pre><pre>This is <i>italic</i> text.</pre><p>This is <a href=\"hoge\">anchor</a> text.</p></body></html>", html)
 
       # test_with_underbar
       ok("<ab/>", g.ab)

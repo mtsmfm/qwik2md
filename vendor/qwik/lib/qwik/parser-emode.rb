@@ -27,7 +27,7 @@ module Qwik
 	  if next_line == 'h2'
 	    num += 1
 	  end
-	  if /\A([ÅúÅ°])(.*)\z/s =~ line
+	  if /\A([‚óè‚ñ†])(.*)\z/s =~ line
 	    ar << HMARK[next_line] + $2
 	  else
 	    if next_line == 'h2'
@@ -51,10 +51,10 @@ module Qwik
 	return 'h2'
       when /\A(------+)/	# only -
 	return 'h3'
-      when /\A([Å®ÅE])(.*)\z/s
+      when /\A([‚Üí„Éª])(.*)\z/s
 	ar << '-'+$2
 	return next_line
-      when /\A([ÅúÅ°])(.*)\z/s
+      when /\A([‚óè‚ñ†])(.*)\z/s
 	ar << '***'+$2
 	return next_line
       end
@@ -91,20 +91,20 @@ if defined?($test) && $test
       eq(true,  !!c.emode?("============================================================"))
 
       # test_preprocess
-      ok('*t', "Åút")
-      ok("*1\n-t", "ÅEt")
+      ok('*t', "‚óèt")
+      ok("*1\n-t", "„Éªt")
       ok("*1\nt{{br}}", 't')
-      ok("*t\nt1{{br}}\nt2{{br}}", "Åút\nt1\nt2")
+      ok("*t\nt1{{br}}\nt2{{br}}", "‚óèt\nt1\nt2")
       ok("*t\nt1{{br}}\n====\nt2{{br}}",
-	 "Åút\nt1\n------------------------------------------------------------\nt2")
-      #ok("*t\n>t1{{br}}\n>t2{{br}}", "Åút\n>t1\n>t2") # impossible...
-      ok("*t\n>t1\n>t2", "Åút\n>t1\n>t2")
+	 "‚óèt\nt1\n------------------------------------------------------------\nt2")
+      #ok("*t\n>t1{{br}}\n>t2{{br}}", "‚óèt\n>t1\n>t2") # impossible...
+      ok("*t\n>t1\n>t2", "‚óèt\n>t1\n>t2")
       ok("*1\n-", '-')
       ok('*1',
 	 '------------------------------------------------------------')
 
       # test_sjis_bug
-      ok("*1\nÅ[{{br}}\nt{{br}}", "Å[\nt")
+      ok("*1\n„Éº{{br}}\nt{{br}}", "„Éº\nt")
 
       # test_br
       ok("*1\n{{{\nt{{br}}\n}}}", "{{{\nt\n}}}")

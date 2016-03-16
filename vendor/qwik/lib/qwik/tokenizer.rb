@@ -219,9 +219,9 @@ if defined?($test) && $test
       ok([[:html, "<p>\nt\n</p>\n"]], "<html>\n<p>\nt\n</p>\n</html>")
 
       # test_sjis_bug
-      ok([[:table, '•|', '•|']], ',•|,•|')
+      ok([[:table, 'æ€–', 'æ€–']], ',æ€–,æ€–')
       ok([[:table, 's', 't']], '|s|t')
-      ok([[:table, '•|', '•|']], '|•||•|')
+      ok([[:table, 'æ€–', 'æ€–']], '|æ€–|æ€–')
 
       # test_multiline
       ok([[:text, 's'], [:text, 't']], "s\nt")

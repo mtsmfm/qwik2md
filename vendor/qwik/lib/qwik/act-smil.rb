@@ -222,14 +222,14 @@ if defined?($test) && $test
       ok_wi([:div, {:class=>'box'},
 	      [:table,
 		[:tr, [:td, 'IN'], [:td, 'OUT'], [:td, 'MSG']],
-		[:tr, [:td, '00:03'], [:td, '00:13'], [:td, '‚ ']],
+		[:tr, [:td, '00:03'], [:td, '00:13'], [:td, 'ã‚']],
 		[:tr, [:td, '00:20'], [:td, '00:28']]],
 	      [:p, [:a, {:href=>'.attach/TestSmil.smil'}, 'TestSmil']]],
 	    '{{video(TestSmil)
 :width:160
 :height:120
 :url:rtsp://stream.nhk.or.jp/news/20030914000046002.rm
-,00:03,00:13,‚ 
+,00:03,00:13,ã‚
 ,00:20,00:28,
 }}')
       res = session('/test/.attach/TestSmil.smil')

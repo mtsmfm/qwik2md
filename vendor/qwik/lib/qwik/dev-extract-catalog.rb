@@ -88,8 +88,8 @@ class ExtractCatalog
 
 	next if e == '->'
 	next if e == '<-'
-	next if j == '¨'
-	next if j == '©'
+	next if j == 'â†’'
+	next if j == 'â†'
 
 	out.puts j
 	out.puts e

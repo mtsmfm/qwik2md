@@ -160,13 +160,13 @@ if defined?($test) && $test
       assert_equal("+", ' '.escape)
       assert_equal('%2B', "+".escape)
       assert_equal('%21', "!".escape)
-      assert_equal("ABC%82%A0%82%A2%82%A4+%2B%23", "ABCÇ†Ç¢Ç§ +#".escape)
+      assert_equal("ABC%82%A0%82%A2%82%A4+%2B%23", "ABC„ÅÇ„ÅÑ„ÅÜ +#".escape)
 
       # test_unescape
       assert_equal('A', '%41'.unescape)
       assert_equal(' ', "+".unescape)
       assert_equal("!", '%21'.unescape)
-      assert_equal("ABCÇ†Ç¢Ç§ +#", "ABC%82%A0%82%A2%82%A4+%2B%23".unescape)
+      assert_equal("ABC„ÅÇ„ÅÑ„ÅÜ +#", "ABC%82%A0%82%A2%82%A4+%2B%23".unescape)
 
       # test_escapeHTML
       assert_equal("&lt;", "<".escapeHTML)
@@ -184,7 +184,7 @@ if defined?($test) && $test
     end
 
     def test_mb_length
-      str = "ì˙ñ{åÍï∂éöóÒ"
+      str = "Êó•Êú¨Ë™ûÊñáÂ≠óÂàó"
       assert_equal(6,str.mb_length)
 
       str = "English"
@@ -192,8 +192,8 @@ if defined?($test) && $test
     end
 
     def test_mb_substring
-      str = "ì˙ñ{åÍï∂éöóÒ"
-      assert_equal("ñ{åÍï∂",str.mb_substring(1,4))
+      str = "Êó•Êú¨Ë™ûÊñáÂ≠óÂàó"
+      assert_equal("Êú¨Ë™ûÊñá",str.mb_substring(1,4))
 
       str = "English"
       assert_equal("ngl",str.mb_substring(1,4))

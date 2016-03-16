@@ -26,7 +26,7 @@ class Time
   end
 
   def format_date
-    day = %w(“ú Œ ‰Î … –Ø ‹à “y)	# 2000-01-01 (“y) 12:34:56
+    day = %w(æ—¥ æœˆ ç« æ°´ æœ¨ é‡‘ åœŸ)	# 2000-01-01 (åœŸ) 12:34:56
     return strftime("%Y-%m-%d #DAY# %H:%M:%S").sub(/#DAY#/, "(#{day[wday]})")
   end
 
@@ -83,7 +83,7 @@ if defined?($test) && $test
       assert_equal '2000-01-01', t.ymd
       assert_equal '2000-01-01 12:34:56', t.ymdx
       assert_equal "2000-01-01(Sat) 12:34:56", t.ymdax
-      assert_equal "2000-01-01 (“y) 12:34:56", t.format_date
+      assert_equal "2000-01-01 (åœŸ) 12:34:56", t.format_date
       assert_equal 'Sat, 01 Jan 2000 12:34:56 GMT', t.rfc1123_date
       assert_equal '2000-01-01T12:34:56', t.rfc_date
     end

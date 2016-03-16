@@ -22,16 +22,16 @@ You can show an editable text field.
     }
 
     D_PluginTextarea_ja = {
-      :dt => '�e�L�X�g�G���A�v���O�C��',
-      :dd => '�ҏW�\�ȃe�L�X�g�G���A��\�����܂��B',
-      :dc => "* ��
+      :dt => 'テキストエリアプラグイン',
+      :dd => '編集可能なテキストエリアを表示します。',
+      :dc => "* 例
  {{textarea
- ����̓e�L�X�g�G���A�̃T���v���ł��B
+ これはテキストエリアのサンプルです。
  }}
 {{textarea
-����̓e�L�X�g�G���A�̃T���v���ł��B
+これはテキストエリアのサンプルです。
 }}
-�ҏW�\�ȃe�L�X�g�G���A�ł��B
+編集可能なテキストエリアです。
 "
     }
 

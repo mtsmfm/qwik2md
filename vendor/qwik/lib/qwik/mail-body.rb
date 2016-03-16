@@ -132,7 +132,7 @@ if defined?($test) && $test
 
       # test_empty_body?
       #ok_eq(false, mail.empty_body?)
-      ok_eq("\201@", 'Å@')
+      ok_eq("\201@", '„ÄÄ')
       ok_eq(true, c.empty_body?(''))
       ok_eq(true, c.empty_body?(' '))
       ok_eq(true, c.empty_body?(' '*100))

@@ -16,11 +16,11 @@ Follow this link. [[.sitelog]]
     }
 
     D_SiteLog_ja = {
-      :dt => '�ҏW����',
-      :dd => '���܂܂ł̕ҏW���������邱�Ƃ��ł��܂��B',
-      :dc => "* �g����
+      :dt => '編集履歴',
+      :dd => 'いままでの編集履歴を見ることができます。',
+      :dc => "* 使い方
  [[.sitelog]]
-[[.sitelog]]��H���Ă��������B
+[[.sitelog]]を辿ってください。
 "
     }
 

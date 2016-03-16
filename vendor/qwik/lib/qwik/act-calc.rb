@@ -41,9 +41,9 @@ You can use a table splited by tabs.
     }
 
     D_PluginCalc_ja = {
-      :dt => '•\ŒvZƒvƒ‰ƒOƒCƒ“',
-      :dd => 'ŠÈ’P‚È•\ŒvZ‚ğs‚¤‚±‚Æ‚ª‚Å‚«‚Ü‚·B',
-      :dc => '* —á
+      :dt => 'è¡¨è¨ˆç®—ãƒ—ãƒ©ã‚°ã‚¤ãƒ³',
+      :dd => 'ç°¡å˜ãªè¡¨è¨ˆç®—ã‚’è¡Œã†ã“ã¨ãŒã§ãã¾ã™ã€‚',
+      :dc => '* ä¾‹
  {{calc
  ,$100	,CPU
  ,$100	,Memory
@@ -60,15 +60,15 @@ You can use a table splited by tabs.
 ,$250	,HDD
 ,$400	,Mother Board
 }}
-* ƒ^ƒu‹æØ‚è•\ŒvZƒvƒ‰ƒOƒCƒ“
-ƒ^ƒu‹æØ‚è‚É‚æ‚é•\‚àŒvZ‚Å‚«‚Ü‚·B
+* ã‚¿ãƒ–åŒºåˆ‡ã‚Šè¡¨è¨ˆç®—ãƒ—ãƒ©ã‚°ã‚¤ãƒ³
+ã‚¿ãƒ–åŒºåˆ‡ã‚Šã«ã‚ˆã‚‹è¡¨ã‚‚è¨ˆç®—ã§ãã¾ã™ã€‚
  {{tab_calc
- 6000	‘Ğ
- 3000	ƒ}ƒEƒX
+ 6000	æ›¸ç±
+ 3000	ãƒã‚¦ã‚¹
  }}
 {{tab_calc
-6000	‘Ğ
-3000	ƒ}ƒEƒX
+6000	æ›¸ç±
+3000	ãƒã‚¦ã‚¹
 }}
 '
     }
@@ -330,22 +330,22 @@ if defined?($test) && $test
 ,$400	,Mother Board
 }}')
       ok_wi([:table,
-	      [:tr, [:td, '1–œ'], [:td, "\tCPU"]],
-	      [:tr, [:td, '1–œ'], [:td, "\tMemory"]],
-	      [:tr, [:td, '0.2–œ'], [:td, "\tAdapter"]],
-	      [:tr, [:td, '2.5–œ'], [:td, "\tnVidia"]],
-	      [:tr, [:td, '2.5–œ'], [:td, "\tHDD 250GB"]],
-	      [:tr, [:td, '4–œ'], [:td, "\tNAS"]],
-	      [:tr, [:td, '22–œ'], [:td, "\tThinkPad X40"]],
-	      [:tr, {:class=>'sum'}, [:td, '33.2–œ'], [:td, '']]],
+	      [:tr, [:td, '1ä¸‡'], [:td, "\tCPU"]],
+	      [:tr, [:td, '1ä¸‡'], [:td, "\tMemory"]],
+	      [:tr, [:td, '0.2ä¸‡'], [:td, "\tAdapter"]],
+	      [:tr, [:td, '2.5ä¸‡'], [:td, "\tnVidia"]],
+	      [:tr, [:td, '2.5ä¸‡'], [:td, "\tHDD 250GB"]],
+	      [:tr, [:td, '4ä¸‡'], [:td, "\tNAS"]],
+	      [:tr, [:td, '22ä¸‡'], [:td, "\tThinkPad X40"]],
+	      [:tr, {:class=>'sum'}, [:td, '33.2ä¸‡'], [:td, '']]],
 	 '{{calc
-,1–œ,	CPU
-,1–œ,	Memory
-,0.2–œ,	Adapter
-,2.5–œ,	nVidia
-,2.5–œ,	HDD 250GB
-,4–œ,	NAS
-,22–œ,	ThinkPad X40
+,1ä¸‡,	CPU
+,1ä¸‡,	Memory
+,0.2ä¸‡,	Adapter
+,2.5ä¸‡,	nVidia
+,2.5ä¸‡,	HDD 250GB
+,4ä¸‡,	NAS
+,22ä¸‡,	ThinkPad X40
 }}')
       ok_wi([:table,
 	      [:tr, [:td, "a\t"], [:td, '10,000']],
@@ -357,12 +357,12 @@ if defined?($test) && $test
 }}')
       # Don't work.
       ok_wi([:table,
-	      [:tr, [:td, "•¨•i\t"], [:td, '’l’i']],
+	      [:tr, [:td, "ç‰©å“\t"], [:td, 'å€¤æ®µ']],
 	      [:tr, [:td, "a\t"], [:td, "\\10,000"]],
 	      [:tr, [:td, "b\t"], [:td, "\\20,000"]],
 	      [:tr, {:class=>'sum'}, [:td, ''], [:td, '']]],
 	    '{{calc
-|•¨•i	|’l’i
+|ç‰©å“	|å€¤æ®µ
 |a	|\\10,000
 |b	|\\20,000
 }}')

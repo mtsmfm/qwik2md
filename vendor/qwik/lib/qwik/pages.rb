@@ -310,12 +310,12 @@ if defined?($test) && $test
       pages = @site.get_pages
 
       #test_find_title
-      pages.create_new.store("* ‚ ")
-      pages.create_new.store("* ‚¢")
-      pages.create_new.store("* ‚¤")
+      pages.create_new.store("* ã‚")
+      pages.create_new.store("* ã„")
+      pages.create_new.store("* ã†")
 
-      #page = pages.find_title("‚¢")
-      page = pages.get_by_title("‚¢")
+      #page = pages.find_title("ã„")
+      page = pages.get_by_title("ã„")
       ok_eq('2', page.key)
       ok_eq(['1', '2', '3'], pages.keys)
     end

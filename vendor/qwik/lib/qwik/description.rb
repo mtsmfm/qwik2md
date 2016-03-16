@@ -134,7 +134,7 @@ The header acts as the page title.
 You can link the page using the page title.
 
 For example, you can link to the TextFormat page using [[TextFormat]].
-In addition, you can use [[‘®ˆê——Ú×”Å]] to link the page.
+In addition, you can use [[æ›¸å¼ä¸€è¦§è©³ç´°ç‰ˆ]] to link the page.
 
 However, usually, please use the page ID to link the page.
 If you use page title to link to the page,

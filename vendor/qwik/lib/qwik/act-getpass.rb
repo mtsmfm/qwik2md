@@ -190,7 +190,7 @@ http://example.com/test/.login?user=user@e.com&pass=95988593
       res = session('/test/.getpass?mail=user@e.com') {|req|
 	req.accept_language = ['ja']
       }
-      ok_title 'ƒpƒXƒ[ƒh‘—MŠ®—¹'
+      ok_title 'ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰é€ä¿¡å®Œäº†'
       ok_in ['user@e.com'], 'em'
       eq ['test@q.example.com', 'user@e.com'], $smtp_sendmail[2..3]
       assert_match /user@e.com/, $smtp_sendmail[4]
@@ -203,14 +203,14 @@ Content-Type: text/plain; charset=\"ISO-2022-JP\"
 
 "
       body =
-'‚±‚ÌƒTƒCƒg‚É‚¨‚¯‚éƒ†[ƒU–¼‚ÆƒpƒXƒ[ƒh‚Å‚· : http://example.com
+'ã“ã®ã‚µã‚¤ãƒˆã«ãŠã‘ã‚‹ãƒ¦ãƒ¼ã‚¶åã¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã§ã™ : http://example.com
 
-ƒ†[ƒU–¼:	user@e.com
-ƒpƒXƒ[ƒh:	95988593
+ãƒ¦ãƒ¼ã‚¶å:	user@e.com
+ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰:	95988593
 
-ƒƒOƒCƒ“ƒy[ƒW‚ÉƒAƒNƒZƒX‚µ‚Ä‚­‚¾‚³‚¢ : http://example.com/test/.login
+ãƒ­ã‚°ã‚¤ãƒ³ãƒšãƒ¼ã‚¸ã«ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦ãã ã•ã„ : http://example.com/test/.login
 
-‰º‹LURL‚ÉƒAƒNƒZƒX‚·‚é‚ÆAŽ©“®“I‚Éƒ†[ƒU[–¼‚ÆƒpƒXƒ[ƒh‚ð“ü—Í‚µ‚Ü‚·B
+ä¸‹è¨˜URLã«ã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹ã¨ã€è‡ªå‹•çš„ã«ãƒ¦ãƒ¼ã‚¶ãƒ¼åã¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¾ã™ã€‚
 http://example.com/test/.login?user=user@e.com&pass=95988593
 
 '.set_sourcecode_charset
@@ -264,8 +264,8 @@ http://example.com/test/.login?user=user@e.com&pass=95988593
       mail = @action.generate_password_mail 'user@e.com'
       $KCODE = "s"
       eq({:from=>"test@q.example.com", :to=>"user@e.com",
-	   :subject=>"ƒpƒXƒ[ƒh : http://example.com",
-	   :content=>"‚±‚ÌƒTƒCƒg‚É‚¨‚¯‚éƒ†[ƒU–¼‚ÆƒpƒXƒ[ƒh‚Å‚· : http://example.com\n\nƒ†[ƒU–¼:\tuser@e.com\nƒpƒXƒ[ƒh:\t95988593\n\nƒƒOƒCƒ“ƒy[ƒW‚ÉƒAƒNƒZƒX‚µ‚Ä‚­‚¾‚³‚¢ : http://example.com/test/.login\n\n‰º‹LURL‚ÉƒAƒNƒZƒX‚·‚é‚ÆAŽ©“®“I‚Éƒ†[ƒU[–¼‚ÆƒpƒXƒ[ƒh‚ð“ü—Í‚µ‚Ü‚·B\nhttp://example.com/test/.login?user=user@e.com&pass=95988593\n"
+	   :subject=>"ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ : http://example.com",
+	   :content=>"ã“ã®ã‚µã‚¤ãƒˆã«ãŠã‘ã‚‹ãƒ¦ãƒ¼ã‚¶åã¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã§ã™ : http://example.com\n\nãƒ¦ãƒ¼ã‚¶å:\tuser@e.com\nãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰:\t95988593\n\nãƒ­ã‚°ã‚¤ãƒ³ãƒšãƒ¼ã‚¸ã«ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦ãã ã•ã„ : http://example.com/test/.login\n\nä¸‹è¨˜URLã«ã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹ã¨ã€è‡ªå‹•çš„ã«ãƒ¦ãƒ¼ã‚¶ãƒ¼åã¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¾ã™ã€‚\nhttp://example.com/test/.login?user=user@e.com&pass=95988593\n"
 	 }, mail)
     end
 

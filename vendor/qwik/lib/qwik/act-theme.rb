@@ -46,38 +46,38 @@ there are several inhibited pattern. Please see [[PluginStyle.describe]].
     }
 
     D_SiteTheme_ja = {
-      :dt => 'ƒTƒCƒgEƒe[ƒ}',
-      :dd => 'ƒTƒCƒg–ˆ‚Éƒy[ƒWEƒfƒUƒCƒ“‚ðŽw’è‚Å‚«‚Ü‚·B',
-      :dc => '* Žg‚¢•û
-** qwikWeb‚ª’ñ‹Ÿ‚·‚éƒe[ƒ}‚©‚ç‘I‚Ô
+      :dt => 'ã‚µã‚¤ãƒˆãƒ»ãƒ†ãƒ¼ãƒž',
+      :dd => 'ã‚µã‚¤ãƒˆæ¯Žã«ãƒšãƒ¼ã‚¸ãƒ»ãƒ‡ã‚¶ã‚¤ãƒ³ã‚’æŒ‡å®šã§ãã¾ã™ã€‚',
+      :dc => '* ä½¿ã„æ–¹
+** qwikWebãŒæä¾›ã™ã‚‹ãƒ†ãƒ¼ãƒžã‹ã‚‰é¸ã¶
 {{theme_list}}
-‚±‚Ì‘I‘ð‰Â”\‚Èƒe[ƒ}ˆê——‚Ì’†‚©‚çˆê‚Â‚ð‘I‚ÑA[[_SiteConfig]]ƒy[ƒW‚É‚Ä
+ã“ã®é¸æŠžå¯èƒ½ãªãƒ†ãƒ¼ãƒžä¸€è¦§ã®ä¸­ã‹ã‚‰ä¸€ã¤ã‚’é¸ã³ã€[[_SiteConfig]]ãƒšãƒ¼ã‚¸ã«ã¦
  :theme:qwikgreen
-‚Æ‚¢‚¤ˆês‚ð‘Š·‚¦‚Ä‚­‚¾‚³‚¢Bƒy[ƒWEƒfƒUƒCƒ“‚ª•ÏX‚³‚ê‚Ü‚·B
+ã¨ã„ã†ä¸€è¡Œã‚’æ›¸æ›ãˆã¦ãã ã•ã„ã€‚ãƒšãƒ¼ã‚¸ãƒ»ãƒ‡ã‚¶ã‚¤ãƒ³ãŒå¤‰æ›´ã•ã‚Œã¾ã™ã€‚
 
-\'\'\'’ˆÓ:\'\'\' qwiksystem‚È‚Ç‚Ìˆê•”‚Ìƒy[ƒW‚ÍAƒVƒXƒeƒ€•\Ž¦‚Ì‚½‚ß‚Ì
-‚à‚Ì‚Å‚·B’Êí‚Ìƒy[ƒW•\Ž¦‚ÉŽg‚¤‚ÆA•\Ž¦‚ª•Ï‚É‚È‚è‚Ü‚·B
+\'\'\'æ³¨æ„:\'\'\' qwiksystemãªã©ã®ä¸€éƒ¨ã®ãƒšãƒ¼ã‚¸ã¯ã€ã‚·ã‚¹ãƒ†ãƒ è¡¨ç¤ºã®ãŸã‚ã®
+ã‚‚ã®ã§ã™ã€‚é€šå¸¸ã®ãƒšãƒ¼ã‚¸è¡¨ç¤ºã«ä½¿ã†ã¨ã€è¡¨ç¤ºãŒå¤‰ã«ãªã‚Šã¾ã™ã€‚
 
-** Ž©•ª‚Åì‚Á‚½CSSƒtƒ@ƒCƒ‹‚ðŽg‚¤
-[[_SiteTheme]]‚Æ‚¢‚¤ƒy[ƒW‚És‚«A‚»‚Ìƒy[ƒW‚É“Y•tƒtƒ@ƒCƒ‹‚Æ‚µ‚Ä
-u\'\'\'theme.css\'\'\'v‚Æ‚¢‚¤ƒtƒ@ƒCƒ‹–¼‚ÅŽ©•ª‚ÌD‚«‚ÈCSSƒtƒ@ƒCƒ‹‚ð
-“Y•t‚µ‚Ä‚­‚¾‚³‚¢B
+** è‡ªåˆ†ã§ä½œã£ãŸCSSãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½¿ã†
+[[_SiteTheme]]ã¨ã„ã†ãƒšãƒ¼ã‚¸ã«è¡Œãã€ãã®ãƒšãƒ¼ã‚¸ã«æ·»ä»˜ãƒ•ã‚¡ã‚¤ãƒ«ã¨ã—ã¦
+ã€Œ\'\'\'theme.css\'\'\'ã€ã¨ã„ã†ãƒ•ã‚¡ã‚¤ãƒ«åã§è‡ªåˆ†ã®å¥½ããªCSSãƒ•ã‚¡ã‚¤ãƒ«ã‚’
+æ·»ä»˜ã—ã¦ãã ã•ã„ã€‚
 
-\'\'\'’ˆÓ:\'\'\' CSS’†‚É‚ÍŽg‚¦‚È‚¢—v‘f‚ª‚ ‚è‚Ü‚·B
-Ú‚µ‚­‚Í[[PluginStyle.describe]]‚ð‚²——‚­‚¾‚³‚¢B
+\'\'\'æ³¨æ„:\'\'\' CSSä¸­ã«ã¯ä½¿ãˆãªã„è¦ç´ ãŒã‚ã‚Šã¾ã™ã€‚
+è©³ã—ãã¯[[PluginStyle.describe]]ã‚’ã”è¦§ãã ã•ã„ã€‚
 
 {{warning_for_css}}
 
-** ŠO•”‚ÌWebƒTƒCƒg‚É’u‚¢‚Ä‚ ‚éCSSƒtƒ@ƒCƒ‹‚ðŽg‚¤
-[[_SiteConfig]]ƒy[ƒW‚Ì
+** å¤–éƒ¨ã®Webã‚µã‚¤ãƒˆã«ç½®ã„ã¦ã‚ã‚‹CSSãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½¿ã†
+[[_SiteConfig]]ãƒšãƒ¼ã‚¸ã®
  :theme:qwikgreen
-‚Æ‚¢‚¤ˆês‚ð‘Š·‚¦‚ÄA
+ã¨ã„ã†ä¸€è¡Œã‚’æ›¸æ›ãˆã¦ã€
  :theme:http://d.hatena.ne.jp/theme/clover/clover.css
-‚Æ‚¢‚¤Š´‚¶‚ÉURL‚ðŽw’è‚µ‚Ä‚­‚¾‚³‚¢Bƒy[ƒWEƒfƒUƒCƒ“‚ª•ÏX‚³‚ê‚Ü‚·B
+ã¨ã„ã†æ„Ÿã˜ã«URLã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚ãƒšãƒ¼ã‚¸ãƒ»ãƒ‡ã‚¶ã‚¤ãƒ³ãŒå¤‰æ›´ã•ã‚Œã¾ã™ã€‚
 
-\'\'\'’ˆÓ:\'\'\' ŠO•”CSSƒtƒ@ƒCƒ‹‚ðŽg‚¤ê‡‚É‚àA‚»‚ÌCSSƒtƒ@ƒCƒ‹’†‚É
-Žg—p‹ÖŽ~—v‘f‚ªŠÜ‚Ü‚ê‚Ä‚¢‚éê‡‚É‚ÍŽg‚¦‚Ü‚¹‚ñB
-Ú‚µ‚­‚Í[[PluginStyle.describe]]‚ð‚²——‚­‚¾‚³‚¢B
+\'\'\'æ³¨æ„:\'\'\' å¤–éƒ¨CSSãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½¿ã†å ´åˆã«ã‚‚ã€ãã®CSSãƒ•ã‚¡ã‚¤ãƒ«ä¸­ã«
+ä½¿ç”¨ç¦æ­¢è¦ç´ ãŒå«ã¾ã‚Œã¦ã„ã‚‹å ´åˆã«ã¯ä½¿ãˆã¾ã›ã‚“ã€‚
+è©³ã—ãã¯[[PluginStyle.describe]]ã‚’ã”è¦§ãã ã•ã„ã€‚
 
 '
     }

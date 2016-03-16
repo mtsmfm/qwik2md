@@ -116,7 +116,7 @@ module Qwik
       href = "#{url}#"+label
 
       if (@titlelink || @emode_titlelink)
-	m = "¡"
+	m = "â– "
 	e.insert(1, [:a, {:class=>'label', :href=>href, :name=>label}, m])
 	return e 
       end
@@ -208,14 +208,14 @@ if defined?($test) && $test
       config.store(':titlelink:true')
 
       ok_t([:h2, [:a, {:href=>"FrontPage.html#t", :name=>'t',
-		     :class=>'label'}, "¡"], 't'],
+		     :class=>'label'}, "â– "], 't'],
 	       [:h2, 't'])
 
       ok_t([:h2, [:a, {:name=>'8f03c3a6dbec1d0f1a5af60947b7b052',
 		     :class=>'label',
 		     :href=>"FrontPage.html#8f03c3a6dbec1d0f1a5af60947b7b052"},
-		   "¡"], "‚ "],
-	       [:h2, "‚ "])
+		   "â– "], "ã‚"],
+	       [:h2, "ã‚"])
     end
 
     def test_emode
@@ -230,16 +230,16 @@ if defined?($test) && $test
       res = Qwik::TDiaryResolver.new(@config, @site, @action)
       ok_eq('t',  res.encode_label('t'))
       ok_eq('zNC0vEuG7ZsGqzX0C5tyRQ',  res.encode_label("t!"))
-      ok_eq('ZHQyWazgdpeYgxXBvfV-jA',  res.encode_label("‚ "))
+      ok_eq('ZHQyWazgdpeYgxXBvfV-jA',  res.encode_label("ã‚"))
 
       ok_t([:h2, [:a, {:href=>"FrontPage.html#t", :name=>'t',
-		     :class=>'label'}, "¡"], 't'],
+		     :class=>'label'}, "â– "], 't'],
 	       [:h2, 't'])
       ok_t([:h2, [:a, {:name=>'ZHQyWazgdpeYgxXBvfV-jA',
 		     :class=>'label',
 		     :href=>"FrontPage.html#ZHQyWazgdpeYgxXBvfV-jA"},
-		   "¡"], "‚ "],
-	       [:h2, "‚ "])
+		   "â– "], "ã‚"],
+	       [:h2, "ã‚"])
     end
 
     def ok_res(e, wabisabi)
@@ -284,7 +284,7 @@ if defined?($test) && $test
       config.store(':titlelink:true')
       ok_res([[:div, {:class=>'day'},
 		 [:h2, [:a, {:name=>'t', :class=>'label',
-		       :href=>"FrontPage.html#t"}, "¡"], 't'],
+		       :href=>"FrontPage.html#t"}, "â– "], 't'],
 		 [:div, {:class=>'body'}, [:div, {:class=>'section'}, []]]]],
 	     [[:h2, 't']])
     end

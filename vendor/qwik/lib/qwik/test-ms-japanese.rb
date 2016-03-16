@@ -21,27 +21,27 @@ class TestMSJapanese < Test::Unit::TestCase
 	     "[test]: Add: bob@example.net",
 	     "[test]: QwikPost: test"], 0..2)
 
-    sm("ƒeƒXƒg") { 'ƒeB' }
+    sm("ãƒ†ã‚¹ãƒˆ") { 'ãƒ†ã€‚' }
     ok_log("[test]: QwikPost: 1
 [test:2]: Send:")
-    eq "ƒeƒXƒg", @site['1'].get_title
-    eq "* ƒeƒXƒg
+    eq "ãƒ†ã‚¹ãƒˆ", @site['1'].get_title
+    eq "* ãƒ†ã‚¹ãƒˆ
 {{mail(bob@example.net,0)
-ƒeB
+ãƒ†ã€‚
 }}
 ", @site['1'].load
 
-    sm("ƒeƒXƒg") { '‚±‚ê‚àƒeB' }
+    sm("ãƒ†ã‚¹ãƒˆ") { 'ã“ã‚Œã‚‚ãƒ†ã€‚' }
     ok_log("[test]: QwikPost: 1
 [test:3]: Send:")
-    eq "ƒeƒXƒg", @site['1'].get_title
+    eq "ãƒ†ã‚¹ãƒˆ", @site['1'].get_title
     # The new mail is added.
-    eq "* ƒeƒXƒg
+    eq "* ãƒ†ã‚¹ãƒˆ
 {{mail(bob@example.net,0)
-ƒeB
+ãƒ†ã€‚
 }}
 {{mail(bob@example.net,0)
-‚±‚ê‚àƒeB
+ã“ã‚Œã‚‚ãƒ†ã€‚
 }}
 ", @site['1'].load
 
@@ -57,7 +57,7 @@ class TestMSJapanese < Test::Unit::TestCase
 	     "[test]: Add: bob@example.net",
 	     "[test]: QwikPost: test"], 0..2)
 
-    sm("ƒeƒXƒg") {
+    sm("ãƒ†ã‚¹ãƒˆ") {
 "MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary=\"------_410DDC04C7AD046D3600_MULTIPART_MIXED_\"
 Content-Transfer-Encoding: 7bit
@@ -66,7 +66,7 @@ Content-Transfer-Encoding: 7bit
 Content-Type: text/plain; charset='ISO-2022-JP'
 Content-Transfer-Encoding: 7bit
 
-ƒeB
+ãƒ†ã€‚
 --------_410DDC04C7AD046D3600_MULTIPART_MIXED_
 Content-Type: image/png; name=\"1x1.png\"
 Content-Disposition: attachment;
@@ -79,15 +79,15 @@ AAAAAElFTkSuQmCC
 --------_410DDC04C7AD046D3600_MULTIPART_MIXED_--
 " }
     page = @site['1']
-    eq "ƒeƒXƒg", page.get_title
+    eq "ãƒ†ã‚¹ãƒˆ", page.get_title
     eq true, @site.files('1').exist?('1x1.png')
   end
 
   def nu
-    eq "* ƒeƒXƒg
+    eq "* ãƒ†ã‚¹ãƒˆ
 {{mail(bob@example.net,0)
 
-ƒeB
+ãƒ†ã€‚
 
 {{file(1x1.png)}}
 

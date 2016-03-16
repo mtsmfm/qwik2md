@@ -16,16 +16,16 @@ TBD
     }
 
     D_PluginDiary_ja = {
-      :dt => '���L�v���O�C��',
-      :dd => '���L�y�[�W�����܂��B',
-      :dc => "* �g����
-�Ⴆ�΁uUser�v�Ƃ����y�[�W���̃y�[�W�����܂��B
-���̃y�[�W�ɉ��L�̂悤�ɓ��L�v���O�C���𖄂ߍ��݂܂��B
+      :dt => '日記プラグイン',
+      :dd => '日記ページを作ります。',
+      :dc => "* 使い方
+例えば「User」というページ名のページを作ります。
+そのページに下記のように日記プラグインを埋め込みます。
  {{diary}}
 
-���L�y�[�W�́uUser_20070417�v�Ƃ����悤�ɁuUser_�v�Ƃ���prefix�̌��
-���t���������悤�ȃy�[�W���ŋL�q���Ă��������B
-�uUser�v�y�[�W�ɂ́A�����̓��L�̈ꗗ���\������܂��B
+日記ページは「User_20070417」というように「User_」というprefixの後に
+日付けが続くようなページ名で記述してください。
+「User」ページには、それらの日記の一覧が表示されます。
 "
     }
 

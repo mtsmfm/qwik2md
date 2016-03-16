@@ -24,19 +24,19 @@ You can edit the links on the Page [[_InterWikiName]].
     }
 
     D_PluginInterWiki_ja = {
-      :dt => 'InterWikiƒvƒ‰ƒOƒCƒ“',
-      :dd => 'WikiŠÔ‚Ì‘ŠŒÝÚ‘±‚ð‚µ‚Ü‚·B',
-      :dc => "* —á
-WikiŠÔ‚Ì‘ŠŒÝÚ‘±‚ðs‚¤‚½‚ß‚ÌŽd‘g‚Ý‚Å‚·B
+      :dt => 'InterWikiãƒ—ãƒ©ã‚°ã‚¤ãƒ³',
+      :dd => 'Wikié–“ã®ç›¸äº’æŽ¥ç¶šã‚’ã—ã¾ã™ã€‚',
+      :dc => "* ä¾‹
+Wikié–“ã®ç›¸äº’æŽ¥ç¶šã‚’è¡Œã†ãŸã‚ã®ä»•çµ„ã¿ã§ã™ã€‚
  [[qwikjp:InstallOnDebian]]
 [[qwikjp:InstallOnDebian]]
-‚Æ‚·‚é‚ÆAqwik.jpã‚ÌInstallOnDebian‚Æ‚¢‚¤ƒy[ƒW‚ÉƒŠƒ“ƒN‚µ‚Ü‚·B
+ã¨ã™ã‚‹ã¨ã€qwik.jpä¸Šã®InstallOnDebianã¨ã„ã†ãƒšãƒ¼ã‚¸ã«ãƒªãƒ³ã‚¯ã—ã¾ã™ã€‚
 
  [[google:qwikWeb]]
 [[google:qwikWeb]]
-“¯—l‚ÉAgoogle‚ÅqwikWeb‚ðŒŸõ‚·‚éƒŠƒ“ƒN‚ðì‚ê‚Ü‚·B
+åŒæ§˜ã«ã€googleã§qwikWebã‚’æ¤œç´¢ã™ã‚‹ãƒªãƒ³ã‚¯ã‚’ä½œã‚Œã¾ã™ã€‚
 
-ƒŠƒ“ƒNæ‚Í[[_InterWikiName]]‚ð•ÒW‚µ‚Ä•Ï‚¦‚ç‚ê‚Ü‚·B
+ãƒªãƒ³ã‚¯å…ˆã¯[[_InterWikiName]]ã‚’ç·¨é›†ã—ã¦å¤‰ãˆã‚‰ã‚Œã¾ã™ã€‚
 "
     }
 
@@ -135,11 +135,11 @@ if defined?($test) && $test
 ,UTF8,http://example.com/?q=,utf8
 EOM
       ok_wi([:p, [:a, {:href=>'http://example.com/?q=%8E%9A',
-            :class=>'interwiki'}, 'SJIS:Žš']], '[[SJIS:Žš]]')
+            :class=>'interwiki'}, 'SJIS:å­—']], '[[SJIS:å­—]]')
       ok_wi([:p, [:a, {:href=>'http://example.com/?q=%BB%FA',
-            :class=>'interwiki'}, 'EUC:Žš']], '[[EUC:Žš]]')
+            :class=>'interwiki'}, 'EUC:å­—']], '[[EUC:å­—]]')
       ok_wi([:p, [:a, {:href=>'http://example.com/?q=%E5%AD%97',
-            :class=>'interwiki'},  'UTF8:Žš']], '[[UTF8:Žš]]')
+            :class=>'interwiki'},  'UTF8:å­—']], '[[UTF8:å­—]]')
 
       # test_interwiki_realuse
       page.store(<<'EOM')
@@ -149,12 +149,12 @@ EOM
 ,hiki,http://www.namaraii.com/hiki/hiki.cgi?,euc
 ,yukiwiki,http://www.hyuki.com/yukiwiki/wiki.cgi?,euc
 EOM
-      ok_wi([:p, [:a, {:href=>"http://www.google.com/search?num=50&lr=lang_ja&q=%E5%AD%97", :class=>'interwiki'}, "google:Žš"]], "[[google:Žš]]")
+      ok_wi([:p, [:a, {:href=>"http://www.google.com/search?num=50&lr=lang_ja&q=%E5%AD%97", :class=>'interwiki'}, "google:å­—"]], "[[google:å­—]]")
       ok_wi([:p, [:a, {:href=>"http://www.google.com/search?num=50&lr=lang_ja&q=%3C", :class=>'interwiki'}, "google:<"]], "[[google:<]]")
       ok_wi([:p, [:a, {:href=>"http://www.amazon.co.jp/exec/obidos/ASIN/4797318325/ref=nosim/q02-22", :class=>'interwiki'}, 'isbn:4797318325']], "[[isbn:4797318325]]")
-      ok_wi([:p, [:a, {:href=>"http://www.amazon.co.jp/exec/obidos/external-search?tag=q02-22&keyword=%E5%AD%97&mode=blended", :class=>'interwiki'}, "amazon:Žš"]], "[[amazon:Žš]]")
-      ok_wi([:p, [:a, {:href=>"http://www.namaraii.com/hiki/hiki.cgi?%BB%FA", :class=>'interwiki'}, "hiki:Žš"]], "[[hiki:Žš]]")
-      ok_wi([:p, [:a, {:href=>"http://www.hyuki.com/yukiwiki/wiki.cgi?%BB%FA", :class=>'interwiki'}, "yukiwiki:Žš"]], "[[yukiwiki:Žš]]")
+      ok_wi([:p, [:a, {:href=>"http://www.amazon.co.jp/exec/obidos/external-search?tag=q02-22&keyword=%E5%AD%97&mode=blended", :class=>'interwiki'}, "amazon:å­—"]], "[[amazon:å­—]]")
+      ok_wi([:p, [:a, {:href=>"http://www.namaraii.com/hiki/hiki.cgi?%BB%FA", :class=>'interwiki'}, "hiki:å­—"]], "[[hiki:å­—]]")
+      ok_wi([:p, [:a, {:href=>"http://www.hyuki.com/yukiwiki/wiki.cgi?%BB%FA", :class=>'interwiki'}, "yukiwiki:å­—"]], "[[yukiwiki:å­—]]")
 
       # test_interwiki_error
       ok_wi([:p, [:span, {:class=>'interwiki'}, 'a:b']], "[[a:b]]")

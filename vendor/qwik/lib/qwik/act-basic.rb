@@ -53,58 +53,58 @@ You can see your group list.
  {{my_group}}
 {{my_group}}
 ** Plugin list plugin
-ƒvƒ‰ƒOƒCƒ“‚Ìˆê——‚ð•\Ž¦‚µ‚Ü‚·B
+ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã®ä¸€è¦§ã‚’è¡¨ç¤ºã—ã¾ã™ã€‚
  {{plugin_list}}
 {{plugin_list}}
 '
     }
 
     D_PluginBasic_ja = {
-      :dt => 'Šî–{ƒvƒ‰ƒOƒCƒ“',
-      :dd => 'Šî–{“I‚Èƒvƒ‰ƒOƒCƒ“‚Ìà–¾‚Å‚·B',
-      :dc => '* à–¾
-** BRƒvƒ‰ƒOƒCƒ“
-‰üs‚µ‚Ü‚·B
+      :dt => 'åŸºæœ¬ãƒ—ãƒ©ã‚°ã‚¤ãƒ³',
+      :dd => 'åŸºæœ¬çš„ãªãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã®èª¬æ˜Žã§ã™ã€‚',
+      :dc => '* èª¬æ˜Ž
+** BRãƒ—ãƒ©ã‚°ã‚¤ãƒ³
+æ”¹è¡Œã—ã¾ã™ã€‚
  This is {{br}} a test.
 This is {{br}} a test.
-** V‹KƒEƒBƒ“ƒhƒE‚Å•\Ž¦
-V‚µ‚¢ƒEƒBƒ“ƒhƒE‚ðì‚Á‚ÄA‚»‚±‚Å•\Ž¦‚³‚¹‚Ü‚·B
+** æ–°è¦ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã§è¡¨ç¤º
+æ–°ã—ã„ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚’ä½œã£ã¦ã€ãã“ã§è¡¨ç¤ºã•ã›ã¾ã™ã€‚
  {{window(http://qwik.jp/)}}
 {{window(http://qwik.jp/)}}
-** ÅIXVƒvƒ‰ƒOƒCƒ“
-ÅIXV“úŽž‚ð•\Ž¦‚µ‚Ü‚·B
+** æœ€çµ‚æ›´æ–°ãƒ—ãƒ©ã‚°ã‚¤ãƒ³
+æœ€çµ‚æ›´æ–°æ—¥æ™‚ã‚’è¡¨ç¤ºã—ã¾ã™ã€‚
  {{last_modified}}
 {{last_modified}}
-** “Á’èƒOƒ‹[ƒvŒü‚¯•\Ž¦
-ƒQƒXƒg‚¾‚¯‚É•\Ž¦‚·‚é•”•ªAƒOƒ‹[ƒv‚¾‚¯‚É•\Ž¦‚·‚é•”•ª‚ðŽw’è‚Å‚«‚Ü‚·B
+** ç‰¹å®šã‚°ãƒ«ãƒ¼ãƒ—å‘ã‘è¡¨ç¤º
+ã‚²ã‚¹ãƒˆã ã‘ã«è¡¨ç¤ºã™ã‚‹éƒ¨åˆ†ã€ã‚°ãƒ«ãƒ¼ãƒ—ã ã‘ã«è¡¨ç¤ºã™ã‚‹éƒ¨åˆ†ã‚’æŒ‡å®šã§ãã¾ã™ã€‚
 {{only_guest
-‚ ‚È‚½‚ÍƒQƒXƒg‚Å‚·B
+ã‚ãªãŸã¯ã‚²ã‚¹ãƒˆã§ã™ã€‚
 }}
 {{only_member
-‚ ‚È‚½‚Íƒƒ“ƒo[‚Å‚·B
+ã‚ãªãŸã¯ãƒ¡ãƒ³ãƒãƒ¼ã§ã™ã€‚
 }}
  {{only_guest
- ‚ ‚È‚½‚ÍƒQƒXƒg‚Å‚·B
+ ã‚ãªãŸã¯ã‚²ã‚¹ãƒˆã§ã™ã€‚
  }}
  {{only_member
- ‚ ‚È‚½‚Íƒƒ“ƒo[‚Å‚·B
+ ã‚ãªãŸã¯ãƒ¡ãƒ³ãƒãƒ¼ã§ã™ã€‚
  }}
-** ƒRƒƒ“ƒgƒAƒEƒgEƒvƒ‰ƒOƒCƒ“
-‚ ‚é—Ìˆæ‚ðƒRƒƒ“ƒgƒAƒEƒg‚µ‚Ü‚·B
+** ã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆãƒ»ãƒ—ãƒ©ã‚°ã‚¤ãƒ³
+ã‚ã‚‹é ˜åŸŸã‚’ã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆã—ã¾ã™ã€‚
  {{com
- ‚±‚Ìs‚ÍŒ©‚¦‚È‚¢B
- ‚±‚Ìs‚àŒ©‚¦‚È‚¢B
+ ã“ã®è¡Œã¯è¦‹ãˆãªã„ã€‚
+ ã“ã®è¡Œã‚‚è¦‹ãˆãªã„ã€‚
  }}
 {{com
-‚±‚Ìs‚ÍŒ©‚¦‚È‚¢B
-‚±‚Ìs‚àŒ©‚¦‚È‚¢B
+ã“ã®è¡Œã¯è¦‹ãˆãªã„ã€‚
+ã“ã®è¡Œã‚‚è¦‹ãˆãªã„ã€‚
 }}
-** Ž©•ª‚ÌƒOƒ‹[ƒv
-Ž©•ª‚ªŠ‘®‚µ‚Ä‚¢‚éƒOƒ‹[ƒv‚Ìˆê——‚ð•\Ž¦‚µ‚Ü‚·B
+** è‡ªåˆ†ã®ã‚°ãƒ«ãƒ¼ãƒ—
+è‡ªåˆ†ãŒæ‰€å±žã—ã¦ã„ã‚‹ã‚°ãƒ«ãƒ¼ãƒ—ã®ä¸€è¦§ã‚’è¡¨ç¤ºã—ã¾ã™ã€‚
  {{my_group}}
 {{my_group}}
-** ƒvƒ‰ƒOƒCƒ“ƒŠƒXƒgEƒvƒ‰ƒOƒCƒ“
-ƒvƒ‰ƒOƒCƒ“‚Ìˆê——‚ð•\Ž¦‚µ‚Ü‚·B
+** ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ãƒªã‚¹ãƒˆãƒ»ãƒ—ãƒ©ã‚°ã‚¤ãƒ³
+ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã®ä¸€è¦§ã‚’è¡¨ç¤ºã—ã¾ã™ã€‚
  {{plugin_list}}
 {{plugin_list}}
 '

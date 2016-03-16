@@ -44,7 +44,7 @@ if defined?($test) && $test
 
       accept_languages = ['ja']
       @action.init_catalog(@memory.catalog, accept_languages)
-      ok_eq('Ç±ÇÒÇ…ÇøÇÕ', @action._('hello'))
+      ok_eq('„Åì„Çì„Å´„Å°„ÅØ', @action._('hello'))
     end
   end
 end

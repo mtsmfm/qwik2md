@@ -24,18 +24,18 @@ You can show the list of attached files.
     }
 
     D_ExtFiles_ja = {
-      :dt => 'ÉtÉ@ÉCÉãìYïtã@î\ ',
-      :dd => 'ÉyÅ[ÉWÇ…ÉtÉ@ÉCÉãÇìYïtÇ≈Ç´Ç‹Ç∑ÅB',
-      :dc => '* égÇ¢ï˚
-ï“èWâÊñ ÇÃàÍî‘â∫Ç…ÅAÉtÉ@ÉCÉãìYïtÇÃÇΩÇﬂÇÃÉtÉHÅ[ÉÄÇ™Ç†ÇËÇ‹Ç∑ÅB
-Åu\'\'\'ÇΩÇ≠Ç≥ÇÒìYïtÇ∑ÇÈ\'\'\'ÅvÇ∆Ç¢Ç§ÉäÉìÉNÇÇΩÇ«ÇÈÇ∆ÅA
-ÇΩÇ≠Ç≥ÇÒÇÃÉtÉ@ÉCÉãÇàÍìxÇ…ìYïtÇ∑ÇÈÇΩÇﬂÇÃâÊñ Ç…Ç∆Ç—Ç‹Ç∑ÅB
+      :dt => '„Éï„Ç°„Ç§„É´Ê∑ª‰ªòÊ©üËÉΩ ',
+      :dd => '„Éö„Éº„Ç∏„Å´„Éï„Ç°„Ç§„É´„ÇíÊ∑ª‰ªò„Åß„Åç„Åæ„Åô„ÄÇ',
+      :dc => '* ‰Ωø„ÅÑÊñπ
+Á∑®ÈõÜÁîªÈù¢„ÅÆ‰∏ÄÁï™‰∏ã„Å´„ÄÅ„Éï„Ç°„Ç§„É´Ê∑ª‰ªò„ÅÆ„Åü„ÇÅ„ÅÆ„Éï„Ç©„Éº„É†„Åå„ÅÇ„Çä„Åæ„Åô„ÄÇ
+„Äå\'\'\'„Åü„Åè„Åï„ÇìÊ∑ª‰ªò„Åô„Çã\'\'\'„Äç„Å®„ÅÑ„ÅÜ„É™„É≥„ÇØ„Çí„Åü„Å©„Çã„Å®„ÄÅ
+„Åü„Åè„Åï„Çì„ÅÆ„Éï„Ç°„Ç§„É´„Çí‰∏ÄÂ∫¶„Å´Ê∑ª‰ªò„Åô„Çã„Åü„ÇÅ„ÅÆÁîªÈù¢„Å´„Å®„Å≥„Åæ„Åô„ÄÇ
 
-ìYïtÇÇ∑ÇÈÇ∆ÅAÇ…é©ìÆìIÇ…ÉyÅ[ÉWÇÃàÍî‘â∫Ç…ìYïtÉtÉ@ÉCÉãÇ÷ÇÃÉäÉìÉNÇ™Ç¬Ç´Ç‹Ç∑ÅB
+Ê∑ª‰ªò„Çí„Åô„Çã„Å®„ÄÅ„Å´Ëá™ÂãïÁöÑ„Å´„Éö„Éº„Ç∏„ÅÆ‰∏ÄÁï™‰∏ã„Å´Ê∑ª‰ªò„Éï„Ç°„Ç§„É´„Å∏„ÅÆ„É™„É≥„ÇØ„Åå„Å§„Åç„Åæ„Åô„ÄÇ
  {{file("somefile.txt")}}
-** ìYïtÉtÉ@ÉCÉãàÍóóÉvÉâÉOÉCÉì
+** Ê∑ª‰ªò„Éï„Ç°„Ç§„É´‰∏ÄË¶ß„Éó„É©„Ç∞„Ç§„É≥
  {{show_files}}
-ÉtÉ@ÉCÉãàÍóóÇï\é¶Ç≈Ç´Ç‹Ç∑ÅB
+„Éï„Ç°„Ç§„É´‰∏ÄË¶ß„ÇíË°®Á§∫„Åß„Åç„Åæ„Åô„ÄÇ
 '
     }
 
@@ -512,7 +512,7 @@ if defined?($test) && $test
 
       # Put a file with Japanese filename.
       res = session('POST /test/1.files') {|req|
-	req.query.update('content'=>t_make_content('Ç†.txt', 't'))
+	req.query.update('content'=>t_make_content('„ÅÇ.txt', 't'))
       }
       ok_title('File attachment completed')
 
@@ -522,7 +522,7 @@ if defined?($test) && $test
       # The reference is added.
       ok_eq('t
 
-{{file(Ç†.txt)}}
+{{file(„ÅÇ.txt)}}
 ', page.load)
 
       # Get the file.
@@ -530,11 +530,11 @@ if defined?($test) && $test
       ok_eq('t', res.body)
 
       # You can use SJIS charset.
-      res = session('/test/1.files/Ç†.txt')
+      res = session('/test/1.files/„ÅÇ.txt')
       ok_eq('t', res.body)
 
       # You can use UTF-8 charset.
-      res = session('/test/1.files/Ç†.txt'.set_sourcecode_charset.to_url_charset)
+      res = session('/test/1.files/„ÅÇ.txt'.set_sourcecode_charset.to_url_charset)
       ok_eq('t', res.body)
 
       # Delete it.
@@ -566,14 +566,14 @@ if defined?($test) && $test
 
       # Put a file with Japanese filename.
       res = session('POST /test/1.files') {|req|
-	req.query.update('content'=>t_make_content('Ç†.txt', 't'))
+	req.query.update('content'=>t_make_content('„ÅÇ.txt', 't'))
       }
       ok_title('File attachment completed')
 
       # Download the file.
       res = session('/test/1.download/=E3=81=82.txt')
       ok_eq('text/plain', res['Content-Type'])
-      ok_eq("attachment; filename=\"Ç†.txt\"",
+      ok_eq("attachment; filename=\"„ÅÇ.txt\"",
 	    res['Content-Disposition'])
       ok_eq('t', res.body)
     end

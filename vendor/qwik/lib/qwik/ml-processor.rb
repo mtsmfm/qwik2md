@@ -124,7 +124,7 @@ module QuickML
     end
 
     UNSUBSCRIBE_THRESHOLD = 500
-    UNSUBSCRIBE_RE = /\A\s*(unsubscribe|bye|#\s*bye|quit|‘Þ‰ï|’E‘Þ)\s*$/s
+    UNSUBSCRIBE_RE = /\A\s*(unsubscribe|bye|#\s*bye|quit|é€€ä¼š|è„±é€€)\s*$/s
     def self.unsubscribe_requested?(body)
       return true if body.empty?
       return true if Mail.empty_body?(body)
@@ -443,7 +443,7 @@ if defined?($test) && $test
       eq true, c.unsubscribe_requested?('bye')
       eq true, c.unsubscribe_requested?('#bye')
       eq true, c.unsubscribe_requested?('# bye')
-      eq true, c.unsubscribe_requested?('‘Þ‰ï')
+      eq true, c.unsubscribe_requested?('é€€ä¼š')
       eq true, c.unsubscribe_requested?('unsubscribe'+' '*488)
       eq false, c.unsubscribe_requested?('unsubscribe desu.')
       eq false, c.unsubscribe_requested?('I want to unsubscribe.')

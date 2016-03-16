@@ -125,7 +125,7 @@ From: "Test User" <user@e.com>
 To: "Test Mailing List" <test@example.com>
 Subject: Re: [test:1] Test Mail
 
-‚ 
+ã‚
 '
       mail = QuickML::Mail.create { str }
       ok_eq("\202\240\n", mail.body)
@@ -137,7 +137,7 @@ From: "Test User" <user@e.com>
 To: "Test Mailing List" <test@example.com>
 Subject: Re: [test:1] Test Mail
 
-‚ 
+ã‚
 '
       mail = QuickML::Mail.generate { str }
       ok_eq("\e$B$\"\e(B\n", mail.body)

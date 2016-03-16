@@ -196,16 +196,16 @@ module Modulobe
 <channel>
      <title>Modulobe Collection</title>
      <link>http://www.modulobe.com/model.html</link>
-     <description>modulobe.com‚ÉƒAƒbƒvƒ[ƒh‚³‚ê‚½model‚ÌƒŠƒXƒg‚Å‚·B</description>
+     <description>modulobe.comã«ã‚¢ãƒƒãƒ—ãƒ­ãƒ¼ãƒ‰ã•ã‚ŒãŸmodelã®ãƒªã‚¹ãƒˆã§ã™ã€‚</description>
      <language>ja</language>
      <managingEditor>modulobe@qwik.jp</managingEditor>
      <webMaster>modulobe@qwik.jp</webMaster>
      <lastBuildDate>*Sat, 9 Jul 2005 13:09:31 GMT*</lastBuildDate>
      <ttl>60</ttl>
      <item>
-          <title>ÖA’·‚·‚¬‚é</title>
+          <title>è›‡ã€é•·ã™ãã‚‹</title>
           <link>http://www.modulobe.com/model.files/hebi-nagasugiru.mdlb</link>
-          <description>’·‚·‚¬‚Ü‚·B</description>
+          <description>é•·ã™ãã¾ã™ã€‚</description>
           <author>Kouichirou Eto</author>
           <pubDate>Sat, 9 Jul 2005 12:56:44 GMT</pubDate>
           <enclosure url="http://www.modulobe.com/model.files/hebi-nagasugiru.mdlb" length="87928" type="application/xml"/>
@@ -294,11 +294,11 @@ module Modulobe
 
 <model>
 <info>
-<name>‚  </name>
+<name>ã‚ </name>
 
-<author>‚¢ </author>
+<author>ã„ </author>
 
-<comment>‚¤
+<comment>ã†
 </comment>
 </info>
 

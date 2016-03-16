@@ -32,17 +32,17 @@ as the static Web pages.
     }
 
     D_ExtArchive_ja = {
-      :dt => 'ƒTƒCƒgEƒA[ƒJƒCƒu',
-      :dd => 'ƒTƒCƒgEƒA[ƒJƒCƒu‚ğæ“¾‚Å‚«‚Ü‚·B',
-      :dc => '* g‚¢•û
+      :dt => 'ã‚µã‚¤ãƒˆãƒ»ã‚¢ãƒ¼ã‚«ã‚¤ãƒ–',
+      :dd => 'ã‚µã‚¤ãƒˆãƒ»ã‚¢ãƒ¼ã‚«ã‚¤ãƒ–ã‚’å–å¾—ã§ãã¾ã™ã€‚',
+      :dc => '* ä½¿ã„æ–¹
 {{zip}}
 
-‚±‚ÌƒŠƒ“ƒN‚©‚çAƒTƒCƒg‚Ì“à—e‚Ü‚é‚²‚Æ‘S•”‚ğˆê‚Â‚ÌƒA[ƒJƒCƒu‚É‚µ‚Ä
-ƒ_ƒEƒ“ƒ[ƒh‚Å‚«‚Ü‚·B
+ã“ã®ãƒªãƒ³ã‚¯ã‹ã‚‰ã€ã‚µã‚¤ãƒˆã®å†…å®¹ã¾ã‚‹ã”ã¨å…¨éƒ¨ã‚’ä¸€ã¤ã®ã‚¢ãƒ¼ã‚«ã‚¤ãƒ–ã«ã—ã¦
+ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã§ãã¾ã™ã€‚
 
-ƒtƒ@ƒCƒ‹‚É‚ÍAŒ³‚Æ‚È‚éƒeƒLƒXƒgƒtƒ@ƒCƒ‹‚Æ‹¤‚ÉAÃ“I‚ÈHTMLƒy[ƒW‚àŠÜ‚Ü‚ê
-‚Ä‚¨‚èA‰ğ“€‚µ‚ÄWebƒTƒCƒg‚É’u‚¯‚ÎA‚»‚Ì‚Ü‚Ü•’Ê‚ÌWebƒy[ƒW‚Æ‚µ‚ÄŒöŠJ‚Å
-‚«‚Ü‚·B
+ãƒ•ã‚¡ã‚¤ãƒ«ã«ã¯ã€å…ƒã¨ãªã‚‹ãƒ†ã‚­ã‚¹ãƒˆãƒ•ã‚¡ã‚¤ãƒ«ã¨å…±ã«ã€é™çš„ãªHTMLãƒšãƒ¼ã‚¸ã‚‚å«ã¾ã‚Œ
+ã¦ãŠã‚Šã€è§£å‡ã—ã¦Webã‚µã‚¤ãƒˆã«ç½®ã‘ã°ã€ãã®ã¾ã¾æ™®é€šã®Webãƒšãƒ¼ã‚¸ã¨ã—ã¦å…¬é–‹ã§
+ãã¾ã™ã€‚
 '
     }
 
@@ -217,7 +217,7 @@ if defined?($test) && $test
       page.store ':theme:qwikborder'
 
       page = @site.create_new
-      page.store '* ‚ '
+      page.store '* ã‚'
 
       page = @site.create_new
       page.store '* A Presentation Page
@@ -326,7 +326,7 @@ test/1-presen.html
       res = session
 
       page = @site.create_new
-      page.store('* ‚ ')
+      page.store('* ã‚')
 
       zip = Qwik::SiteArchive.generate(@config, @site, @action)
       assert_match(/test.zip\Z/, zip.to_s)

@@ -31,7 +31,7 @@ Subject: This is an inline test.
 --Multipart_Thu_Apr_14_21:22:30_2005-1
 Content-Type: text/plain; charset=ISO-2022-JP
 
-サンプル.jpgを添付してみます。
+繧ｵ繝ｳ繝励Ν.jpg繧呈ｷｻ莉倥＠縺ｦ縺ｿ縺ｾ縺吶�
 --Multipart_Thu_Apr_14_21:22:30_2005-1
 Content-Type: image/jpeg
 Content-Disposition: inline; filename=\"sample.jpg\"
@@ -49,7 +49,7 @@ AAAAAElFTkSuQmCC
     ok_eq('This is an inline test.', page.get_title)
     ok_eq("* This is an inline test.
 {{mail(bob@example.net,0)
-サンプル.jpgを添付してみます。
+繧ｵ繝ｳ繝励Ν.jpg繧呈ｷｻ莉倥＠縺ｦ縺ｿ縺ｾ縺吶�
 
 {{file(sample.jpg)}}
 }}

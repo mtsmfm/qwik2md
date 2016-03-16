@@ -19,7 +19,7 @@ class TestMailSubmitWithJapaneseFilename < Test::Unit::TestCase
 	     '[test]: Add: bob@example.net',
 	     '[test]: QwikPost: test'], 0..2)
 
-    sm('ƒeƒXƒg') {
+    sm('ãƒ†ã‚¹ãƒˆ') {
 "Date: Fri, 20 May 2005 15:21:55 +0900
 From: bob@example.net
 To: test@q.example.com
@@ -58,15 +58,15 @@ AAAAAAAAAAAAAAAAAAAAEwAAAAAQAAAAAAAA
 --------_428D7194605E049A05F8_MULTIPART_MIXED_--
 " }
     page = @site['1']
-    eq 'ƒeƒXƒg', page.get_title
-    eq '* ƒeƒXƒg
+    eq 'ãƒ†ã‚¹ãƒˆ', page.get_title
+    eq '* ãƒ†ã‚¹ãƒˆ
 {{mail(bob@example.net,0)
 test.
 
-{{file(17fy—\ŽZƒR[ƒh‚ÌŽw’è‚É‚Â‚¢‚Ä.doc)}}
+{{file(17fyäºˆç®—ã‚³ãƒ¼ãƒ‰ã®æŒ‡å®šã«ã¤ã„ã¦.doc)}}
 
 
-{{file(î•ñ—¬ƒfƒUƒCƒ“ƒOƒ‹[ƒv.xls)}}
+{{file(æƒ…å ±æµãƒ‡ã‚¶ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—.xls)}}
 }}
 ',
 	  page.get
@@ -74,9 +74,9 @@ test.
     files = @site.files '1'
     # The files.list are encoded in UTF-8
     eq ["17fy\344\272\210\347\256\227\343\202\263\343\203\274\343\203\211\343\201\256\346\214\207\345\256\232\343\201\253\343\201\244\343\201\204\343\201\246.doc", "\346\203\205\345\240\261\346\265\201\343\203\207\343\202\266\343\202\244\343\203\263\343\202\260\343\203\253\343\203\274\343\203\227.xls"], files.list
-    eq true, files.exist?('17fy—\ŽZƒR[ƒh‚ÌŽw’è‚É‚Â‚¢‚Ä.doc')
-    eq true, files.exist?('17fy—\ŽZƒR[ƒh‚ÌŽw’è‚É‚Â‚¢‚Ä.doc'.set_sourcecode_charset.to_filename_charset)	# UTF-8 is allowed.
-    eq true, files.exist?('17fy—\ŽZƒR[ƒh‚ÌŽw’è‚É‚Â‚¢‚Ä.doc'.set_sourcecode_charset.to_mail_charset)	# Any charsets are allowed.
-    eq true, files.exist?('î•ñ—¬ƒfƒUƒCƒ“ƒOƒ‹[ƒv.xls')
+    eq true, files.exist?('17fyäºˆç®—ã‚³ãƒ¼ãƒ‰ã®æŒ‡å®šã«ã¤ã„ã¦.doc')
+    eq true, files.exist?('17fyäºˆç®—ã‚³ãƒ¼ãƒ‰ã®æŒ‡å®šã«ã¤ã„ã¦.doc'.set_sourcecode_charset.to_filename_charset)	# UTF-8 is allowed.
+    eq true, files.exist?('17fyäºˆç®—ã‚³ãƒ¼ãƒ‰ã®æŒ‡å®šã«ã¤ã„ã¦.doc'.set_sourcecode_charset.to_mail_charset)	# Any charsets are allowed.
+    eq true, files.exist?('æƒ…å ±æµãƒ‡ã‚¶ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—.xls')
   end
 end

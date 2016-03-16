@@ -40,12 +40,12 @@ if defined?($test) && $test
     end
 
     def test_plg_text
-      ok_day([[:h2, {:id=>'8f03c3a6dbec1d0f1a5af60947b7b052'}, 'Ç†'],
+      ok_day([[:h2, {:id=>'8f03c3a6dbec1d0f1a5af60947b7b052'}, '„ÅÇ'],
 	       [:div, {:class=>'body'}, [:div, {:class=>'section'}, []]]],
-	     "{{text\n* Ç†\n}}")
-      ok_day([[:h2, {:id=>'7657b04993b557a2ee9b36bf280a3ec4'}, 'Ç¢'],
+	     "{{text\n* „ÅÇ\n}}")
+      ok_day([[:h2, {:id=>'7657b04993b557a2ee9b36bf280a3ec4'}, '„ÅÑ'],
 	       [:div, {:class=>'body'}, [:div, {:class=>'section'}, []]]],
-	     "{{text\n* Ç¢\n}}")
+	     "{{text\n* „ÅÑ\n}}")
       ok_wi([:p, '<'], "{{text\n<\n}}")
       @site['1'].delete
       @site.erase_all

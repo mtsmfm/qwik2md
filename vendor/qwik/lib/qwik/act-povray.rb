@@ -32,9 +32,9 @@ light_source { <-9, 9, 0> rgb 1 }
     }
 
     D_PluginPovray_ja = {
-      :dt => 'PovRayƒvƒ‰ƒOƒCƒ“',
-      :dd => 'ƒŒƒCƒgƒŒ[ƒVƒ“ƒO‚É‚æ‚é3D CG‚ğ–„‚ß‚ß‚Ü‚·B',
-      :dc => '* —á
+      :dt => 'PovRayãƒ—ãƒ©ã‚°ã‚¤ãƒ³',
+      :dd => 'ãƒ¬ã‚¤ãƒˆãƒ¬ãƒ¼ã‚·ãƒ³ã‚°ã«ã‚ˆã‚‹3D CGã‚’åŸ‹ã‚è¾¼ã‚ã¾ã™ã€‚',
+      :dc => '* ä¾‹
  {{povray
  sphere { <0, 0, 9>, 3
  finish { ambient 0.2 diffuse 0.8 phong 1 }
@@ -49,7 +49,7 @@ pigment { red 1 }
 }
 light_source { <-9, 9, 0> rgb 1 }
 }}
-- [[POVRay Short Code Contest, Round 3|http://astronomy.swin.edu.au/~pbourke/raytracing/scc3/final/]]‚È‚Ç‚ÌƒTƒ“ƒvƒ‹‚ğŒ©‚Ä‚İ‚é‚Æ–Ê”’‚¢‚©‚à‚µ‚ê‚Ü‚¹‚ñB
+- [[POVRay Short Code Contest, Round 3|http://astronomy.swin.edu.au/~pbourke/raytracing/scc3/final/]]ãªã©ã®ã‚µãƒ³ãƒ—ãƒ«ã‚’è¦‹ã¦ã¿ã‚‹ã¨é¢ç™½ã„ã‹ã‚‚ã—ã‚Œã¾ã›ã‚“ã€‚
 '
     }
 

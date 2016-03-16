@@ -155,15 +155,15 @@ if defined?($test) && $test
     def test_japanese
       res = session
       page = @site.create_new
-      page.store('*‚ ')
+      page.store('*ã‚')
 
-      ok([:a, {:href=>'1.html'}, '‚ '],
-	 [:a, {:href=>'‚ .html'}, '‚ '])
+      ok([:a, {:href=>'1.html'}, 'ã‚'],
+	 [:a, {:href=>'ã‚.html'}, 'ã‚'])
       
-      ok([:span, {:class=>'new'}, '‚¢',
+      ok([:span, {:class=>'new'}, 'ã„',
 	   [:a, {:href=>'.new?t=%82%A2'},
 	     [:img, {:alt=>'create', :src=>'.theme/i/new.png'}]]],
-	 [:a, {:href=>'‚¢.html'}, '‚¢'])
+	 [:a, {:href=>'ã„.html'}, 'ã„'])
     end
   end
 
@@ -203,10 +203,10 @@ if defined?($test) && $test
 		[:a, {:href=>'.new?t=test'},
 		  [:img, {:alt=>'create', :src=>'.theme/i/new.png'}]]]],
 	    '[[test]]')
-      ok_wi([:p, [:span, {:class=>'new'}, '‚¢',
+      ok_wi([:p, [:span, {:class=>'new'}, 'ã„',
 		[:a, {:href=>'.new?t=%82%A2'},
 		  [:img, {:alt=>'create', :src=>'.theme/i/new.png'}]]]],
-	    '[[‚¢]]')
+	    '[[ã„]]')
     end
 
     def test_all2
@@ -218,12 +218,12 @@ if defined?($test) && $test
       ok_wi([:p, [:a, {:href=>'.attach'}, '.attach']], '[[.attach]]')
       ok_wi([:p, [:a, {:href=>'.attach'}, 'FileAttach']],
 	    '[[FileAttach|.attach]]')
-      ok_wi([:p, [:a, {:href=>'.attach'}, 'ƒtƒ@ƒCƒ‹“Y•t']],
-	    '[[ƒtƒ@ƒCƒ‹“Y•t|.attach]]')
+      ok_wi([:p, [:a, {:href=>'.attach'}, 'ãƒ•ã‚¡ã‚¤ãƒ«æ·»ä»˜']],
+	    '[[ãƒ•ã‚¡ã‚¤ãƒ«æ·»ä»˜|.attach]]')
 
       # test_mojibake
       ok_wi([:p, 't'], 't')
-      ok_wi([:p, '450‰~'], '450‰~')
+      ok_wi([:p, '450å††'], '450å††')
     end
 
   end

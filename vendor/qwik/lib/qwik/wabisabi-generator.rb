@@ -103,7 +103,7 @@ if defined?($test) && $test
       ok([:a, {:href=>'u'}, 't'], g.make('a', :href=>'u'){'t'})
       html = g.html {[
 	  g.head {[
-	      g.title {"タイトル"},
+	      g.title {"繧ｿ繧､繝医Ν"},
 	    ]},
 	  g.body {[
 	      g.pre {[g.b {'world'},  'hello']},
@@ -113,7 +113,7 @@ if defined?($test) && $test
 	    ]}
 	]}
       ok([:html,
-	   [:head, [:title, "タイトル"]],
+	   [:head, [:title, "繧ｿ繧､繝医Ν"]],
 	   [:body,
 	     [:pre, [:b, 'world'], 'hello'],
 	     [:pre, 'this is ', [:b, 'bold'], ' text.'],
@@ -186,7 +186,7 @@ if defined?($test) && $test
       html = g.html {[
 	  g.head {[
 	      g.contenttype("text/html; charset=SHIFT_JIS"),
-	      g.title {"タイトル"},
+	      g.title {"繧ｿ繧､繝医Ν"},
 	      g.stylesheet('style.css')
 	    ]},
 	  g.body {[
@@ -202,7 +202,7 @@ if defined?($test) && $test
 	   [:head,
 	     [:meta,
 	       {:content=>"text/html; charset=SHIFT_JIS", 'http-equiv'=>'Content-Type'}],
-	     [:title, "タイトル"],
+	     [:title, "繧ｿ繧､繝医Ν"],
 	     [:link,
 	       {:href=>'style.css', :rel=>'stylesheet', :type=>'text/css'}]],
 	   [:body,
@@ -244,7 +244,7 @@ if defined?($test) && $test
       html = html {[
 	  head {[
 	      contenttype("text/html; charset=SHIFT_JIS"),
-	      title {"タイトル"},
+	      title {"繧ｿ繧､繝医Ν"},
 	      stylesheet('style.css')
 	    ]},
 	  body {[
@@ -256,7 +256,7 @@ if defined?($test) && $test
 	      img('new.gif', 'new')
 	    ]}
 	]}
-      ok("<html><head><meta content=\"text/html; charset=SHIFT_JIS\" http-equiv=\"Content-Type\"/><title>タイトル</title><link href=\"style.css\" rel=\"stylesheet\" type=\"text/css\"/></head><body><pre><b>world</b>hello</pre><pre>This is <b>bold</b> text.</pre><pre>This is <i>italic</i> text.</pre><p>This is <a href=\"hoge\">anchor</a> text.</p><p>This is <a href=\"hoge\">anchor</a> text.</p><img alt=\"new\" src=\"new.gif\"/></body></html>", html)
+      ok("<html><head><meta content=\"text/html; charset=SHIFT_JIS\" http-equiv=\"Content-Type\"/><title>繧ｿ繧､繝医Ν</title><link href=\"style.css\" rel=\"stylesheet\" type=\"text/css\"/></head><body><pre><b>world</b>hello</pre><pre>This is <b>bold</b> text.</pre><pre>This is <i>italic</i> text.</pre><p>This is <a href=\"hoge\">anchor</a> text.</p><p>This is <a href=\"hoge\">anchor</a> text.</p><img alt=\"new\" src=\"new.gif\"/></body></html>", html)
     end
   end
 end

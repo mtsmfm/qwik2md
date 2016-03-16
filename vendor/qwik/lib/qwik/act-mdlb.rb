@@ -708,12 +708,12 @@ http://www.modulobe.com/
       page = @site.create('c')
 
       # Put files.
-      content, image = prepare('c:\Ç¢\Ç†.mdlb', 'c:\Ç¢\Ç†.gif')
+      content, image = prepare('c:\„ÅÑ\„ÅÇ.mdlb', 'c:\„ÅÑ\„ÅÇ.gif')
       res = session('POST /test/c.modulobe_files_upload') {|req|
 	req.query.update({'content'=>content, 'image'=>image})
       }
       ok_title('File attachment completed')
-      ok_xp([:p, [:strong, 'Ç†.mdlb'], ' : ', 'The file is saved.'],
+      ok_xp([:p, [:strong, '„ÅÇ.mdlb'], ' : ', 'The file is saved.'],
 	    "//div[@class='body_main']/p")
 
       # Get the file.
@@ -727,7 +727,7 @@ http://www.modulobe.com/
 	req.query.update({'content'=>content, 'image'=>image})
       }
       ok_title('File attachment completed')
-      ok_xp([:p, [:strong, 'Ç†.mdlb'], ' -> ', [:strong, '1-Ç†.mdlb'], ' : ',
+      ok_xp([:p, [:strong, '„ÅÇ.mdlb'], ' -> ', [:strong, '1-„ÅÇ.mdlb'], ' : ',
 	      'The file is saved with this filename.'],
 	    "//div[@class='body_main']/p")
 

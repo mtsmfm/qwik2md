@@ -60,14 +60,14 @@ if defined?($test) && $test
 	   [:h2, {:id=>'From'}, 'From:'],
 	   [:div,
 	     {:class=>'body'},
-	     [:div, {:class=>'section'}, [[:p, '�e�X�g�ł��B'], ["\n"]]]]],
-	 "* �e�X�g\n{{mail\n�e�X�g�ł��B\n\n}}")
+	     [:div, {:class=>'section'}, [[:p, 'テストです。'], ["\n"]]]]],
+	 "* テスト\n{{mail\nテストです。\n\n}}")
       ok([:div,
 	   {:class=>'day'},
 	   [:h2, {:id=>'979dff15c789fca0315256fc8af6fa64'}, 'From: t@e...'],
 	   [:div, {:class=>'body'}, [:div, {:class=>'section'},
-	       [[:p, '�X'], ["\n"]]]]],
-	 "* �e\n{{mail(t@e.com)\n�X\n\n}}")
+	       [[:p, 'ス'], ["\n"]]]]],
+	 "* テ\n{{mail(t@e.com)\nス\n\n}}")
       ok([:div,
 	   {:class=>'day'},
 	   [:h2,
@@ -75,15 +75,15 @@ if defined?($test) && $test
 	     [:span, {:class=>'date'}, 'Jan 1, 1970'],
 	     ' From: t@e...'],
 	   [:div, {:class=>'body'}, [:div, {:class=>'section'},
-	       [[:p, '�X'], ["\n"]]]]],
-	 "* �e\n{{mail(t@e.com,0)\n�X\n\n}}")
+	       [[:p, 'ス'], ["\n"]]]]],
+	 "* テ\n{{mail(t@e.com,0)\nス\n\n}}")
       ok([:div,
 	   {:class=>'day'},
 	   [:h2, {:id=>'979dff15c789fca0315256fc8af6fa64'}, 'From: t@e...'],
 	   [:div,
 	     {:class=>'body'},
 	     [:div, {:class=>'section'}, [[:p, 't@e...'], ["\n"]]]]],
-	 "* �e\n{{mail(t@e.com)\nt@e.com\n\n}}")
+	 "* テ\n{{mail(t@e.com)\nt@e.com\n\n}}")
     end
 
     def test_mail_new
@@ -96,25 +96,25 @@ if defined?($test) && $test
       ok([:div, {:class=>'day'},
 	   [:h2, {:id=>'From'}, ' From: '],
 	   [:div, {:class=>'body'},
-	     [:div, {:class=>'section'}, [[:p, '�e�X�g�ł��B'], ["\n"]]]]],
-	 "* �e�X�g\n{{mail\n�e�X�g�ł��B\n\n}}")
+	     [:div, {:class=>'section'}, [[:p, 'テストです。'], ["\n"]]]]],
+	 "* テスト\n{{mail\nテストです。\n\n}}")
       ok([:div, {:class=>'day'},
 	   [:h2, {:id=>'979dff15c789fca0315256fc8af6fa64'}, ' From: t@e...'],
 	   [:div, {:class=>'body'},
-	     [:div, {:class=>'section'}, [[:p, '�X'], ["\n"]]]]],
-	 "* �e\n{{mail(t@e.com)\n�X\n\n}}")
+	     [:div, {:class=>'section'}, [[:p, 'ス'], ["\n"]]]]],
+	 "* テ\n{{mail(t@e.com)\nス\n\n}}")
       ok([:div, {:class=>'day'},
 	   [:h2, {:id=>'979dff15c789fca0315256fc8af6fa64'},
 	     [:span, {:class=>'date'}, 'Jan 1, 1970'],
 	     ' From: t@e...'],
 	   [:div, {:class=>'body'},
-	     [:div, {:class=>'section'}, [[:p, '�X'], ["\n"]]]]],
-	 "* �e\n{{mail(t@e.com,0)\n�X\n\n}}")
+	     [:div, {:class=>'section'}, [[:p, 'ス'], ["\n"]]]]],
+	 "* テ\n{{mail(t@e.com,0)\nス\n\n}}")
       ok([:div, {:class=>'day'},
 	   [:h2, {:id=>'979dff15c789fca0315256fc8af6fa64'}, ' From: t@e...'],
 	   [:div, {:class=>'body'},
 	     [:div, {:class=>'section'}, [[:p, 't@e...'], ["\n"]]]]],
-	 "* �e\n{{mail(t@e.com)\nt@e.com\n\n}}")
+	 "* テ\n{{mail(t@e.com)\nt@e.com\n\n}}")
       ok([:div, {:class=>'day'},
 	   [:h2, {:id=>'979dff15c789fca0315256fc8af6fa64'},
 	     [:span, {:class=>'date'}, 'Jan 1, 1970'], ' From: t@e...'],

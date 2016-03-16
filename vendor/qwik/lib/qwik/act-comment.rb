@@ -31,24 +31,24 @@ This plugin is obsolete.  Please use 'mcomment' plugin instead.
     }
 
     D_PluginComment_ja = {
-      :dt => '�R�����g�E�v���O�C��',
-      :dd => '�R�����g���͗���\�����܂��B',
+      :dt => 'コメント・プラグイン',
+      :dd => 'コメント入力欄を表示します。',
       :dc => "
-* �����s�R�����g�E�v���O�C��
-�����s���͂ł���R�����g�E�v���O�C���ł��B
+* 複数行コメント・プラグイン
+複数行入力できるコメント・プラグインです。
 {{mcomment}}
  {{mcomment}}
-���̂悤�ɁA(1)������ƁA�V�����R�����g����ԏ�ɂ��悤�ɂȂ�܂��B
+このように、(1)をつけると、新しいコメントが一番上につくようになります。
  {{mcomment(1)}}
-* Hiki���R�����g�E�v���O�C��
-Hiki�̃R�����g�E�v���O�C���Ƃقړ����g�������ł��܂��B
+* Hiki風コメント・プラグイン
+Hikiのコメント・プラグインとほぼ同じ使い方ができます。
 {{hcomment}}
  {{hcomment}}
-���l�ɁA(1)������ƁA�V�����R�����g����ԏ�ɂ��悤�ɂȂ�܂��B
+同様に、(1)をつけると、新しいコメントが一番上につくようになります。
  {{hcomment(1)}}
-* ���R�����g�E�v���O�C��
-�Â��d�l�̃R�����g�v���O�C���ł��̂ŁA���p�͐������܂���B
-�umcomment�v�v���O�C���𐄏����܂��B
+* 旧コメント・プラグイン
+古い仕様のコメントプラグインですので、利用は推奨しません。
+「mcomment」プラグインを推奨します。
 {{comment}}
  {{comment}}
 "

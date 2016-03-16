@@ -31,19 +31,19 @@ by Mr. Kan Fushihara.  Thank you very much.
     }
 
     D_PluginWema_ja = {
-      :dt => '•â³‹@”\ ',
-      :dd => '•â³‚ð‚Í‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B',
-      :dc => '* Žg—p–@
+      :dt => 'é™„ç®‹æ©Ÿèƒ½ ',
+      :dd => 'é™„ç®‹ã‚’ã¯ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚',
+      :dc => '* ä½¿ç”¨æ³•
  {{wema}}
 {{wema}}
 
-ƒy[ƒW’†‚Éã‹L‚Ì‚æ‚¤‚Éwemaƒvƒ‰ƒOƒCƒ“‚ð‚¤‚ß‚±‚Ý‚Ü‚·B
-uNew Post-itv‚Æ‚¢‚¤ƒŠƒ“ƒN‚ð‰Ÿ‚·‚ÆA¬‚³‚ÈWindow‚ª•\Ž¦‚³‚ê‚Ü‚·B
-‚È‚É‚©ƒeƒLƒXƒg‚ð‚¢‚êAƒZ[ƒu‚µ‚Ä‚­‚¾‚³‚¢B
-Window‚ð“®‚©‚µ‚ÄAusetv‚ð‰Ÿ‚·‚ÆˆÊ’u‚ðƒZƒbƒg‚µ‚Ü‚·B
-* Š´ŽÓ
-•šŒ´Š²Ž‚É‚æ‚éu[[wema|http://wema.sourceforge.jp/]]v‚ðŒ³‚ÉŠJ”­‚¢‚½‚µ
-‚Ü‚µ‚½B‚Ç‚¤‚à‚ ‚è‚ª‚Æ‚¤‚²‚´‚¢‚Ü‚·B
+ãƒšãƒ¼ã‚¸ä¸­ã«ä¸Šè¨˜ã®ã‚ˆã†ã«wemaãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã‚’ã†ã‚ã“ã¿ã¾ã™ã€‚
+ã€ŒNew Post-itã€ã¨ã„ã†ãƒªãƒ³ã‚¯ã‚’æŠ¼ã™ã¨ã€å°ã•ãªWindowãŒè¡¨ç¤ºã•ã‚Œã¾ã™ã€‚
+ãªã«ã‹ãƒ†ã‚­ã‚¹ãƒˆã‚’ã„ã‚Œã€ã‚»ãƒ¼ãƒ–ã—ã¦ãã ã•ã„ã€‚
+Windowã‚’å‹•ã‹ã—ã¦ã€ã€Œsetã€ã‚’æŠ¼ã™ã¨ä½ç½®ã‚’ã‚»ãƒƒãƒˆã—ã¾ã™ã€‚
+* æ„Ÿè¬
+ä¼åŽŸå¹¹æ°ã«ã‚ˆã‚‹ã€Œ[[wema|http://wema.sourceforge.jp/]]ã€ã‚’å…ƒã«é–‹ç™ºã„ãŸã—
+ã¾ã—ãŸã€‚ã©ã†ã‚‚ã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã™ã€‚
 '
     }
 

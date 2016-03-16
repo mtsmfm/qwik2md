@@ -75,7 +75,7 @@ if defined?($test) && $test
       # test_encode
       ok_eq('t', c.encode('t'))
       ok_eq(' ', c.encode(' '))
-      ok_eq('=E3=81=82', c.encode("Ç†"))
+      ok_eq('=E3=81=82', c.encode("„ÅÇ"))
       ok_eq('=E3=81=82', c.encode("\202\240"))
       ok_eq('=E3=81=82.txt', c.encode("\202\240.txt"))
 

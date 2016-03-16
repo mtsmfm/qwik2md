@@ -12,133 +12,133 @@ module QuickML
 	:codeconv_method => :tojis,
 
 	# for test
-	'hello' => "����ɂ���",
+	'hello' => "こんにちは",
 
 	# Original QuickML messages.
 	"<%s> was removed from the mailing list:\n<%s>\n" =>
-	"<%s> ��\n���[�����O���X�g <%s> ����폜����܂����B\n",
+	"<%s> は\nメーリングリスト <%s> から削除されました。\n",
 
 	"because the address was unreachable.\n" =>
-	"���[�����͂��Ȃ����߂ł��B\n",
+	"メールが届かないためです。\n",
 
 	"ML will be closed if no article is posted for %d days.\n\n" =>
-	"���̃��[�����O���X�g�� %d���ȓ��ɓ��e���Ȃ��Ə��ł��܂��B\n\n",
+	"このメーリングリストは %d日以内に投稿がないと消滅します。\n\n",
 
 	"Time to close: %s.\n\n" =>
-	"���ŗ\�����: %s\n\n",
+	"消滅予定日時: %s\n\n",
 
 	'%Y-%m-%d %H:%M' =>
-	"%Y�N%m��%d�� %H��%M��",
+	"%Y年%m月%d日 %H時%M分",
 
 	"You are not a member of the mailing list:\n<%s>\n" =>
-	"���Ȃ��� <%s> ���[�����O���X�g�̃����o�[�ł͂���܂���B\n",
+	"あなたは <%s> メーリングリストのメンバーではありません。\n",
 
 	"The original body is omitted to avoid spam trouble.\n" =>
-	"���[���{�̂̓X�p���΍�̂��ߏȗ�����܂����B\n",
+	"メール本体はスパム対策のため省略されました。\n",
 
 	"You are removed from the mailing list:\n<%s>\n" =>
-	"���Ȃ��� <%s> ���[�����O���X�g����폜����܂����B\n",
+	"あなたは <%s> メーリングリストから削除されました。\n",
 
 	"by the request of <%s>.\n" =>
-	"<%s> ���폜�����肢�������߂ł��B\n",
+	"<%s> が削除をお願いしたためです。\n",
 
 	"You have unsubscribed from the mailing list:\n<%s>.\n" =>
-	"���Ȃ��� <%s> ���[�����O���X�g����މ�܂����B",
+	"あなたは <%s> メーリングリストから退会しました。",
 
 
 	"The following addresses cannot be added because <%s> mailing list reaches the maximum number of members (%d persons)\n\n" =>
-	"<%s> ���[�����O���X�g�̓����o�[�̍ő�l�� (%d�l)\n�ɒB�����̂ňȉ��̃A�h���X�͒ǉ��ł��܂���ł����B\n\n",
+	"<%s> メーリングリストはメンバーの最大人数 (%d人)\nに達したので以下のアドレスは追加できませんでした。\n\n",
 
 	"Invalid mailing list name: <%s>\n" =>
-	"<%s> �͐������Ȃ����[�����O���X�g���ł��B\n",
+	"<%s> は正しくないメーリングリスト名です。\n",
 
 	"You can only use 0-9, a-z, A-Z,  `-' for mailing list name\n" =>
-	"���[�����O���X�g���ɂ� 0-9, a-z, A-Z, �u-�v�������g���܂��B\n",
+	"メーリングリスト名には 0-9, a-z, A-Z, 「-」だけが使えます。\n",
 
 	"Sorry, your mail exceeds the length limitation.\n" =>
-	"�\���󂠂�܂���B���Ȃ��̃��[���̃T�C�Y�͐����𒴂��܂����B\n",
+	"申し訳ありません。あなたのメールのサイズは制限を超えました。\n",
 
 	"The max length is %s bytes.\n\n" =>
-	"���[���̃T�C�Y�̐����� %s �o�C�g�ł��B\n\n",
+	"メールのサイズの制限は %s バイトです。\n\n",
 
 	"[%s] Unsubscribe: %s" =>
-	"[%s] �މ�: %s",
+	"[%s] 退会: %s",
 
 	"[%s] ML will be closed soon" =>
-	"[%s] ���[�����O���X�g��~�̂��ē�",
+	"[%s] メーリングリスト停止のご案内",
 
 	"[%s] Removed: <%s>" =>
-	"[%s] �����o�[�폜: <%s>",
+	"[%s] メンバー削除: <%s>",
 
 	"Members of <%s>:\n" =>
-	"<%s> �̃����o�[:\n",
+	"<%s> のメンバー:\n",
 
 	"How to unsubscribe from the ML:\n" =>
-	"����ML��މ����@:\n",
+	"このMLを退会する方法:\n",
 
 	"- Just send an empty message to <%s>.\n" =>
-	"- �{������̃��[���� <%s> �ɑ����Ă�������\n",
+	"- 本文が空のメールを <%s> に送ってください\n",
 
 	"- Alternatively, if you cannot send an empty message for some reason,\n" =>
-	"- �{������̃��[���𑗂�Ȃ��ꍇ�́A\n",
+	"- 本文が空のメールを送れない場合は、\n",
 
 	"  please send a message just saying 'unsubscribe' to <%s>.\n" =>
-	"  �{���Ɂu�މ�v�Ƃ������������[���� <%s> �ɑ����Ă�������\n",
+	"  本文に「退会」とだけ書いたメールを <%s> に送ってください\n",
 
 	"  (e.g., hotmail's advertisement, signature, etc.)\n" =>
-	"  (������hotmail�̍L���Ȃǂ����ċ󃁁[���𑗂�Ȃ��ꍇ�Ȃ�)\n",
+	"  (署名やhotmailの広告などがついて空メールを送れない場合など)\n",
 
 	"[QuickML] Error: %s" =>
-	"[QuickML] �G���[: %s",
+	"[QuickML] エラー: %s",
 
 	"New Member: %s\n" =>
-	"�V�����o�[: %s\n",
+	"新メンバー: %s\n",
 
 	"Did you send a mail with a different address from the address registered in the mailing list?\n" =>
-	"���[�����O���X�g�ɓo�^�������[���A�h���X�ƈقȂ�A�h���X���烁�[���𑗐M���Ă��܂���?\n",
+	"メーリングリストに登録したメールアドレスと異なるアドレスからメールを送信していませんか?\n",
 
 	"Please check your 'From:' address.\n" =>
-	"���o�l�̃��[���A�h���X���m�F���Ă��������B\n",
+	"差出人のメールアドレスを確認してください。\n",
 
 	"Info: %s\n" => 
-	"�g����: %s\n",
+	"使い方: %s\n",
 
 	"----- Original Message -----\n" =>
-	"----- ���̃��b�Z�[�W -----\n",
+	"----- 元のメッセージ -----\n",
 
 	"[%s] Confirmation: %s" =>
-	"[%s] �m�F: %s",
+	"[%s] 確認: %s",
 
 	# qwikWeb messages.
 	"First, please read the agreement of this service.\n" =>
-	"�܂����L�̗��p�K������ǂ݉������B\n",
+	"まず下記の利用規約をお読み下さい。\n",
 
 	"http://qwik.jp/qwikjpAgreementE.html\n" =>
 	"http://qwik.jp/qwikjpAgreementJ.html\n",
 
 	"You must agree with this agreement to use the service.\n" =>
-	"���̃T�[�r�X�𗘗p����ɂ́A���p�K������F���Ă��������K�v������܂��B\n",
+	"このサービスを利用するには、利用規約を承認していただく必要があります。\n",
 
 	"If you agree, then,\n" =>
-	"�������F����ꍇ�A\n",
+	"もし承認する場合、\n",
 
 	"Please simply reply to this mail to create ML <%s>.\n" =>
-	"���̃��[���ɕԐM����� <%s> ���[�����O���X�g������܂��B\n",
+	"このメールに返信すると <%s> メーリングリストが作られます。\n",
 
 	"WARNING: Total attached file size exceeded." =>
-	"�x��: �Y�t�t�@�C���̍��v�T�C�Y���ő�e�ʂ𒴂��Ă��܂��B",
+	"警告: 添付ファイルの合計サイズが最大容量を超えています。",
 
 	'Files are not attached on the web.' =>
-	"�Y�t�t�@�C����Web�ɕۑ�����܂���B",
+	"添付ファイルはWebに保存されません。",
 
 	"WARNING: Total attached file size is reaching to the limit." =>
-	"�x��: �Y�t�t�@�C���̍��v�T�C�Y���ő�e�ʂɋ߂Â��Ă��܂��B",
+	"警告: 添付ファイルの合計サイズが最大容量に近づいています。",
 
 	"%s left" =>
-	"�c��%s",
+	"残り%s",
 
 	"\nFile '%s' was not attached.\n" =>
-	"\n�t�@�C�� '%s' �͕ۑ�����܂���ł����B\n",
+	"\nファイル '%s' は保存されませんでした。\n",
       }
     end
   end

@@ -24,7 +24,7 @@ You can input allowed elements only.
 ** valid attributes
 #{WabisabiValidator::VALID_ATTR.join(' ')}
 
-* HTML‚Ì’†‚Ö‚Ìƒvƒ‰ƒOƒCƒ“‚Ì–„‚ßž‚Ý
+* HTMLã®ä¸­ã¸ã®ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã®åŸ‹ã‚è¾¼ã¿
 You can also embed plugins like this.
  {{html
  <plugin param=\"1\" method=\"recent\"></plugin>
@@ -70,8 +70,8 @@ You can also embed plugins like this.
 <TD>Table 2-1</TD>
 <TD>Table 2-2</TD>
 <TD>Table 2-3</TD></TR></TBODY></TABLE>
-<P><EM>Emphasis</EM>A
-<STRONG>Strong</STRONG>A
+<P><EM>Emphasis</EM>ã€
+<STRONG>Strong</STRONG>ã€
 <DEL>Delete</DEL>
 <A href=\"http://qwik.jp/.theme/new.png\">new</A>
 <A href=\"FrontPage.html\">FrontPage</A>
@@ -84,24 +84,24 @@ You can also embed plugins like this.
     }
 
     D_PluginEmbedHtml_ja = {
-      :dt => 'HTML–„‚ßž‚Ý‹@”\ ',
-      :dd => 'HTML‚ð‚»‚Ì‚Ü‚Ü–„ž‚Þ‚±‚Æ‚ª‚Å‚«‚Ü‚·B',
-      :dc => "* —á
+      :dt => 'HTMLåŸ‹ã‚è¾¼ã¿æ©Ÿèƒ½ ',
+      :dd => 'HTMLã‚’ãã®ã¾ã¾åŸ‹è¾¼ã‚€ã“ã¨ãŒã§ãã¾ã™ã€‚',
+      :dc => "* ä¾‹
  {{html
  This is <font color='red'>red</font>.
  }}
 {{html
 This is <font color='red'>red</font>.
 }}
-* Žg‚¦‚é—v‘f
-”CˆÓ‚Ìƒ^ƒO‚ªŽg‚¦‚é‚í‚¯‚Å‚Í‚È‚­CŽg‚¦‚é—v‘f‚ÍŒÀ‚ç‚ê‚Ä‚¢‚Ü‚·D
-** Žg‚¦‚éƒ^ƒO
+* ä½¿ãˆã‚‹è¦ç´ 
+ä»»æ„ã®ã‚¿ã‚°ãŒä½¿ãˆã‚‹ã‚ã‘ã§ã¯ãªãï¼Œä½¿ãˆã‚‹è¦ç´ ã¯é™ã‚‰ã‚Œã¦ã„ã¾ã™ï¼Ž
+** ä½¿ãˆã‚‹ã‚¿ã‚°
 #{WabisabiValidator::VALID_TAGS.join(' ')}
-** Žg‚¦‚éƒAƒgƒŠƒrƒ…[ƒg
+** ä½¿ãˆã‚‹ã‚¢ãƒˆãƒªãƒ“ãƒ¥ãƒ¼ãƒˆ
 #{WabisabiValidator::VALID_ATTR.join(' ')}
 
-* HTML‚Ì’†‚Ö‚Ìƒvƒ‰ƒOƒCƒ“‚Ì–„‚ßž‚Ý
-HTML‹Lq‚Ì’†‚ÉqwikWeb‚Ìƒvƒ‰ƒOƒCƒ“‚ð–„ž‚Þ‚±‚Æ‚à‚Å‚«‚Ü‚·B
+* HTMLã®ä¸­ã¸ã®ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã®åŸ‹ã‚è¾¼ã¿
+HTMLè¨˜è¿°ã®ä¸­ã«qwikWebã®ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã‚’åŸ‹è¾¼ã‚€ã“ã¨ã‚‚ã§ãã¾ã™ã€‚
  {{html
  <plugin param=\"1\" method=\"recent\"></plugin>
  }}
@@ -109,42 +109,42 @@ HTML‹Lq‚Ì’†‚ÉqwikWeb‚Ìƒvƒ‰ƒOƒCƒ“‚ð–„ž‚Þ‚±‚Æ‚à‚Å‚«‚Ü‚·B
 <plugin param=\"1\" method=\"recent\"></plugin>
 }}
 
-* —á
+* ä¾‹
 <html>
-<H3>Œ©o‚µ2</H3>
-<H4>Œ©o‚µ3</H4>
-<H5>Œ©o‚µ4</H5>
-<H6>Œ©o‚µ5</H6>
+<H3>è¦‹å‡ºã—2</H3>
+<H4>è¦‹å‡ºã—3</H4>
+<H5>è¦‹å‡ºã—4</H5>
+<H6>è¦‹å‡ºã—5</H6>
 <UL>
-<LI>‰Óð‘ƒŒƒxƒ‹1
+<LI>ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«1
 <UL>
-<LI>‰Óð‘ƒŒƒxƒ‹2
+<LI>ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«2
 <UL>
-<LI>‰Óð‘ƒŒƒxƒ‹3</LI></UL></LI></UL></LI></UL>
+<LI>ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«3</LI></UL></LI></UL></LI></UL>
 <OL>
-<LI>‡˜ƒŠƒXƒg1
+<LI>é †åºãƒªã‚¹ãƒˆ1
 <OL>
-<LI>‡˜ƒŠƒXƒg2
+<LI>é †åºãƒªã‚¹ãƒˆ2
 <OL>
-<LI>‡˜ƒŠƒXƒg3</LI></OL></LI></OL></LI></OL><PRE>®Œ`Ï‚ÝƒeƒLƒXƒgB</PRE>
+<LI>é †åºãƒªã‚¹ãƒˆ3</LI></OL></LI></OL></LI></OL><PRE>æ•´å½¢æ¸ˆã¿ãƒ†ã‚­ã‚¹ãƒˆã€‚</PRE>
 <BLOCKQUOTE>
-<P>ˆø—pB</P></BLOCKQUOTE>
+<P>å¼•ç”¨ã€‚</P></BLOCKQUOTE>
 <DL>
 <DT>Wiki
-<DD>‘‚«ž‚Ý‰Â”\‚ÈWebƒy[ƒW
+<DD>æ›¸ãè¾¼ã¿å¯èƒ½ãªWebãƒšãƒ¼ã‚¸
 <DT>QuickML
-<DD>ŠÈ’P‚Éì‚ê‚éƒ[ƒŠƒ“ƒOƒŠƒXƒgƒVƒXƒeƒ€</DD></DL>
+<DD>ç°¡å˜ã«ä½œã‚Œã‚‹ãƒ¡ãƒ¼ãƒªãƒ³ã‚°ãƒªã‚¹ãƒˆã‚·ã‚¹ãƒ†ãƒ </DD></DL>
 <TABLE>
 <TBODY>
 <TR>
-<TD>€–Ú1-1</TD>
-<TD>€–Ú1-2</TD>
-<TD>€–Ú1-3</TD></TR>
+<TD>é …ç›®1-1</TD>
+<TD>é …ç›®1-2</TD>
+<TD>é …ç›®1-3</TD></TR>
 <TR>
-<TD>€–Ú2-1</TD>
-<TD>€–Ú2-2</TD>
-<TD>€–Ú2-3</TD></TR></TBODY></TABLE>
-<P><EM>‹­’²</EM>A<STRONG>‚³‚ç‚É‹­’²</STRONG>A<DEL>Žæ‚èÁ‚µü</DEL> <A href=\"http://qwik.jp/.theme/new.png\">new</A> <A href=\"FrontPage.html\">FrontPage</A> <A href=\"http://www.yahoo.co.jp/\">Yahoo!</A></P>
+<TD>é …ç›®2-1</TD>
+<TD>é …ç›®2-2</TD>
+<TD>é …ç›®2-3</TD></TR></TBODY></TABLE>
+<P><EM>å¼·èª¿</EM>ã€<STRONG>ã•ã‚‰ã«å¼·èª¿</STRONG>ã€<DEL>å–ã‚Šæ¶ˆã—ç·š</DEL> <A href=\"http://qwik.jp/.theme/new.png\">new</A> <A href=\"FrontPage.html\">FrontPage</A> <A href=\"http://www.yahoo.co.jp/\">Yahoo!</A></P>
 
 <PLUGIN param=\"1\" method=\"recent\"></PLUGIN>
 </html>
@@ -212,81 +212,81 @@ a
 
       # test_longer_html
       html = <<"EOT"
-<H2>‘Ž®ˆê——ŠÈˆÕ”Å</H2>
-<P>Ú×‚Èà–¾‚Í<A href="TextFormat.html">TextFormat</A>‚ð‚²‚ç‚ñ‚­‚¾‚³‚¢B</P>
-<H3>Œ©o‚µ2</H3>
-<H4>Œ©o‚µ3</H4>
-<H5>Œ©o‚µ4</H5>
-<H6>Œ©o‚µ5</H6>
+<H2>æ›¸å¼ä¸€è¦§ç°¡æ˜“ç‰ˆ</H2>
+<P>è©³ç´°ãªèª¬æ˜Žã¯<A href="TextFormat.html">TextFormat</A>ã‚’ã”ã‚‰ã‚“ãã ã•ã„ã€‚</P>
+<H3>è¦‹å‡ºã—2</H3>
+<H4>è¦‹å‡ºã—3</H4>
+<H5>è¦‹å‡ºã—4</H5>
+<H6>è¦‹å‡ºã—5</H6>
 <UL>
-<LI>‰Óð‘ƒŒƒxƒ‹1
+<LI>ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«1
 <UL>
-<LI>‰Óð‘ƒŒƒxƒ‹2
+<LI>ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«2
 <UL>
-<LI>‰Óð‘ƒŒƒxƒ‹3</LI></UL></LI></UL></LI></UL>
+<LI>ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«3</LI></UL></LI></UL></LI></UL>
 <OL>
-<LI>‡˜ƒŠƒXƒg1
+<LI>é †åºãƒªã‚¹ãƒˆ1
 <OL>
-<LI>‡˜ƒŠƒXƒg2
+<LI>é †åºãƒªã‚¹ãƒˆ2
 <OL>
-<LI>‡˜ƒŠƒXƒg3</LI></OL></LI></OL></LI></OL><PRE>®Œ`Ï‚ÝƒeƒLƒXƒgB</PRE>
+<LI>é †åºãƒªã‚¹ãƒˆ3</LI></OL></LI></OL></LI></OL><PRE>æ•´å½¢æ¸ˆã¿ãƒ†ã‚­ã‚¹ãƒˆã€‚</PRE>
 <BLOCKQUOTE>
-<P>ˆø—pB</P></BLOCKQUOTE>
+<P>å¼•ç”¨ã€‚</P></BLOCKQUOTE>
 <DL>
 <DT>Wiki
-<DD>‘‚«ž‚Ý‰Â”\‚ÈWebƒy[ƒW
+<DD>æ›¸ãè¾¼ã¿å¯èƒ½ãªWebãƒšãƒ¼ã‚¸
 <DT>QuickML
-<DD>ŠÈ’P‚Éì‚ê‚éƒ[ƒŠƒ“ƒOƒŠƒXƒgƒVƒXƒeƒ€</DD></DL>
+<DD>ç°¡å˜ã«ä½œã‚Œã‚‹ãƒ¡ãƒ¼ãƒªãƒ³ã‚°ãƒªã‚¹ãƒˆã‚·ã‚¹ãƒ†ãƒ </DD></DL>
 <TABLE>
 <TBODY>
 <TR>
-<TD>€–Ú1-1</TD>
-<TD>€–Ú1-2</TD>
-<TD>€–Ú1-3</TD></TR>
+<TD>é …ç›®1-1</TD>
+<TD>é …ç›®1-2</TD>
+<TD>é …ç›®1-3</TD></TR>
 <TR>
-<TD>€–Ú2-1</TD>
-<TD>€–Ú2-2</TD>
-<TD>€–Ú2-3</TD></TR></TBODY></TABLE>
-<P><EM>‹­’²</EM>A<STRONG>‚³‚ç‚É‹­’²</STRONG>A<DEL>Žæ‚èÁ‚µü</DEL> <IMG alt=new src="http://example.com/.theme/new.png"> <A href="FrontPage.html">FrontPage</A> <A href="http://www.yahoo.co.jp/">Yahoo!</A></P><PLUGIN param="1" method="recent"></PLUGIN>
+<TD>é …ç›®2-1</TD>
+<TD>é …ç›®2-2</TD>
+<TD>é …ç›®2-3</TD></TR></TBODY></TABLE>
+<P><EM>å¼·èª¿</EM>ã€<STRONG>ã•ã‚‰ã«å¼·èª¿</STRONG>ã€<DEL>å–ã‚Šæ¶ˆã—ç·š</DEL> <IMG alt=new src="http://example.com/.theme/new.png"> <A href="FrontPage.html">FrontPage</A> <A href="http://www.yahoo.co.jp/">Yahoo!</A></P><PLUGIN param="1" method="recent"></PLUGIN>
 EOT
 
       result = <<"EOT"
 
-<p>Ú×‚Èà–¾‚Í<a href="TextFormat.html">TextFormat</a>‚ð‚²‚ç‚ñ‚­‚¾‚³‚¢B</p>
-<h3>Œ©o‚µ2</h3>
-<h4>Œ©o‚µ3</h4>
-<h5>Œ©o‚µ4</h5>
-<h6>Œ©o‚µ5</h6>
+<p>è©³ç´°ãªèª¬æ˜Žã¯<a href="TextFormat.html">TextFormat</a>ã‚’ã”ã‚‰ã‚“ãã ã•ã„ã€‚</p>
+<h3>è¦‹å‡ºã—2</h3>
+<h4>è¦‹å‡ºã—3</h4>
+<h5>è¦‹å‡ºã—4</h5>
+<h6>è¦‹å‡ºã—5</h6>
 <ul>
-<li>‰Óð‘ƒŒƒxƒ‹1
+<li>ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«1
 <ul>
-<li>‰Óð‘ƒŒƒxƒ‹2
+<li>ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«2
 <ul>
-<li>‰Óð‘ƒŒƒxƒ‹3</li></ul></li></ul></li></ul>
+<li>ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«3</li></ul></li></ul></li></ul>
 <ol>
-<li>‡˜ƒŠƒXƒg1
+<li>é †åºãƒªã‚¹ãƒˆ1
 <ol>
-<li>‡˜ƒŠƒXƒg2
+<li>é †åºãƒªã‚¹ãƒˆ2
 <ol>
-<li>‡˜ƒŠƒXƒg3</li></ol></li></ol></li></ol><pre>®Œ`Ï‚ÝƒeƒLƒXƒgB</pre>
+<li>é †åºãƒªã‚¹ãƒˆ3</li></ol></li></ol></li></ol><pre>æ•´å½¢æ¸ˆã¿ãƒ†ã‚­ã‚¹ãƒˆã€‚</pre>
 <blockquote>
-<p>ˆø—pB</p></blockquote>
+<p>å¼•ç”¨ã€‚</p></blockquote>
 <dl>
 <dt>Wiki
-</dt><dd>‘‚«ž‚Ý‰Â”\‚ÈWebƒy[ƒW
+</dt><dd>æ›¸ãè¾¼ã¿å¯èƒ½ãªWebãƒšãƒ¼ã‚¸
 </dd><dt>QuickML
-</dt><dd>ŠÈ’P‚Éì‚ê‚éƒ[ƒŠƒ“ƒOƒŠƒXƒgƒVƒXƒeƒ€</dd></dl>
+</dt><dd>ç°¡å˜ã«ä½œã‚Œã‚‹ãƒ¡ãƒ¼ãƒªãƒ³ã‚°ãƒªã‚¹ãƒˆã‚·ã‚¹ãƒ†ãƒ </dd></dl>
 <table>
 <tbody>
 <tr>
-<td>€–Ú1-1</td>
-<td>€–Ú1-2</td>
-<td>€–Ú1-3</td></tr>
+<td>é …ç›®1-1</td>
+<td>é …ç›®1-2</td>
+<td>é …ç›®1-3</td></tr>
 <tr>
-<td>€–Ú2-1</td>
-<td>€–Ú2-2</td>
-<td>€–Ú2-3</td></tr></tbody></table>
-<p><em>‹­’²</em>A<strong>‚³‚ç‚É‹­’²</strong>A<del>Žæ‚èÁ‚µü</del> <img alt="new" src="http://example.com/.theme/new.png"/> <a href="FrontPage.html">FrontPage</a> <a href="http://www.yahoo.co.jp/">Yahoo!</a></p><plugin method="recent" param="1"/>
+<td>é …ç›®2-1</td>
+<td>é …ç›®2-2</td>
+<td>é …ç›®2-3</td></tr></tbody></table>
+<p><em>å¼·èª¿</em>ã€<strong>ã•ã‚‰ã«å¼·èª¿</strong>ã€<del>å–ã‚Šæ¶ˆã—ç·š</del> <img alt="new" src="http://example.com/.theme/new.png"/> <a href="FrontPage.html">FrontPage</a> <a href="http://www.yahoo.co.jp/">Yahoo!</a></p><plugin method="recent" param="1"/>
 EOT
       ok_wi(result, '{{html
 '+html+'

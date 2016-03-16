@@ -42,9 +42,9 @@ if defined?($test) && $test
 	    '[[FrontPage]]'
       ok_wi [:p, [:a, {:href=>'FrontPage.html'}, 't']], '[[t|FrontPage]]'
       page = @site.create_new
-      page.store '*Ç†'
-      ok_wi [:p, [:a, {:href=>'2.html'}, 'Ç†']], "[[2]]"
-      ok_wi [:p, [:a, {:href=>'2.html'}, 'Ç†']], '[[Ç†]]'
+      page.store '*„ÅÇ'
+      ok_wi [:p, [:a, {:href=>'2.html'}, '„ÅÇ']], "[[2]]"
+      ok_wi [:p, [:a, {:href=>'2.html'}, '„ÅÇ']], '[[„ÅÇ]]'
 
       # test_resolve_plugin
       ok_wi [:p, [:em, 't']], "''t''"
@@ -111,11 +111,11 @@ if defined?($test) && $test
       ok_wi "<p><a href=\"FrontPage.html\">t</a></p>", '[[t|FrontPage]]'
       ok_wi "<p><a href=\"t.html\">s</a></p>", '[[s|t]]'
       page = @site.create_new
-      page.store '*Ç†'
-      ok_wi "<p><a href=\"2.html\">Ç†</a></p>", "[[2]]"
+      page.store '*„ÅÇ'
+      ok_wi "<p><a href=\"2.html\">„ÅÇ</a></p>", "[[2]]"
 
       # test_find_title
-      ok_wi "<p><a href=\"2.html\">Ç†</a></p>", '[[Ç†]]'
+      ok_wi "<p><a href=\"2.html\">„ÅÇ</a></p>", '[[„ÅÇ]]'
     end
   end
 end

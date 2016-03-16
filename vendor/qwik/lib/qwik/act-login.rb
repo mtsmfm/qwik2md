@@ -35,27 +35,27 @@ please follow 'Log in by Basic Authentication.' link.
     }
 
     D_QwikWebLogin_ja = {
-      :dt => 'qwikWeb�̃��O�C��',
-      :dd => 'qwikWeb�ł͎O��ނ̔F�ؕ��@���g���܂��B',
-      :dc => "* �g����
-** TypeKey�ɂ�郍�O�C��
-TypeKey�F�؂Ń��O�C�����邱�Ƃ��ł��܂��B���O�C����ʂ���uTypeKey�Ń�
-�O�C������v�Ƃ��������N�����ǂ��Ă��������BTypeKey�ɂ��F�؉�ʂ���
-����܂��̂ŁA���̉�ʂ��烍�O�C�����܂��BqwikWeb�ł́A���[���A�h��
-�X�ɂ���ĔF�؂����Ă��邽�߁A���[���A�h���X���V�X�e���ɒʒm����K�v��
-����܂��B
+      :dt => 'qwikWebのログイン',
+      :dd => 'qwikWebでは三種類の認証方法を使えます。',
+      :dc => "* 使い方
+** TypeKeyによるログイン
+TypeKey認証でログインすることができます。ログイン画面から「TypeKeyでロ
+グインする」というリンクをたどってください。TypeKeyによる認証画面があ
+らわれますので、その画面からログインします。qwikWebでは、メールアドレ
+スによって認証をしているため、メールアドレスをシステムに通知する必要が
+あります。
 
-TypeKey�ł̃A�J�E���g���ł͂Ȃ��A���[���A�h���X�ɂ���ĔF�؂��邽�߁A
-�o�^����Ă��郁�[���A�h���X���A���̃O���[�v�ɓo�^����Ă��郁�[���A�h
-���X�ƈ�v���Ă���K�v������܂��B
-** �p�X���[�h�Ń��O�C��
-���[�UID�̗��Ɏ����̃��[���A�h���X���A�܂��p�X���[�h���ɂ̓p�X���[�h��
-���͂��Ă��������BqwikWeb�ɂ�����p�X���[�h�́A�V�X�e���������I�ɐ���
-�����p�X���[�h���g���܂��B�u�p�X���[�h�����v�Ƃ��������N�����ǂ�ƁA
-�p�X���[�h�����ł��܂��B
-** BASIC�F�؂ɂ�郍�O�C��
-BASIC�F�؂��g���܂��B�g�ѓd�b�̂悤�ɁABASIC�F�؂��������ł��Ȃ��ꍇ�́A
-�uBASIC�F�؁v�̃����N�����ǂ��Ă��������B
+TypeKeyでのアカウント名ではなく、メールアドレスによって認証するため、
+登録されているメールアドレスが、そのグループに登録されているメールアド
+レスと一致している必要があります。
+** パスワードでログイン
+ユーザIDの欄に自分のメールアドレスを、またパスワード欄にはパスワードを
+入力してください。qwikWebにおけるパスワードは、システムが自動的に生成
+したパスワードが使われます。「パスワードを入手」というリンクをたどると、
+パスワードを入手できます。
+** BASIC認証によるログイン
+BASIC認証も使えます。携帯電話のように、BASIC認証だけしかできない場合は、
+「BASIC認証」のリンクをたどってください。
 "
     }
 

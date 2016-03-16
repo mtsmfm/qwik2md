@@ -84,22 +84,22 @@ module Qwik
     end
 
     RING_CATALOG_CONTENT = '
-:TEST:ƒeƒXƒg
-:RIGHT_ARROW:¨
-:BULLET:œ
-:USER:ƒ†[ƒU–¼
-:YOUR_MAIL:‚ ‚È‚½‚Ìƒ[ƒ‹
-:YOUR_USER:‚ ‚È‚½‚Ìƒ†[ƒU–¼
-:YOUR_NAME:‚ ‚È‚½‚Ì–¼‘O
-:MAIL:ƒ[ƒ‹
-:USER_NAME:ƒ†[ƒUƒl[ƒ€
-:MESSAGE:ƒƒbƒZ[ƒW
-:REALNAME:–{–¼
-:THANKYOU:‚Ç‚¤‚à‚ ‚è‚ª‚Æ‚¤‚²‚´‚¢‚Ü‚µ‚½B
-:CONFIRM_YOUR_INPUT:‚à‚¤ˆê“x“ü—Í‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B
-:NAME:–¼‘O
-:NYUGAKU:“üŠw
-:YEAR:”N
+:TEST:ãƒ†ã‚¹ãƒˆ
+:RIGHT_ARROW:â†’
+:BULLET:â—
+:USER:ãƒ¦ãƒ¼ã‚¶å
+:YOUR_MAIL:ã‚ãªãŸã®ãƒ¡ãƒ¼ãƒ«
+:YOUR_USER:ã‚ãªãŸã®ãƒ¦ãƒ¼ã‚¶å
+:YOUR_NAME:ã‚ãªãŸã®åå‰
+:MAIL:ãƒ¡ãƒ¼ãƒ«
+:USER_NAME:ãƒ¦ãƒ¼ã‚¶ãƒãƒ¼ãƒ 
+:MESSAGE:ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
+:REALNAME:æœ¬å
+:THANKYOU:ã©ã†ã‚‚ã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã—ãŸã€‚
+:CONFIRM_YOUR_INPUT:ã‚‚ã†ä¸€åº¦å…¥åŠ›ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚
+:NAME:åå‰
+:NYUGAKU:å…¥å­¦
+:YEAR:å¹´
 '
 
     # ============================== invite
@@ -637,7 +637,7 @@ if defined?($test) && $test
     # ============================== catalog
     def test_catalog
       res = session
-      eq "ƒeƒXƒg", @action._r(:TEST)
+      eq "ãƒ†ã‚¹ãƒˆ", @action._r(:TEST)
     end
 
     # ============================== invite
@@ -671,15 +671,15 @@ if defined?($test) && $test
       res = session('/test/1.ring_invite')
       ok_xp([:div, {:class=>'section'},
 	      [[:h3, "INVITE_NOSEND"],
-		[:p, "‚à‚¤ˆê“x“ü—Í‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B"],
+		[:p, "ã‚‚ã†ä¸€åº¦å…¥åŠ›ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚"],
 		[:p, [:a, {:href=>'1.html'}, 'Go back']]]],
 	    "//div[@class='section']")
 
       res = session("/test/1.ring_invite?guest_mail=g@e.com&message=hi")
       ok_xp([:div, {:class=>'section'},
 	      [[:h3, "INVITE_MAIL_IS_SENT"],
-		[:dl, [:dt, "ƒƒbƒZ[ƒW"], [:dd, 'hi']],
-		[:p, "‚Ç‚¤‚à‚ ‚è‚ª‚Æ‚¤‚²‚´‚¢‚Ü‚µ‚½B"],
+		[:dl, [:dt, "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸"], [:dd, 'hi']],
+		[:p, "ã©ã†ã‚‚ã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã—ãŸã€‚"],
 		[:p, [:a, {:href=>'1.html'}, 'Go back']]]],
 	    "//div[@class='section']")
 
@@ -704,7 +704,7 @@ if defined?($test) && $test
       page.store("{{ring_invite_list}}")
       res = session('/test/1.html')
       ok_xp([:dl,
- [:dt, [:span, {:class=>'ring_ul'}, 'user@e.com'], "¨ (g@e.com) 1970-01-01"],
+ [:dt, [:span, {:class=>'ring_ul'}, 'user@e.com'], "â†’ (g@e.com) 1970-01-01"],
  [:dd, 'hi']],
 		   "//div[@class='ring_invite_list']/dl")
     end
@@ -757,11 +757,11 @@ if defined?($test) && $test
       ok_in([:dl,
 	      [:dt, [:span, {:class=>'ring_ul'},
 		  [:a, {:href=>'1.html'}, 'Test User']],
-		"¨ (gu@e.com) 1970-01-01"],
+		"â†’ (gu@e.com) 1970-01-01"],
 	      [:dd, 'invite'],
 	      [:dt, [:span, {:class=>'ring_ul'},
 		  [:a, {:href=>'1.html'}, 'Test User']],
-		"¨ (fe@e.com) 1970-01-01"],
+		"â†’ (fe@e.com) 1970-01-01"],
 	      [:dd, 'youtoo']],
 	    "//div[@class='ring_invite_list']")
 
@@ -794,14 +794,14 @@ if defined?($test) && $test
       res = session('/test/1.ring_make')
       ok_xp([:div, {:class=>'section'},
 	      [[:h3, "MAKER_NOT_REGISTERD"],
-		[:p, "‚à‚¤ˆê“x“ü—Í‚ğŠm”F‚µ‚Ä‚­‚¾‚³‚¢B"],
+		[:p, "ã‚‚ã†ä¸€åº¦å…¥åŠ›ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚"],
 		[:p, [:a, {:href=>'1.html'}, 'Go back']]]],
 	    "//div[@class='section']")
 
       res = session("/test/1.ring_make?username=u&realname=r&faculty=f&year=1990")
       ok_xp([:div, {:class=>'section'},
 	      [[:h3, "MAKER_REGISTERD"],
-		[:dl, [:dt, "ƒ†[ƒU–¼"], [:dd, 'u'], [:dt, "–{–¼"], [:dd, 'r']],
+		[:dl, [:dt, "ãƒ¦ãƒ¼ã‚¶å"], [:dd, 'u'], [:dt, "æœ¬å"], [:dd, 'r']],
 		[:p, [:a, {:href=>'2.html'}, "MAKER_THE_PAGE"], "MAKER_SEE"]]],
 	    "//div[@class='section']")
       page = @site['2']
@@ -832,17 +832,17 @@ if defined?($test) && $test
       assert_rattr({:action=>'r.ring_make', :method=>'POST'}, '//form')
 
       # Make my page.
-      res = session("/test/1.ring_make?page=RingMakePage&username=ƒQƒXƒg&realname=R“c‘¾˜Y&faculty=‘‡­ô&year=1990") {|req|
+      res = session("/test/1.ring_make?page=RingMakePage&username=ã‚²ã‚¹ãƒˆ&realname=å±±ç”°å¤ªéƒ&faculty=ç·åˆæ”¿ç­–&year=1990") {|req|
 	req.cookies.clear		# login as the guest
 	pass = @memory.passgen.generate('gu@e.com')
 	req.cookies.update({'user'=>'gu@e.com', 'pass'=>pass})
       }
       ok_in(["MAKER_REGISTERD"], "//div[@class='section']//h3")
-      ok_in(["ƒQƒXƒg"], "//div[@class='section']//dd[1]")
-      ok_in(["R“c‘¾˜Y"], "//div[@class='section']//dd[2]")
+      ok_in(["ã‚²ã‚¹ãƒˆ"], "//div[@class='section']//dd[1]")
+      ok_in(["å±±ç”°å¤ªéƒ"], "//div[@class='section']//dd[2]")
       ok_in(["MAKER_THE_PAGE"], "//div[@class='section']//a")
       ok_xp([:a, {:href=>'1.html'}, "MAKER_THE_PAGE"], "//div[@class='section']//a")
-      ok_eq("* ƒQƒXƒg
+      ok_eq("* ã‚²ã‚¹ãƒˆ
 * profile
 {{ring_personal_info}}
 * message
@@ -855,19 +855,19 @@ if defined?($test) && $test
 	pass = @memory.passgen.generate('gu@e.com')
 	req.cookies.update({'user'=>'gu@e.com', 'pass'=>pass})
       }
-      assert_text("ƒQƒXƒg", 'h1')
+      assert_text("ã‚²ã‚¹ãƒˆ", 'h1')
       assert_text('profile', 'h2')
       assert_rattr({:method=>'POST', :action=>'1.ring_msg'}, '//form')
-      assert_match(/,gu@e.com,ƒQƒXƒg,R“c‘¾˜Y,‘‡­ô,1990,1,/,
+      assert_match(/,gu@e.com,ã‚²ã‚¹ãƒˆ,å±±ç”°å¤ªéƒ,ç·åˆæ”¿ç­–,1990,1,/,
 		   @site['_RingMember'].load)
       ok_eq('gu@e.com', @action.plg_ring_user('gu@e.com', 'mail'))
       # @action.user = 'gu@e.com'
       #ok_eq('gu@e.com', @action.plg_ring_show('mail'))
       #ok_eq('gu@e.com', @action.plg_ring_show('mail'))
       ok_guest('gu@e.com', "{{ring_show(mail)}}")
-      ok_guest("ƒQƒXƒg",     "{{ring_show(user)}}")
-      ok_guest("R“c‘¾˜Y",   "{{ring_show(name)}}")
-      ok_guest("‘‡­ô",   "{{ring_show(faculty)}}")
+      ok_guest("ã‚²ã‚¹ãƒˆ",     "{{ring_show(user)}}")
+      ok_guest("å±±ç”°å¤ªéƒ",   "{{ring_show(name)}}")
+      ok_guest("ç·åˆæ”¿ç­–",   "{{ring_show(faculty)}}")
       ok_guest('1990',       "{{ring_show(year)}}")
       ok_guest('1',          "{{ring_show(pagename)}}")
       ok_guest(%r|\d+|,      "{{ring_show(time)}}")
@@ -880,22 +880,22 @@ if defined?($test) && $test
 =begin
       ok_wi('gu@e.com', "{{ring_user(guest@example.com, mail)}}")
       ok_wi('gu@e.com', "{{ring_see(mail)}}")
-      ok_wi("ƒQƒXƒg",     "{{ring_see(user)}}")
-      ok_wi("R“c‘¾˜Y",   "{{ring_see(name)}}")
-      ok_wi("‘‡­ô",   "{{ring_see(faculty)}}")
+      ok_wi("ã‚²ã‚¹ãƒˆ",     "{{ring_see(user)}}")
+      ok_wi("å±±ç”°å¤ªéƒ",   "{{ring_see(name)}}")
+      ok_wi("ç·åˆæ”¿ç­–",   "{{ring_see(faculty)}}")
       ok_wi('1990',       "{{ring_see(year)}}")
       ok_wi('1',          "{{ring_see(pagename)}}")
       ok_wi(%r|\d+|,      "{{ring_see(time)}}")
-      ok_wi("<dl><dt>–¼‘OAE-mail</dt><dd>R“c‘¾˜Y &lt;gu@e.com&gt;</dd><dt>“üŠw</dt><dd>1990”N ‘‡­ô</dd></dl>", "{{ring_personal_info}}")
-      ok_eq("* ƒQƒXƒg\n{{ring_personal_info}}\n\n* profile\n# ‚±‚±‚Éprofile‚ğ‹Lq‚µ‚Ä‚­‚¾‚³‚¢B\n:Œ¤‹†‰ï:\n:E‹Æ:\n:Å‹ß‚Ìƒ}ƒCƒu[ƒ€:\n\n* SEND MESSAGE\n{{ring_message_form}}\n\n* MESSAGE\n", @site['1'].load)
-      ok_wi(/R“c‘¾˜Y/, @site['1'].load)
+      ok_wi("<dl><dt>åå‰ã€E-mail</dt><dd>å±±ç”°å¤ªéƒ &lt;gu@e.com&gt;</dd><dt>å…¥å­¦</dt><dd>1990å¹´ ç·åˆæ”¿ç­–</dd></dl>", "{{ring_personal_info}}")
+      ok_eq("* ã‚²ã‚¹ãƒˆ\n{{ring_personal_info}}\n\n* profile\n# ã“ã“ã«profileã‚’è¨˜è¿°ã—ã¦ãã ã•ã„ã€‚\n:ç ”ç©¶ä¼š:\n:è·æ¥­:\n:æœ€è¿‘ã®ãƒã‚¤ãƒ–ãƒ¼ãƒ :\n\n* SEND MESSAGE\n{{ring_message_form}}\n\n* MESSAGE\n", @site['1'].load)
+      ok_wi(/å±±ç”°å¤ªéƒ/, @site['1'].load)
 =end
 
       page = @site['1']
       ok_eq("{{ring_show(time)}}", page.load)
 
       page = @site['_RingMember']
-      ok_eq(",gu@e.com,ƒQƒXƒg,R“c‘¾˜Y,‘‡­ô,1990,1,0\n", page.load)
+      ok_eq(",gu@e.com,ã‚²ã‚¹ãƒˆ,å±±ç”°å¤ªéƒ,ç·åˆæ”¿ç­–,1990,1,0\n", page.load)
 
       page = @site['_SiteMember']
       ok_eq(",user@e.com,\n,gu@e.com,user@e.com\n", page.load)
@@ -912,7 +912,7 @@ if defined?($test) && $test
       res = session('/test/1.html')
       div = res.body.get_path("//div[@class='form']/form")
       ok_eq({:method=>'POST', :action=>'1.ring_msg'}, div.attr)
-      ok_eq([:tr, [:th, "œƒ†[ƒU–¼"], [:td, 'user@e.com']],
+      ok_eq([:tr, [:th, "â—ãƒ¦ãƒ¼ã‚¶å"], [:td, 'user@e.com']],
 	    div.get_path('/table/tr'))
       ok_xp([:input, {:value=>" POST! ", :type=>'submit', :class=>'submit'}],
 	    "//div[@class='form']/input")
@@ -944,7 +944,7 @@ if defined?($test) && $test
       page = @site.create('_RingMember')
       page.store(",gu@e.com,gugu,T Y,ei,1990,1,0\n")
 
-      ok_wi([:p, [:a, {:href=>'1.html'}, "ƒQƒXƒg"]], "[[ƒQƒXƒg|1]]")
+      ok_wi([:p, [:a, {:href=>'1.html'}, "ã‚²ã‚¹ãƒˆ"]], "[[ã‚²ã‚¹ãƒˆ|1]]")
       ok_wi([:a, {:href=>'1.html'}, 'gugu'], "{{ring_link('gu@e.com')}}")
       ok_wi([:span, {:class=>'ring_ul'}, [:a, {:href=>'1.html'}, 'gugu']],
 	    "{{ring_ul('gu@e.com')}}")
@@ -1026,10 +1026,10 @@ if defined?($test) && $test
 
       # test plg_ring_personal_info
       ok_wi([:dl,
-	      [:dt, "–¼‘O E-mail"],
+	      [:dt, "åå‰ E-mail"],
 	      [:dd, "Alan Smithy", " <", "user@e.com", ">"],
-	      [:dt, "“üŠw"],
-	      [:dd, '1990', "”N ", 'ei']],
+	      [:dt, "å…¥å­¦"],
+	      [:dd, '1990', "å¹´ ", 'ei']],
 	    "{{ring_personal_info}}")
     end
 

@@ -464,8 +464,8 @@ p2
       ok([[:hr]], "====\n")
 
       # test_bug
-      ok_eq("\226]", '–]')
-      ok([[:p, [:a, {:href=>"\226].html"}, "\226]"]]], '[[–]]]'+"\n")
+      ok_eq("\226]", 'æœ›')
+      ok([[:p, [:a, {:href=>"\226].html"}, "\226]"]]], '[[æœ›]]'+"\n")
     end
   end
 
@@ -480,36 +480,36 @@ p2
     def test_dl
       s = '<DL>
 <DT>Wiki
-<DD>‘‚«ž‚Ý‰Â”\‚ÈWebƒy[ƒW
+<DD>æ›¸ãè¾¼ã¿å¯èƒ½ãªWebãƒšãƒ¼ã‚¸
 <DT>QuickML
-<DD>ŠÈ’P‚Éì‚ê‚éƒ[ƒŠƒ“ƒOƒŠƒXƒgƒVƒXƒeƒ€</DD></DL>
+<DD>ç°¡å˜ã«ä½œã‚Œã‚‹ãƒ¡ãƒ¼ãƒªãƒ³ã‚°ãƒªã‚¹ãƒˆã‚·ã‚¹ãƒ†ãƒ </DD></DL>
 '
-      e = ':Wiki:‘‚«ž‚Ý‰Â”\‚ÈWebƒy[ƒW
-:QuickML:ŠÈ’P‚Éì‚ê‚éƒ[ƒŠƒ“ƒOƒŠƒXƒgƒVƒXƒeƒ€
+      e = ':Wiki:æ›¸ãè¾¼ã¿å¯èƒ½ãªWebãƒšãƒ¼ã‚¸
+:QuickML:ç°¡å˜ã«ä½œã‚Œã‚‹ãƒ¡ãƒ¼ãƒªãƒ³ã‚°ãƒªã‚¹ãƒˆã‚·ã‚¹ãƒ†ãƒ 
 '
       ok(e, s)
     end
 
     def test_ul
       s = '<UL>
-<LI>‰Óð‘ƒŒƒxƒ‹1
+<LI>ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«1
 <UL>
-<LI>‰Óð‘ƒŒƒxƒ‹2
+<LI>ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«2
 <UL>
-<LI>‰Óð‘ƒŒƒxƒ‹3</LI></UL></LI></UL></LI></UL>
+<LI>ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«3</LI></UL></LI></UL></LI></UL>
 '
-      e = '-‰Óð‘ƒŒƒxƒ‹1
---‰Óð‘ƒŒƒxƒ‹2
----‰Óð‘ƒŒƒxƒ‹3
+      e = '-ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«1
+--ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«2
+---ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«3
 '
       ok(e, s)
     end
 
     def test_blockquote
       s = '<BLOCKQUOTE>
-<P>ˆø—pB</P></BLOCKQUOTE>
+<P>å¼•ç”¨ã€‚</P></BLOCKQUOTE>
 '
-      e = "> ˆø—pB\n"
+      e = "> å¼•ç”¨ã€‚\n"
       ok(e, s)
     end
 
@@ -523,7 +523,7 @@ p2
       #ok('', '<UL><LI>li1</LI><UL><LI>li2</LI></UL></UL>')
       #ok('', '<DL><DT>dt<DD>dd</DD></DL>')
       #ok('', '<DL><DT>dt1<DD>dd1><DT>dt2<DD>dd2</DD></DL>')
-      ok("> ˆø—pB\n", '<BLOCKQUOTE><P>ˆø—pB</P></BLOCKQUOTE>')
+      ok("> å¼•ç”¨ã€‚\n", '<BLOCKQUOTE><P>å¼•ç”¨ã€‚</P></BLOCKQUOTE>')
       ok("> * h\n", '<BLOCKQUOTE><H2>h</H2></BLOCKQUOTE>')
       ok("> x\n> y\n", '<BLOCKQUOTE><P>x</P><P>y</P></BLOCKQUOTE>')
 
@@ -532,8 +532,8 @@ p2
 	 '<P>Go <A href="FrontPage.html">FrontPage</A>.</P>')
       ok("Go [[qwikWeb|http://example.com/]].\n",
 	 '<P>Go <A href="http://example.com/">qwikWeb</A>.</P>')
-      ok("''‹­’²''A'''‚³‚ç‚É‹­’²'''A==Žæ‚èÁ‚µü==\n",
-	 '<P><EM>‹­’²</EM>A<STRONG>‚³‚ç‚É‹­’²</STRONG>A<DEL>Žæ‚èÁ‚µü</DEL></P>')
+      ok("''å¼·èª¿''ã€'''ã•ã‚‰ã«å¼·èª¿'''ã€==å–ã‚Šæ¶ˆã—ç·š==\n",
+	 '<P><EM>å¼·èª¿</EM>ã€<STRONG>ã•ã‚‰ã«å¼·èª¿</STRONG>ã€<DEL>å–ã‚Šæ¶ˆã—ç·š</DEL></P>')
       ok("[[http://example.com/.theme/new.png]]\n",
 	 '<P><IMG alt=new src="http://example.com/.theme/new.png"></P>')
       ok("\n", '<P><IMG></P>')
@@ -542,132 +542,132 @@ p2
 
     def test_frontpage
       s = '<H2>FrontPage</H2>
-<P>‚±‚ê‚ÍV‹KqwikWebƒTƒCƒg‚Ì“üŒû‚Æ‚È‚éƒy[ƒW‚Å‚·B</P>
-<H3>Žg‚¢•û</H3>
-<P>ƒy[ƒW‚Ìã‚Ì•û‚É‚ ‚éu•ÒWv‚Æ‚¢‚¤ƒŠƒ“ƒN‚ð‚½‚Ç‚é‚ÆA‚±‚Ìƒy[ƒW‚Ì•ÒWƒ‚[ƒh‚É‚È‚è‚Ü‚·B</P>
-<P>•\Ž¦‚³‚ê‚½ƒeƒLƒXƒg‚Ì“à—e‚ð•ÏX‚µAuSavevƒ{ƒ^ƒ“‚ðƒNƒŠƒbƒN‚·‚é‚ÆA‚±‚Ìƒy[ƒW‚Ì“à—e‚ª•ÏX‚³‚ê‚Ü‚·B</P>
-<H3>‹Lq•û–@</H3>
-<P>ƒy[ƒW‚Ì“à—e‚ÍƒeƒLƒXƒg‚Å‘‚©‚ê‚Ä‚¨‚èA‚¢‚­‚Â‚©‚Ì‹L†‚É‚æ‚Á‚ÄŒ©o‚µ‚È‚Ç‚ÌŽw’è‚ð‚µ‚Ü‚·BÚ‚µ‚¢î•ñ‚ÍA<A href="TextFormat.html">TextFormat</A>‚ð‚²——‰º‚³‚¢B</P>
+<P>ã“ã‚Œã¯æ–°è¦qwikWebã‚µã‚¤ãƒˆã®å…¥å£ã¨ãªã‚‹ãƒšãƒ¼ã‚¸ã§ã™ã€‚</P>
+<H3>ä½¿ã„æ–¹</H3>
+<P>ãƒšãƒ¼ã‚¸ã®ä¸Šã®æ–¹ã«ã‚ã‚‹ã€Œç·¨é›†ã€ã¨ã„ã†ãƒªãƒ³ã‚¯ã‚’ãŸã©ã‚‹ã¨ã€ã“ã®ãƒšãƒ¼ã‚¸ã®ç·¨é›†ãƒ¢ãƒ¼ãƒ‰ã«ãªã‚Šã¾ã™ã€‚</P>
+<P>è¡¨ç¤ºã•ã‚ŒãŸãƒ†ã‚­ã‚¹ãƒˆã®å†…å®¹ã‚’å¤‰æ›´ã—ã€ã€ŒSaveã€ãƒœã‚¿ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã¨ã€ã“ã®ãƒšãƒ¼ã‚¸ã®å†…å®¹ãŒå¤‰æ›´ã•ã‚Œã¾ã™ã€‚</P>
+<H3>è¨˜è¿°æ–¹æ³•</H3>
+<P>ãƒšãƒ¼ã‚¸ã®å†…å®¹ã¯ãƒ†ã‚­ã‚¹ãƒˆã§æ›¸ã‹ã‚Œã¦ãŠã‚Šã€ã„ãã¤ã‹ã®è¨˜å·ã«ã‚ˆã£ã¦è¦‹å‡ºã—ãªã©ã®æŒ‡å®šã‚’ã—ã¾ã™ã€‚è©³ã—ã„æƒ…å ±ã¯ã€<A href="TextFormat.html">TextFormat</A>ã‚’ã”è¦§ä¸‹ã•ã„ã€‚</P>
 <H3>qwikWeb</H3>
-<P>Ú‚µ‚­‚ÍA<A href="http://example.com/">qwikWeb</A>ƒz[ƒ€ƒy[ƒW‚ð‚²——‚­‚¾‚³‚¢B</P>
+<P>è©³ã—ãã¯ã€<A href="http://example.com/">qwikWeb</A>ãƒ›ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ã‚’ã”è¦§ãã ã•ã„ã€‚</P>
 '
       org = '* FrontPage
-‚±‚ê‚ÍV‹KqwikWebƒTƒCƒg‚Ì“üŒû‚Æ‚È‚éƒy[ƒW‚Å‚·B
+ã“ã‚Œã¯æ–°è¦qwikWebã‚µã‚¤ãƒˆã®å…¥å£ã¨ãªã‚‹ãƒšãƒ¼ã‚¸ã§ã™ã€‚
 
-** Žg‚¢•û
-ƒy[ƒW‚Ìã‚Ì•û‚É‚ ‚éu•ÒWv‚Æ‚¢‚¤ƒŠƒ“ƒN‚ð‚½‚Ç‚é‚ÆA
-‚±‚Ìƒy[ƒW‚Ì•ÒWƒ‚[ƒh‚É‚È‚è‚Ü‚·B
+** ä½¿ã„æ–¹
+ãƒšãƒ¼ã‚¸ã®ä¸Šã®æ–¹ã«ã‚ã‚‹ã€Œç·¨é›†ã€ã¨ã„ã†ãƒªãƒ³ã‚¯ã‚’ãŸã©ã‚‹ã¨ã€
+ã“ã®ãƒšãƒ¼ã‚¸ã®ç·¨é›†ãƒ¢ãƒ¼ãƒ‰ã«ãªã‚Šã¾ã™ã€‚
 
-•\Ž¦‚³‚ê‚½ƒeƒLƒXƒg‚Ì“à—e‚ð•ÏX‚µAuSavevƒ{ƒ^ƒ“‚ðƒNƒŠƒbƒN‚·‚é‚ÆA
-‚±‚Ìƒy[ƒW‚Ì“à—e‚ª•ÏX‚³‚ê‚Ü‚·B
+è¡¨ç¤ºã•ã‚ŒãŸãƒ†ã‚­ã‚¹ãƒˆã®å†…å®¹ã‚’å¤‰æ›´ã—ã€ã€ŒSaveã€ãƒœã‚¿ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã¨ã€
+ã“ã®ãƒšãƒ¼ã‚¸ã®å†…å®¹ãŒå¤‰æ›´ã•ã‚Œã¾ã™ã€‚
 
-** ‹Lq•û–@
-ƒy[ƒW‚Ì“à—e‚ÍƒeƒLƒXƒg‚Å‘‚©‚ê‚Ä‚¨‚èA
-‚¢‚­‚Â‚©‚Ì‹L†‚É‚æ‚Á‚ÄŒ©o‚µ‚È‚Ç‚ÌŽw’è‚ð‚µ‚Ü‚·B
-Ú‚µ‚¢î•ñ‚ÍA[[TextFormat]]‚ð‚²——‰º‚³‚¢B
+** è¨˜è¿°æ–¹æ³•
+ãƒšãƒ¼ã‚¸ã®å†…å®¹ã¯ãƒ†ã‚­ã‚¹ãƒˆã§æ›¸ã‹ã‚Œã¦ãŠã‚Šã€
+ã„ãã¤ã‹ã®è¨˜å·ã«ã‚ˆã£ã¦è¦‹å‡ºã—ãªã©ã®æŒ‡å®šã‚’ã—ã¾ã™ã€‚
+è©³ã—ã„æƒ…å ±ã¯ã€[[TextFormat]]ã‚’ã”è¦§ä¸‹ã•ã„ã€‚
 
 ** qwikWeb
-Ú‚µ‚­‚ÍA[[qwikWeb|http://example.com/]]ƒz[ƒ€ƒy[ƒW‚ð‚²——‚­‚¾‚³‚¢B
+è©³ã—ãã¯ã€[[qwikWeb|http://example.com/]]ãƒ›ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ã‚’ã”è¦§ãã ã•ã„ã€‚
 '
       e = '* FrontPage
-‚±‚ê‚ÍV‹KqwikWebƒTƒCƒg‚Ì“üŒû‚Æ‚È‚éƒy[ƒW‚Å‚·B
+ã“ã‚Œã¯æ–°è¦qwikWebã‚µã‚¤ãƒˆã®å…¥å£ã¨ãªã‚‹ãƒšãƒ¼ã‚¸ã§ã™ã€‚
 
-** Žg‚¢•û
-ƒy[ƒW‚Ìã‚Ì•û‚É‚ ‚éu•ÒWv‚Æ‚¢‚¤ƒŠƒ“ƒN‚ð‚½‚Ç‚é‚ÆA‚±‚Ìƒy[ƒW‚Ì•ÒWƒ‚[ƒh‚É‚È‚è‚Ü‚·B
+** ä½¿ã„æ–¹
+ãƒšãƒ¼ã‚¸ã®ä¸Šã®æ–¹ã«ã‚ã‚‹ã€Œç·¨é›†ã€ã¨ã„ã†ãƒªãƒ³ã‚¯ã‚’ãŸã©ã‚‹ã¨ã€ã“ã®ãƒšãƒ¼ã‚¸ã®ç·¨é›†ãƒ¢ãƒ¼ãƒ‰ã«ãªã‚Šã¾ã™ã€‚
 
-•\Ž¦‚³‚ê‚½ƒeƒLƒXƒg‚Ì“à—e‚ð•ÏX‚µAuSavevƒ{ƒ^ƒ“‚ðƒNƒŠƒbƒN‚·‚é‚ÆA‚±‚Ìƒy[ƒW‚Ì“à—e‚ª•ÏX‚³‚ê‚Ü‚·B
+è¡¨ç¤ºã•ã‚ŒãŸãƒ†ã‚­ã‚¹ãƒˆã®å†…å®¹ã‚’å¤‰æ›´ã—ã€ã€ŒSaveã€ãƒœã‚¿ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã¨ã€ã“ã®ãƒšãƒ¼ã‚¸ã®å†…å®¹ãŒå¤‰æ›´ã•ã‚Œã¾ã™ã€‚
 
-** ‹Lq•û–@
-ƒy[ƒW‚Ì“à—e‚ÍƒeƒLƒXƒg‚Å‘‚©‚ê‚Ä‚¨‚èA‚¢‚­‚Â‚©‚Ì‹L†‚É‚æ‚Á‚ÄŒ©o‚µ‚È‚Ç‚ÌŽw’è‚ð‚µ‚Ü‚·BÚ‚µ‚¢î•ñ‚ÍA[[TextFormat]]‚ð‚²——‰º‚³‚¢B
+** è¨˜è¿°æ–¹æ³•
+ãƒšãƒ¼ã‚¸ã®å†…å®¹ã¯ãƒ†ã‚­ã‚¹ãƒˆã§æ›¸ã‹ã‚Œã¦ãŠã‚Šã€ã„ãã¤ã‹ã®è¨˜å·ã«ã‚ˆã£ã¦è¦‹å‡ºã—ãªã©ã®æŒ‡å®šã‚’ã—ã¾ã™ã€‚è©³ã—ã„æƒ…å ±ã¯ã€[[TextFormat]]ã‚’ã”è¦§ä¸‹ã•ã„ã€‚
 
 ** qwikWeb
-Ú‚µ‚­‚ÍA[[qwikWeb|http://example.com/]]ƒz[ƒ€ƒy[ƒW‚ð‚²——‚­‚¾‚³‚¢B
+è©³ã—ãã¯ã€[[qwikWeb|http://example.com/]]ãƒ›ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ã‚’ã”è¦§ãã ã•ã„ã€‚
 '
       ok(e, s)
     end
 
     def test_textformat
-      s = '<H2>‘Ž®ˆê——ŠÈˆÕ”Å</H2>
-<P>Ú×‚Èà–¾‚Í<A href="TextFormat.html">TextFormat</A>‚ð‚²‚ç‚ñ‚­‚¾‚³‚¢B</P>
-<H3>Œ©o‚µ2</H3>
-<H4>Œ©o‚µ3</H4>
-<H5>Œ©o‚µ4</H5>
-<H6>Œ©o‚µ5</H6>
+      s = '<H2>æ›¸å¼ä¸€è¦§ç°¡æ˜“ç‰ˆ</H2>
+<P>è©³ç´°ãªèª¬æ˜Žã¯<A href="TextFormat.html">TextFormat</A>ã‚’ã”ã‚‰ã‚“ãã ã•ã„ã€‚</P>
+<H3>è¦‹å‡ºã—2</H3>
+<H4>è¦‹å‡ºã—3</H4>
+<H5>è¦‹å‡ºã—4</H5>
+<H6>è¦‹å‡ºã—5</H6>
 <UL>
-<LI>‰Óð‘ƒŒƒxƒ‹1
+<LI>ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«1
 <UL>
-<LI>‰Óð‘ƒŒƒxƒ‹2
+<LI>ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«2
 <UL>
-<LI>‰Óð‘ƒŒƒxƒ‹3</LI></UL></LI></UL></LI></UL>
+<LI>ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«3</LI></UL></LI></UL></LI></UL>
 <OL>
-<LI>‡˜ƒŠƒXƒg1
+<LI>é †åºãƒªã‚¹ãƒˆ1
 <OL>
-<LI>‡˜ƒŠƒXƒg2
+<LI>é †åºãƒªã‚¹ãƒˆ2
 <OL>
-<LI>‡˜ƒŠƒXƒg3</LI></OL></LI></OL></LI></OL><PRE>®Œ`Ï‚ÝƒeƒLƒXƒgB</PRE>
+<LI>é †åºãƒªã‚¹ãƒˆ3</LI></OL></LI></OL></LI></OL><PRE>æ•´å½¢æ¸ˆã¿ãƒ†ã‚­ã‚¹ãƒˆã€‚</PRE>
 <BLOCKQUOTE>
-<P>ˆø—pB</P></BLOCKQUOTE>
+<P>å¼•ç”¨ã€‚</P></BLOCKQUOTE>
 <DL>
 <DT>Wiki
-<DD>‘‚«ž‚Ý‚Å‚«‚éWebƒy[ƒW
+<DD>æ›¸ãè¾¼ã¿ã§ãã‚‹Webãƒšãƒ¼ã‚¸
 <DT>QuickML
-<DD>ŠÈ’P‚Éì‚ê‚éƒ[ƒŠƒ“ƒOƒŠƒXƒgƒVƒXƒeƒ€</DD></DL>
+<DD>ç°¡å˜ã«ä½œã‚Œã‚‹ãƒ¡ãƒ¼ãƒªãƒ³ã‚°ãƒªã‚¹ãƒˆã‚·ã‚¹ãƒ†ãƒ </DD></DL>
 <TABLE>
 <TBODY>
 <TR>
-<TD>€–Ú1-1</TD>
-<TD>€–Ú1-2</TD>
-<TD>€–Ú1-3</TD></TR>
+<TD>é …ç›®1-1</TD>
+<TD>é …ç›®1-2</TD>
+<TD>é …ç›®1-3</TD></TR>
 <TR>
-<TD>€–Ú2-1</TD>
-<TD>€–Ú2-2</TD>
-<TD>€–Ú2-3</TD></TR></TBODY></TABLE>
-<P><EM>‹­’²</EM>A<STRONG>‚³‚ç‚É‹­’²</STRONG>A<DEL>Žæ‚èÁ‚µü</DEL> <IMG alt=new src="http://example.com/.theme/new.png"> <A href="FrontPage.html">FrontPage</A> <A href="http://www.yahoo.co.jp/">Yahoo!</A></P><PLUGIN param="1" method="recent"></PLUGIN>
+<TD>é …ç›®2-1</TD>
+<TD>é …ç›®2-2</TD>
+<TD>é …ç›®2-3</TD></TR></TBODY></TABLE>
+<P><EM>å¼·èª¿</EM>ã€<STRONG>ã•ã‚‰ã«å¼·èª¿</STRONG>ã€<DEL>å–ã‚Šæ¶ˆã—ç·š</DEL> <IMG alt=new src="http://example.com/.theme/new.png"> <A href="FrontPage.html">FrontPage</A> <A href="http://www.yahoo.co.jp/">Yahoo!</A></P><PLUGIN param="1" method="recent"></PLUGIN>
 '
-      org = "* ‘Ž®ˆê——ŠÈˆÕ”Å
-Ú×‚Èà–¾‚Í[[TextFormat]]‚ð‚²‚ç‚ñ‚­‚¾‚³‚¢B
-** Œ©o‚µ2
-*** Œ©o‚µ3
-**** Œ©o‚µ4
-***** Œ©o‚µ5
-- ‰Óð‘ƒŒƒxƒ‹1
--- ‰Óð‘ƒŒƒxƒ‹2
---- ‰Óð‘ƒŒƒxƒ‹3
-+ ‡˜ƒŠƒXƒg1
-++ ‡˜ƒŠƒXƒg2
-+++ ‡˜ƒŠƒXƒg3
- ®Œ`Ï‚ÝƒeƒLƒXƒgB
-> ˆø—pB
-:Wiki:‘‚«ž‚Ý‚Å‚«‚éWebƒy[ƒW
-:QuickML:ŠÈ’P‚Éì‚ê‚éƒ[ƒŠƒ“ƒOƒŠƒXƒgƒVƒXƒeƒ€
-,€–Ú1-1,€–Ú1-2,€–Ú1-3
-,€–Ú2-1,€–Ú2-2,€–Ú2-3
-''‹­’²''A'''‚³‚ç‚É‹­’²'''A==Žæ‚èÁ‚µü==
+      org = "* æ›¸å¼ä¸€è¦§ç°¡æ˜“ç‰ˆ
+è©³ç´°ãªèª¬æ˜Žã¯[[TextFormat]]ã‚’ã”ã‚‰ã‚“ãã ã•ã„ã€‚
+** è¦‹å‡ºã—2
+*** è¦‹å‡ºã—3
+**** è¦‹å‡ºã—4
+***** è¦‹å‡ºã—5
+- ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«1
+-- ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«2
+--- ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«3
++ é †åºãƒªã‚¹ãƒˆ1
+++ é †åºãƒªã‚¹ãƒˆ2
++++ é †åºãƒªã‚¹ãƒˆ3
+ æ•´å½¢æ¸ˆã¿ãƒ†ã‚­ã‚¹ãƒˆã€‚
+> å¼•ç”¨ã€‚
+:Wiki:æ›¸ãè¾¼ã¿ã§ãã‚‹Webãƒšãƒ¼ã‚¸
+:QuickML:ç°¡å˜ã«ä½œã‚Œã‚‹ãƒ¡ãƒ¼ãƒªãƒ³ã‚°ãƒªã‚¹ãƒˆã‚·ã‚¹ãƒ†ãƒ 
+,é …ç›®1-1,é …ç›®1-2,é …ç›®1-3
+,é …ç›®2-1,é …ç›®2-2,é …ç›®2-3
+''å¼·èª¿''ã€'''ã•ã‚‰ã«å¼·èª¿'''ã€==å–ã‚Šæ¶ˆã—ç·š==
 [[new|http://example.com/.theme/new.png]]
 [[FrontPage]]
 [[Yahoo!|http://www.yahoo.co.jp/]]
 {{recent(1)}}
 "
-      e = "* ‘Ž®ˆê——ŠÈˆÕ”Å
-Ú×‚Èà–¾‚Í[[TextFormat]]‚ð‚²‚ç‚ñ‚­‚¾‚³‚¢B
+      e = "* æ›¸å¼ä¸€è¦§ç°¡æ˜“ç‰ˆ
+è©³ç´°ãªèª¬æ˜Žã¯[[TextFormat]]ã‚’ã”ã‚‰ã‚“ãã ã•ã„ã€‚
 
-** Œ©o‚µ2
-*** Œ©o‚µ3
-**** Œ©o‚µ4
-***** Œ©o‚µ5
--‰Óð‘ƒŒƒxƒ‹1
---‰Óð‘ƒŒƒxƒ‹2
----‰Óð‘ƒŒƒxƒ‹3
-+‡˜ƒŠƒXƒg1
-++‡˜ƒŠƒXƒg2
-+++‡˜ƒŠƒXƒg3
- ®Œ`Ï‚ÝƒeƒLƒXƒgB
-> ˆø—pB
-:Wiki:‘‚«ž‚Ý‚Å‚«‚éWebƒy[ƒW
-:QuickML:ŠÈ’P‚Éì‚ê‚éƒ[ƒŠƒ“ƒOƒŠƒXƒgƒVƒXƒeƒ€
-|€–Ú1-1|€–Ú1-2|€–Ú1-3
-|€–Ú2-1|€–Ú2-2|€–Ú2-3
-''‹­’²''A'''‚³‚ç‚É‹­’²'''A==Žæ‚èÁ‚µü== [[http://example.com/.theme/new.png]] [[FrontPage]] [[Yahoo!|http://www.yahoo.co.jp/]]
+** è¦‹å‡ºã—2
+*** è¦‹å‡ºã—3
+**** è¦‹å‡ºã—4
+***** è¦‹å‡ºã—5
+-ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«1
+--ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«2
+---ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«3
++é †åºãƒªã‚¹ãƒˆ1
+++é †åºãƒªã‚¹ãƒˆ2
++++é †åºãƒªã‚¹ãƒˆ3
+ æ•´å½¢æ¸ˆã¿ãƒ†ã‚­ã‚¹ãƒˆã€‚
+> å¼•ç”¨ã€‚
+:Wiki:æ›¸ãè¾¼ã¿ã§ãã‚‹Webãƒšãƒ¼ã‚¸
+:QuickML:ç°¡å˜ã«ä½œã‚Œã‚‹ãƒ¡ãƒ¼ãƒªãƒ³ã‚°ãƒªã‚¹ãƒˆã‚·ã‚¹ãƒ†ãƒ 
+|é …ç›®1-1|é …ç›®1-2|é …ç›®1-3
+|é …ç›®2-1|é …ç›®2-2|é …ç›®2-3
+''å¼·èª¿''ã€'''ã•ã‚‰ã«å¼·èª¿'''ã€==å–ã‚Šæ¶ˆã—ç·š== [[http://example.com/.theme/new.png]] [[FrontPage]] [[Yahoo!|http://www.yahoo.co.jp/]]
 
 {{recent(1)}}
 "
@@ -677,12 +677,12 @@ p2
     def test_bug
       s = '<DL>
 <DT>Wiki
-<DD>‘‚«ž‚Ý‚Å‚«‚é<STRONG>Web</STRONG>ƒy[ƒW
+<DD>æ›¸ãè¾¼ã¿ã§ãã‚‹<STRONG>Web</STRONG>ãƒšãƒ¼ã‚¸
 <DT>QuickML
-<DD><EM>ŠÈ’P</EM>‚Éì‚ê‚éƒ[ƒŠƒ“ƒOƒŠƒXƒgƒVƒXƒeƒ€</DD></DL>
+<DD><EM>ç°¡å˜</EM>ã«ä½œã‚Œã‚‹ãƒ¡ãƒ¼ãƒªãƒ³ã‚°ãƒªã‚¹ãƒˆã‚·ã‚¹ãƒ†ãƒ </DD></DL>
 '
-      e = ":Wiki:‘‚«ž‚Ý‚Å‚«‚é'''Web'''ƒy[ƒW
-:QuickML:''ŠÈ’P''‚Éì‚ê‚éƒ[ƒŠƒ“ƒOƒŠƒXƒgƒVƒXƒeƒ€
+      e = ":Wiki:æ›¸ãè¾¼ã¿ã§ãã‚‹'''Web'''ãƒšãƒ¼ã‚¸
+:QuickML:''ç°¡å˜''ã«ä½œã‚Œã‚‹ãƒ¡ãƒ¼ãƒªãƒ³ã‚°ãƒªã‚¹ãƒˆã‚·ã‚¹ãƒ†ãƒ 
 "
       ok(e, s)
     end

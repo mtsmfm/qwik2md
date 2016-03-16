@@ -46,42 +46,42 @@ Specify translate Japanese to English link.
     }
 
     D_PluginWebService_ja = {
-      :dt => 'WebƒT[ƒrƒXEƒvƒ‰ƒOƒCƒ“',
-      :dd => 'Webã‚ÌŠeŽíƒT[ƒrƒX‚ð—˜—p‚·‚éƒvƒ‰ƒOƒCƒ“‚Å‚·B',
+      :dt => 'Webã‚µãƒ¼ãƒ“ã‚¹ãƒ»ãƒ—ãƒ©ã‚°ã‚¤ãƒ³',
+      :dd => 'Webä¸Šã®å„ç¨®ã‚µãƒ¼ãƒ“ã‚¹ã‚’åˆ©ç”¨ã™ã‚‹ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã§ã™ã€‚',
       :dc => '
-* ‚Í‚Ä‚Èƒ|ƒCƒ“ƒgEƒvƒ‰ƒOƒCƒ“
+* ã¯ã¦ãªãƒã‚¤ãƒ³ãƒˆãƒ»ãƒ—ãƒ©ã‚°ã‚¤ãƒ³
  {{hatena_point(eto)}}
-‚Í‚Ä‚Èƒ|ƒCƒ“ƒg(“Š‚°‘K)‚Ìƒ^ƒO‚ð–„ž‚ß‚Ü‚·B
-* Trackfeedƒvƒ‰ƒOƒCƒ“
-ƒgƒ‰ƒbƒNƒtƒB[ƒh‚ð–„ž‚ß‚Ü‚·B
+ã¯ã¦ãªãƒã‚¤ãƒ³ãƒˆ(æŠ•ã’éŠ­)ã®ã‚¿ã‚°ã‚’åŸ‹è¾¼ã‚ã¾ã™ã€‚
+* Trackfeedãƒ—ãƒ©ã‚°ã‚¤ãƒ³
+ãƒˆãƒ©ãƒƒã‚¯ãƒ•ã‚£ãƒ¼ãƒ‰ã‚’åŸ‹è¾¼ã‚ã¾ã™ã€‚
  {{trackfeed(yourid)}}
-* Bloglinesu“Çƒvƒ‰ƒOƒCƒ“
-Bloglines‚Åu“Ç‚·‚éƒŠƒ“ƒN‚ð•\Ž¦‚µ‚Ü‚·B
+* Bloglinesè¬›èª­ãƒ—ãƒ©ã‚°ã‚¤ãƒ³
+Bloglinesã§è¬›èª­ã™ã‚‹ãƒªãƒ³ã‚¯ã‚’è¡¨ç¤ºã—ã¾ã™ã€‚
  {{sub_bloglines}}
 {{sub_bloglines}}
 
-“Á’è‚ÌURL‚ðŽw’è‚·‚é‚±‚Æ‚à‚Å‚«‚Ü‚·B
+ç‰¹å®šã®URLã‚’æŒ‡å®šã™ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ã€‚
  {{sub_bloglines("http://www.ruby-lang.org/")}}
 {{sub_bloglines("http://www.ruby-lang.org/")}}
-* E Wordsƒvƒ‰ƒOƒCƒ“
-—pŒê’è‹`‚ð•\Ž¦‚³‚¹‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+* E Wordsãƒ—ãƒ©ã‚°ã‚¤ãƒ³
+ç”¨èªžå®šç¾©ã‚’è¡¨ç¤ºã•ã›ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
  {{e_words}}
 {{e_words}}
-* Google AdSenseƒvƒ‰ƒOƒCƒ“
-Google AdSense‚ð–„ž‚ß‚Ü‚·B
+* Google AdSenseãƒ—ãƒ©ã‚°ã‚¤ãƒ³
+Google AdSenseã‚’åŸ‹è¾¼ã‚ã¾ã™ã€‚
  {{google_ad}}
 {{google_ad}}
  {{google_ad_button}}
 {{google_ad_button}}
-“ñŽí—Þ‚ÌƒTƒCƒY‚©‚ç‘I‚×‚Ü‚·B
-‚»‚êˆÈŠO‚ÌƒTƒCƒY‚ÍAŒ»Ý‚Í–¢‘Î‰ž‚Æ‚È‚Á‚Ä‚¢‚Ü‚·B
-* –|–óƒvƒ‰ƒOƒCƒ“
-–|–óƒy[ƒW‚É”ò‚ÔƒŠƒ“ƒN‚ð•\Ž¦‚µ‚Ü‚·B
+äºŒç¨®é¡žã®ã‚µã‚¤ã‚ºã‹ã‚‰é¸ã¹ã¾ã™ã€‚
+ãã‚Œä»¥å¤–ã®ã‚µã‚¤ã‚ºã¯ã€ç¾åœ¨ã¯æœªå¯¾å¿œã¨ãªã£ã¦ã„ã¾ã™ã€‚
+* ç¿»è¨³ãƒ—ãƒ©ã‚°ã‚¤ãƒ³
+ç¿»è¨³ãƒšãƒ¼ã‚¸ã«é£›ã¶ãƒªãƒ³ã‚¯ã‚’è¡¨ç¤ºã—ã¾ã™ã€‚
 You can show an translation link.
  {{translate_ej}}
-‰pŒê‚©‚ç“ú–{Œê‚Ö–|–ó‚·‚éB
+è‹±èªžã‹ã‚‰æ—¥æœ¬èªžã¸ç¿»è¨³ã™ã‚‹ã€‚
  {{translate_je}}
-“ú–{Œê‚©‚ç‰pŒê‚Ö–|–ó‚·‚éB
+æ—¥æœ¬èªžã‹ã‚‰è‹±èªžã¸ç¿»è¨³ã™ã‚‹ã€‚
 '
     }
 
@@ -253,11 +253,11 @@ if defined?($test) && $test
  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
  xmlns:foaf='http://xmlns.com/foaf/0.1/'>
 <rdf:Description 
- rdf:about="ƒGƒ“ƒgƒŠ[‚ÌPermalink ‚ ‚é‚¢‚ÍƒEƒFƒuƒTƒCƒg‚ÌURL">
+ rdf:about="ã‚¨ãƒ³ãƒˆãƒªãƒ¼ã®Permalink ã‚ã‚‹ã„ã¯ã‚¦ã‚§ãƒ–ã‚µã‚¤ãƒˆã®URL">
  <foaf:maker rdf:parseType='Resource'>
  <foaf:holdsAccount>
  <foaf:OnlineAccount 
- foaf:accountName="‚ ‚È‚½‚Ì‚Í‚Ä‚ÈƒAƒJƒEƒ“ƒg–¼">
+ foaf:accountName="ã‚ãªãŸã®ã¯ã¦ãªã‚¢ã‚«ã‚¦ãƒ³ãƒˆå">
  <foaf:accountServiceHomepage 
 	 rdf:resource='http://www.hatena.ne.jp/' />
  </foaf:OnlineAccount>

@@ -221,20 +221,20 @@ if defined?($test) && $test
 		[:input, {:value=>'1', :type=>'hidden', :name=>'page'}],
 		[:table, {:class=>'form'},
 		  [:tr,
-		      [:td, {:class=>'midashi'}, "€–Ú"],
+		      [:td, {:class=>'midashi'}, "é …ç›®"],
 		      [:td, {:class=>'nakami'},
 			[[:input, {:size=>'must',
 			      :value=>'default', :name=>'name'}]]]],
-		    [:tr, [:td, {:class=>'msg', :colspan=>2}, "à–¾"]],
+		    [:tr, [:td, {:class=>'msg', :colspan=>2}, "èª¬æ˜"]],
 		    [:tr,
 		      [:td, {:class=>'midashi'}, ''],
 		      [:td, {:class=>'nakami'},
-			[[:input, {:value=>" “Še ",
+			[[:input, {:value=>" æŠ•ç¨¿ ",
 			      :type=>'submit', :class=>'submit'}]]]]]]],
 	    "{{tableform
-|€–Ú|{{input(name,default,must)}}|
-|à–¾|
-||{{submit( “Še )}}|
+|é …ç›®|{{input(name,default,must)}}|
+|èª¬æ˜|
+||{{submit( æŠ•ç¨¿ )}}|
 }}")
     end
   end

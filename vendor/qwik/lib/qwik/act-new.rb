@@ -315,12 +315,12 @@ if defined?($test) && $test
     def test_new_sjis
       t_add_user
       page = @site['FrontPage']
-      page.store("[[ƒ|ƒX]]")
+      page.store("[[ãƒã‚¹]]")
 
       # See FrontPage
       res = session('/test/')
       ok_title('FrontPage')
-      ok_in([:span, {:class=>'new'}, "ƒ|ƒX",
+      ok_in([:span, {:class=>'new'}, "ãƒã‚¹",
 	      [:a, {:href=>".new?t=%83%7C%83X"},
 		[:img, {:src=>'.theme/i/new.png', :alt=>'create'}]]],
 	    "//div[@class='section']/p")
@@ -330,89 +330,89 @@ if defined?($test) && $test
       t_add_user
 
       page = @site['FrontPage']
-      page.store("[[Å‰‚Ìƒy[ƒW]]")
+      page.store("[[æœ€åˆã®ãƒšãƒ¼ã‚¸]]")
       ok_eq('FrontPage', page.get_title)
 
       # See a page
       res = session('/test/')
-      ok_in(["Å‰‚Ìƒy[ƒW",
+      ok_in(["æœ€åˆã®ãƒšãƒ¼ã‚¸",
 	      [:a, {:href=>".new?t=%8D%C5%8F%89%82%CC%83y%81%5B%83W"},
 		[:img, {:src=>'.theme/i/new.png', :alt=>'create'}]]],
 	    "//span[@class='new']")
 
       # Please input corresponding page key
-      res = session("/test/.new?t=Å‰‚Ìƒy[ƒW")
+      res = session("/test/.new?t=æœ€åˆã®ãƒšãƒ¼ã‚¸")
       ok_in(['New page'], 'h1')
       ok_in(['Confirm'], 'h2')
       assert_attr({:action=>'.new', :method=>'POST'}, 'form')
-      ok_xp([:input, {:value=>"Å‰‚Ìƒy[ƒW",
+      ok_xp([:input, {:value=>"æœ€åˆã®ãƒšãƒ¼ã‚¸",
 		:class=>'focus', :name=>'t'}], '//input')
       ok_xp([:input, {:value=>'New page', :type=>'submit'}],
 	    "//input[2]")
 
       # POST
-      res = session("POST /test/.new?t=Å‰‚Ìƒy[ƒW")
+      res = session("POST /test/.new?t=æœ€åˆã®ãƒšãƒ¼ã‚¸")
       ok_in(['New page'], 'h1')
       ok_in(['Edit new page'], "//div[@class='section']//a")
       ok_xp([:a, {:href=>'1.edit'}, 'Edit new page'],
 	    "//div[@class='section']//a")
 
       # Check the new page.
-      ok_eq("* Å‰‚Ìƒy[ƒW\n", @site['1'].load)
-      page = @site.get_by_title("Å‰‚Ìƒy[ƒW")
+      ok_eq("* æœ€åˆã®ãƒšãƒ¼ã‚¸\n", @site['1'].load)
+      page = @site.get_by_title("æœ€åˆã®ãƒšãƒ¼ã‚¸")
       ok_eq('1', page.key)
 
       # Check title.
       page = @site['1']
-      ok_eq("Å‰‚Ìƒy[ƒW", page.get_title)
-      ok_eq('1', @site.get_by_title("Å‰‚Ìƒy[ƒW").key.to_s)
-      ok_eq(false, @site.exist?("Å‰‚Ìƒy[ƒW"))
+      ok_eq("æœ€åˆã®ãƒšãƒ¼ã‚¸", page.get_title)
+      ok_eq('1', @site.get_by_title("æœ€åˆã®ãƒšãƒ¼ã‚¸").key.to_s)
+      ok_eq(false, @site.exist?("æœ€åˆã®ãƒšãƒ¼ã‚¸"))
       ok_eq(true, @site.exist?('1'))
 
       # Check the source page.
       res = session('/test/')
-      ok_in(["Å‰‚Ìƒy[ƒW"], "//div[@class='section']//a")
-      ok_xp([:a, {:href=>'1.html'}, "Å‰‚Ìƒy[ƒW"],
+      ok_in(["æœ€åˆã®ãƒšãƒ¼ã‚¸"], "//div[@class='section']//a")
+      ok_xp([:a, {:href=>'1.html'}, "æœ€åˆã®ãƒšãƒ¼ã‚¸"],
 	    "//div[@class='section']//a")
-      ok_eq("[[Å‰‚Ìƒy[ƒW]]", @site['FrontPage'].load)
+      ok_eq("[[æœ€åˆã®ãƒšãƒ¼ã‚¸]]", @site['FrontPage'].load)
 
       # Try to create with the same key.
-      res = session("/test/.new?t=Å‰‚Ìƒy[ƒW")
+      res = session("/test/.new?t=æœ€åˆã®ãƒšãƒ¼ã‚¸")
 
       # Try to create with the same key.
-      res = session("POST /test/.new?t=Å‰‚Ìƒy[ƒW")
+      res = session("POST /test/.new?t=æœ€åˆã®ãƒšãƒ¼ã‚¸")
       ok_in(['Already exists'], '//h2')
 
       # Let's create a page again.  At the first, embed the title.
       page = @site['FrontPage']
-      page.store("[[“ñ•Å]]")
+      page.store("[[äºŒé ]]")
 
       # See the page
       res = session('/test/')
-      ok_in(["“ñ•Å",
+      ok_in(["äºŒé ",
 	      [:a, {:href=>".new?t=%93%F1%95%C5"},
 		[:img, {:src=>'.theme/i/new.png', :alt=>'create'}]]],
 	    "//div[@class='section']//span")
 
       # please input a corresponding page key
-      res = session("/test/.new?t=“ñ•Å")
-      ok_xp([:input, {:value=>"“ñ•Å", :class=>'focus', :name=>'t'}], '//input')
+      res = session("/test/.new?t=äºŒé ")
+      ok_xp([:input, {:value=>"äºŒé ", :class=>'focus', :name=>'t'}], '//input')
 
       # try again
-      res = session("POST /test/.new?t=“ñ•Å")
+      res = session("POST /test/.new?t=äºŒé ")
       ok_in(['Edit new page'], "//div[@class='section']//a")
       ok_xp([:a, {:href=>'2.edit'}, 'Edit new page'],
 	    "//div[@class='section']//a")
 
       page = @site['2']
-      ok_eq("* “ñ•Å\n", page.load)
+      ok_eq("* äºŒé \n", page.load)
 
       # check the source page again
       res = session('/test/')
-      ok_in(["“ñ•Å"], "//div[@class='section']//a")
-      ok_xp([:a, {:href=>'2.html'}, "“ñ•Å"],
+      ok_in(["äºŒé "], "//div[@class='section']//a")
+      ok_xp([:a, {:href=>'2.html'}, "äºŒé "],
 	    "//div[@class='section']//a")
-      ok_eq("[[“ñ•Å]]", @site['FrontPage'].load)
+      ok_eq("[[äºŒé ]]", @site['FrontPage'].load)
     end
   end
 end

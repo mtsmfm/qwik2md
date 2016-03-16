@@ -38,20 +38,20 @@ If you change anything on the site, it\'ll recreate the archive.
     }
 
     D_SiteBackup_ja = {
-      :dt => '�T�C�g�E�o�b�N�A�b�v',
-      :dd => '�T�C�g�E�o�b�N�A�b�v���擾�ł��܂��B',
-      :dc => '* �g����
+      :dt => 'サイト・バックアップ',
+      :dd => 'サイト・バックアップを取得できます。',
+      :dc => '* 使い方
 {{sitebackup}}
 
-���̃����N����A�T�C�g�̓��e���ׂĂ�tar.gz�`���̃A�[�J�C�u�ɂ��ă_�E�����[�h�ł��܂��B
+このリンクから、サイトの内容すべてをtar.gz形式のアーカイブにしてダウンロードできます。
 
-�W�J����qwikWeb��data�f�B���N�g���ɒu���΁C�T�C�g�����̂܂܈ڍs���邱�Ƃ��ł��܂��D
+展開してqwikWebのdataディレクトリに置けば，サイトをそのまま移行することができます．
 
-�ŏ��̈��ڂ́A�A�[�J�C�u�쐬�̂��߂̃v���Z�X�����s����܂��B
-�쐬���I����Ă��烊���[�h���邩�A�u���E�U���猳�̃y�[�W�ɖ߂���
-������x�����N���N���b�N����ƁA�A�[�J�C�u���_�E�����[�h���邱�Ƃ��ł��܂��B
+最初の一回目は、アーカイブ作成のためのプロセスが実行されます。
+作成が終わってからリロードするか、ブラウザから元のページに戻って
+もう一度リンクをクリックすると、アーカイブをダウンロードすることができます。
 
-�T�C�g�̓��e���X�V���ꂽ��A���̃����N���ēx�N���b�N����ƁA�A�[�J�C�u���č쐬����܂��B
+サイトの内容が更新された後、このリンクを再度クリックすると、アーカイブも再作成されます。
 '
     }
 

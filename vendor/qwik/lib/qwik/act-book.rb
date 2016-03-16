@@ -16,37 +16,37 @@ Add a link to a book by isbn.
 {{isbn(4797318325)}}
  {{isbn_amazon(4797318325)}}
 {{isbn_amazon(4797318325)}}
- {{isbn_amazon(4797318325,‘–¼)}}
-{{isbn_amazon(4797318325,‘–¼)}}
+ {{isbn_amazon(4797318325,æ›¸å)}}
+{{isbn_amazon(4797318325,æ›¸å)}}
 ** Book Serach plugin
  {{book_search(Wiki)}}
 {{book_search(Wiki)}}
- {{book_search(ƒuƒƒO)}}
-{{book_search(ƒuƒƒO)}}
+ {{book_search(ãƒ–ãƒ­ã‚°)}}
+{{book_search(ãƒ–ãƒ­ã‚°)}}
 You can edit the book stores list on [[_BookSearch]].
 "
     }
 
     D_PluginBook_ja = {
-      :dt => '–{‚ÆISBNƒvƒ‰ƒOƒCƒ“',
-      :dd => '–{‚â–{‚ÌŒŸõ‚Ö‚ÌƒŠƒ“ƒN‚ðì‚è‚Ü‚·B',
-      :dc => "* —á
-** ISBNƒvƒ‰ƒOƒCƒ“
-ISBN‚ÅƒŠƒ“ƒN‚µ‚Ü‚·B
+      :dt => 'æœ¬ã¨ISBNãƒ—ãƒ©ã‚°ã‚¤ãƒ³',
+      :dd => 'æœ¬ã‚„æœ¬ã®æ¤œç´¢ã¸ã®ãƒªãƒ³ã‚¯ã‚’ä½œã‚Šã¾ã™ã€‚',
+      :dc => "* ä¾‹
+** ISBNãƒ—ãƒ©ã‚°ã‚¤ãƒ³
+ISBNã§ãƒªãƒ³ã‚¯ã—ã¾ã™ã€‚
  {{isbn(4797318325)}}
 {{isbn(4797318325)}}
  {{isbn_amazon(4797318325)}}
 {{isbn_amazon(4797318325)}}
- {{isbn_amazon(4797318325,‘–¼)}}
-{{isbn_amazon(4797318325,‘–¼)}}
-ƒŠƒ“ƒNæ‚Ìˆê——‚ÍA[[_IsbnLink]]‚ÅŽw’è‚Å‚«‚Ü‚·B
-** –{‚ÌŒŸõƒvƒ‰ƒOƒCƒ“B
-–{‚ðŒŸõ‚µ‚Ü‚·B
+ {{isbn_amazon(4797318325,æ›¸å)}}
+{{isbn_amazon(4797318325,æ›¸å)}}
+ãƒªãƒ³ã‚¯å…ˆã®ä¸€è¦§ã¯ã€[[_IsbnLink]]ã§æŒ‡å®šã§ãã¾ã™ã€‚
+** æœ¬ã®æ¤œç´¢ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã€‚
+æœ¬ã‚’æ¤œç´¢ã—ã¾ã™ã€‚
  {{book_search(Wiki)}}
 {{book_search(Wiki)}}
- {{book_search(ƒuƒƒO)}}
-{{book_search(ƒuƒƒO)}}
-ŒŸõƒŠƒ“ƒNæ‚Ìˆê——‚ÍA[[_BookSearch]]‚ÅŽw’è‚Å‚«‚Ü‚·B
+ {{book_search(ãƒ–ãƒ­ã‚°)}}
+{{book_search(ãƒ–ãƒ­ã‚°)}}
+æ¤œç´¢ãƒªãƒ³ã‚¯å…ˆã®ä¸€è¦§ã¯ã€[[_BookSearch]]ã§æŒ‡å®šã§ãã¾ã™ã€‚
 "
     }
 
@@ -131,14 +131,14 @@ if defined?($test) && $test
 ,euc,http://example.com/euc/,euc')
 
       ok_wi([:div, {:class=>'box'},
-	      ['book:–{ ',
+	      ['book:æœ¬ ',
 		[:a, {:href=>'http://example.com/utf8/%E6%9C%AC'},
 		  'utf8'], ' ',
 		[:a, {:href=>'http://example.com/sjis/%96%7B'},
 		  'sjis'], ' ',
 		[:a, {:href=>'http://example.com/euc/%CB%DC'},
 		  'euc'], ' ']],
-	    '{{book_search(–{)}}')
+	    '{{book_search(æœ¬)}}')
 
       # test_isbn
       ok_wi([:a, {:href=>'http://www.amazon.co.jp/exec/obidos/ASIN/4797318325/q02-22/ref=nosim/'}, 'isbn:4797318325'], '{{isbn_amazon(4797318325)}}')

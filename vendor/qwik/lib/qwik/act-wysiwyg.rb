@@ -25,13 +25,13 @@ You can show a link to wysiwyg mode by this plugin.
     }
 
     D_ExtWysiwyg_ja = {
-      :dt => '�����܂ܕҏW���[�h',
-      :dd => '�y�[�W�������܂܂̏�ԂŕҏW�ł��܂��B',
-      :dc => "* ��
-���Ƃ��΁A[[FrontPage�������܂ܕҏW|FrontPage.wysiwyg]]�y�[�W�ɂ����ƁA
-FrontPage�������܂܂̏�ԂŕҏW�����ʂɂƂт܂��B
+      :dt => '見たまま編集モード',
+      :dd => 'ページを見たままの状態で編集できます。',
+      :dc => "* 例
+たとえば、[[FrontPageを見たまま編集|FrontPage.wysiwyg]]ページにいくと、
+FrontPageを見たままの状態で編集する画面にとびます。
 
-���̃y�[�W���猩���܂ܕҏW��ʂɔ�Ԃɂ́A���L�̃v���O�C�����g���܂��B
+そのページから見たまま編集画面に飛ぶには、下記のプラグインを使います。
  {{wysiwyg}}
 {{wysiwyg}}
 "

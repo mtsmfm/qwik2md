@@ -61,82 +61,82 @@ if defined?($test) && $test
 
       # test_long_html
       html = <<'EOT'
-<H2>‘Ž®ˆê——ŠÈˆÕ”Å</H2>
-<P>Ú×‚Èà–¾‚Í<A href="TextFormat.html">TextFormat</A>‚ð‚²‚ç‚ñ‚­‚¾‚³‚¢B</P>
-<H3>Œ©o‚µ2</H3>
-<H4>Œ©o‚µ3</H4>
-<H5>Œ©o‚µ4</H5>
-<H6>Œ©o‚µ5</H6>
+<H2>æ›¸å¼ä¸€è¦§ç°¡æ˜“ç‰ˆ</H2>
+<P>è©³ç´°ãªèª¬æ˜Žã¯<A href="TextFormat.html">TextFormat</A>ã‚’ã”ã‚‰ã‚“ãã ã•ã„ã€‚</P>
+<H3>è¦‹å‡ºã—2</H3>
+<H4>è¦‹å‡ºã—3</H4>
+<H5>è¦‹å‡ºã—4</H5>
+<H6>è¦‹å‡ºã—5</H6>
 <UL>
-<LI>‰Óð‘ƒŒƒxƒ‹1
+<LI>ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«1
 <UL>
-<LI>‰Óð‘ƒŒƒxƒ‹2
+<LI>ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«2
 <UL>
-<LI>‰Óð‘ƒŒƒxƒ‹3</LI></UL></LI></UL></LI></UL>
+<LI>ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«3</LI></UL></LI></UL></LI></UL>
 <OL>
-<LI>‡˜ƒŠƒXƒg1
+<LI>é †åºãƒªã‚¹ãƒˆ1
 <OL>
-<LI>‡˜ƒŠƒXƒg2
+<LI>é †åºãƒªã‚¹ãƒˆ2
 <OL>
-<LI>‡˜ƒŠƒXƒg3</LI></OL></LI></OL></LI></OL><PRE>®Œ`Ï‚ÝƒeƒLƒXƒgB</PRE>
+<LI>é †åºãƒªã‚¹ãƒˆ3</LI></OL></LI></OL></LI></OL><PRE>æ•´å½¢æ¸ˆã¿ãƒ†ã‚­ã‚¹ãƒˆã€‚</PRE>
 <BLOCKQUOTE>
-<P>ˆø—pB</P></BLOCKQUOTE>
+<P>å¼•ç”¨ã€‚</P></BLOCKQUOTE>
 <DL>
 <DT>Wiki
-<DD>‘‚«ž‚Ý‰Â”\‚ÈWebƒy[ƒW
+<DD>æ›¸ãè¾¼ã¿å¯èƒ½ãªWebãƒšãƒ¼ã‚¸
 <DT>QuickML
-<DD>ŠÈ’P‚Éì‚ê‚éƒ[ƒŠƒ“ƒOƒŠƒXƒgƒVƒXƒeƒ€</DD></DL>
+<DD>ç°¡å˜ã«ä½œã‚Œã‚‹ãƒ¡ãƒ¼ãƒªãƒ³ã‚°ãƒªã‚¹ãƒˆã‚·ã‚¹ãƒ†ãƒ </DD></DL>
 <TABLE>
 <TBODY>
 <TR>
-<TD>€–Ú1-1</TD>
-<TD>€–Ú1-2</TD>
-<TD>€–Ú1-3</TD></TR>
+<TD>é …ç›®1-1</TD>
+<TD>é …ç›®1-2</TD>
+<TD>é …ç›®1-3</TD></TR>
 <TR>
-<TD>€–Ú2-1</TD>
-<TD>€–Ú2-2</TD>
-<TD>€–Ú2-3</TD></TR></TBODY></TABLE>
-<P><EM>‹­’²</EM>A<STRONG>‚³‚ç‚É‹­’²</STRONG>A<DEL>Žæ‚èÁ‚µü</DEL> <IMG alt=new src="http://example.com/.theme/new.png"> <A href="FrontPage.html">FrontPage</A> <A href="http://www.yahoo.co.jp/">Yahoo!</A></P><PLUGIN param='1' method='recent'></PLUGIN>
+<TD>é …ç›®2-1</TD>
+<TD>é …ç›®2-2</TD>
+<TD>é …ç›®2-3</TD></TR></TBODY></TABLE>
+<P><EM>å¼·èª¿</EM>ã€<STRONG>ã•ã‚‰ã«å¼·èª¿</STRONG>ã€<DEL>å–ã‚Šæ¶ˆã—ç·š</DEL> <IMG alt=new src="http://example.com/.theme/new.png"> <A href="FrontPage.html">FrontPage</A> <A href="http://www.yahoo.co.jp/">Yahoo!</A></P><PLUGIN param='1' method='recent'></PLUGIN>
 EOT
 
-      result = [[:h2, "‘Ž®ˆê——ŠÈˆÕ”Å"], "\n",
-	[:p, "Ú×‚Èà–¾‚Í",
+      result = [[:h2, "æ›¸å¼ä¸€è¦§ç°¡æ˜“ç‰ˆ"], "\n",
+	[:p, "è©³ç´°ãªèª¬æ˜Žã¯",
 	  [:a, {:href=>'TextFormat.html'}, 'TextFormat'],
-	  "‚ð‚²‚ç‚ñ‚­‚¾‚³‚¢B"], "\n",
-	[:h3, "Œ©o‚µ2"], "\n",
-	[:h4, "Œ©o‚µ3"], "\n",
-	[:h5, "Œ©o‚µ4"], "\n",
-	[:h6, "Œ©o‚µ5"], "\n",
+	  "ã‚’ã”ã‚‰ã‚“ãã ã•ã„ã€‚"], "\n",
+	[:h3, "è¦‹å‡ºã—2"], "\n",
+	[:h4, "è¦‹å‡ºã—3"], "\n",
+	[:h5, "è¦‹å‡ºã—4"], "\n",
+	[:h6, "è¦‹å‡ºã—5"], "\n",
 	[:ul,  "\n",
-	  [:li,   "‰Óð‘ƒŒƒxƒ‹1\n",
+	  [:li,   "ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«1\n",
 	    [:ul,    "\n",
-	      [:li, "‰Óð‘ƒŒƒxƒ‹2\n",
-		[:ul, "\n", [:li, "‰Óð‘ƒŒƒxƒ‹3"]]]]]], "\n",
+	      [:li, "ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«2\n",
+		[:ul, "\n", [:li, "ç®‡æ¡æ›¸ãƒ¬ãƒ™ãƒ«3"]]]]]], "\n",
 	[:ol,  "\n",
-	  [:li,   "‡˜ƒŠƒXƒg1\n",
-	    [:ol, "\n", [:li, "‡˜ƒŠƒXƒg2\n",
-		[:ol, "\n", [:li, "‡˜ƒŠƒXƒg3"]]]]]],
-	[:pre, "®Œ`Ï‚ÝƒeƒLƒXƒgB"], "\n",
-	[:blockquote, "\n", [:p, "ˆø—pB"]], "\n",
+	  [:li,   "é †åºãƒªã‚¹ãƒˆ1\n",
+	    [:ol, "\n", [:li, "é †åºãƒªã‚¹ãƒˆ2\n",
+		[:ol, "\n", [:li, "é †åºãƒªã‚¹ãƒˆ3"]]]]]],
+	[:pre, "æ•´å½¢æ¸ˆã¿ãƒ†ã‚­ã‚¹ãƒˆã€‚"], "\n",
+	[:blockquote, "\n", [:p, "å¼•ç”¨ã€‚"]], "\n",
 	[:dl, "\n",
 	  [:dt, "Wiki\n"],
-	  [:dd, '‘‚«ž‚Ý‰Â”\‚ÈWebƒy[ƒW'+"\n"],
+	  [:dd, 'æ›¸ãè¾¼ã¿å¯èƒ½ãªWebãƒšãƒ¼ã‚¸'+"\n"],
 	  [:dt, "QuickML\n"],
-	  [:dd, "ŠÈ’P‚Éì‚ê‚éƒ[ƒŠƒ“ƒOƒŠƒXƒgƒVƒXƒeƒ€"]], "\n",
+	  [:dd, "ç°¡å˜ã«ä½œã‚Œã‚‹ãƒ¡ãƒ¼ãƒªãƒ³ã‚°ãƒªã‚¹ãƒˆã‚·ã‚¹ãƒ†ãƒ "]], "\n",
 	[:table, "\n",
 	  [:tbody, "\n",
 	    [:tr, "\n",
-	      [:td, "€–Ú1-1"], "\n",
-	      [:td, "€–Ú1-2"], "\n",
-	      [:td, "€–Ú1-3"]], "\n",
+	      [:td, "é …ç›®1-1"], "\n",
+	      [:td, "é …ç›®1-2"], "\n",
+	      [:td, "é …ç›®1-3"]], "\n",
 	    [:tr, "\n",
-	      [:td, "€–Ú2-1"], "\n",
-	      [:td, "€–Ú2-2"], "\n",
-	      [:td, "€–Ú2-3"]]]], "\n",
+	      [:td, "é …ç›®2-1"], "\n",
+	      [:td, "é …ç›®2-2"], "\n",
+	      [:td, "é …ç›®2-3"]]]], "\n",
 	[:p,
-	  [:em, "‹­’²"],  "A",
-	  [:strong, "‚³‚ç‚É‹­’²"],  "A",
-	  [:del, "Žæ‚èÁ‚µü"],  ' ',
+	  [:em, "å¼·èª¿"],  "ã€",
+	  [:strong, "ã•ã‚‰ã«å¼·èª¿"],  "ã€",
+	  [:del, "å–ã‚Šæ¶ˆã—ç·š"],  ' ',
 	  [:img, {:alt=>'new', :src=>'http://example.com/.theme/new.png'}],  ' ',
 	  [:a, {:href=>'FrontPage.html'}, 'FrontPage'],  ' ',
 	  [:a, {:href=>'http://www.yahoo.co.jp/'}, "Yahoo!"]],

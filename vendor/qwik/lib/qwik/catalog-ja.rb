@@ -9,460 +9,460 @@ class Qwik::CatalogFactory
   def self.catalog_ja
     {
       # for test
-      'hello' => '‚±‚ñ‚É‚¿‚Í',
+      'hello' => 'ã“ã‚“ã«ã¡ã¯',
 
       # Error
-      'Error' => 'ƒGƒ‰[',
-      'Failed' => 'Ž¸”s',
+      'Error' => 'ã‚¨ãƒ©ãƒ¼',
+      'Failed' => 'å¤±æ•—',
 
       # act-comment.rb
-      'No message.' => 'ƒƒbƒZ[ƒW‚ª‚ ‚è‚Ü‚¹‚ñ',
+      'No message.' => 'ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãŒã‚ã‚Šã¾ã›ã‚“',
 
       # act-povray.rb, act-textarea.rb
-      'No text.' => 'ƒeƒLƒXƒg‚ª‚ ‚è‚Ü‚¹‚ñ',
+      'No text.' => 'ãƒ†ã‚­ã‚¹ãƒˆãŒã‚ã‚Šã¾ã›ã‚“',
 
       # action.rb
-      'No such site.' => '‘Î‰ž‚·‚éƒTƒCƒg‚ª‚ ‚è‚Ü‚¹‚ñ',
-      'No corresponding site.' => '‘Î‰ž‚·‚éƒTƒCƒg‚Í‚ ‚è‚Ü‚¹‚ñ',
+      'No such site.' => 'å¯¾å¿œã™ã‚‹ã‚µã‚¤ãƒˆãŒã‚ã‚Šã¾ã›ã‚“',
+      'No corresponding site.' => 'å¯¾å¿œã™ã‚‹ã‚µã‚¤ãƒˆã¯ã‚ã‚Šã¾ã›ã‚“',
       'Please send mail to make a site' =>
-      'qwikWeb‚ÌƒTƒCƒg‚ðì‚é‚É‚ÍA‚Ü‚¸ƒ[ƒ‹‚ð‘—‚é•K—v‚ª‚ ‚è‚Ü‚·B',
-      'Login' => 'ƒƒOƒCƒ“',
-      'Access here and see how to.' => '‚ÉƒAƒNƒZƒX‚µ‚ÄAŽg‚¢•û‚ð‚²——‰º‚³‚¢B',
-      'Please log in.' => 'ƒƒOƒCƒ“‚µ‚Ä‚­‚¾‚³‚¢',
-      'Members Only' => 'ƒƒ“ƒo[ê—p', # and act-getpass.rb
+      'qwikWebã®ã‚µã‚¤ãƒˆã‚’ä½œã‚‹ã«ã¯ã€ã¾ãšãƒ¡ãƒ¼ãƒ«ã‚’é€ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚',
+      'Login' => 'ãƒ­ã‚°ã‚¤ãƒ³',
+      'Access here and see how to.' => 'ã«ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦ã€ä½¿ã„æ–¹ã‚’ã”è¦§ä¸‹ã•ã„ã€‚',
+      'Please log in.' => 'ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ãã ã•ã„',
+      'Members Only' => 'ãƒ¡ãƒ³ãƒãƒ¼å°‚ç”¨', # and act-getpass.rb
       'You are now logged in with this user id.' =>
-      '‚ ‚È‚½‚Í¡‚±‚Ìƒ†[ƒUID ‚ÅƒƒOƒCƒ“‚µ‚Ä‚¢‚Ü‚·',
+      'ã‚ãªãŸã¯ä»Šã“ã®ãƒ¦ãƒ¼ã‚¶ID ã§ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ã„ã¾ã™',
       'You are not logged in yet.' =>
-      '‚ ‚È‚½‚Í‚Ü‚¾ƒƒOƒCƒ“‚µ‚Ä‚¢‚Ü‚¹‚ñ', # FIXME: not found.
+      'ã‚ãªãŸã¯ã¾ã ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ã„ã¾ã›ã‚“', # FIXME: not found.
       'If you would like to log in on another account,' =>
-      '•Ê‚Ìƒ†[ƒUID ‚ÅƒƒOƒCƒ“‚µ‚È‚¨‚µ‚½‚¢ê‡‚ÍA',
-      'please log out first.' => '‚Ü‚¸ƒƒOƒAƒEƒg‚µ‚Ä‚­‚¾‚³‚¢',
+      'åˆ¥ã®ãƒ¦ãƒ¼ã‚¶ID ã§ãƒ­ã‚°ã‚¤ãƒ³ã—ãªãŠã—ãŸã„å ´åˆã¯ã€',
+      'please log out first.' => 'ã¾ãšãƒ­ã‚°ã‚¢ã‚¦ãƒˆã—ã¦ãã ã•ã„',
       ': Access here, and log in again.' =>
-      '‚µ‚Ä‚©‚çÄ“xƒAƒNƒZƒX‚µ‚Ä‚­‚¾‚³‚¢B', # FIXME: not found.
+      'ã—ã¦ã‹ã‚‰å†åº¦ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦ãã ã•ã„ã€‚', # FIXME: not found.
       'You need to log in to use this function.' =>
-      '‚±‚Ì‹@”\‚ð—˜—p‚·‚é‚É‚ÍƒƒOƒCƒ“‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B',
-       'Go back' => '–ß‚é',
-      'Please input POST' => 'POST“ü—Í‚ª•K—v',
+      'ã“ã®æ©Ÿèƒ½ã‚’åˆ©ç”¨ã™ã‚‹ã«ã¯ãƒ­ã‚°ã‚¤ãƒ³ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚',
+       'Go back' => 'æˆ»ã‚‹',
+      'Please input POST' => 'POSTå…¥åŠ›ãŒå¿…è¦',
       'This function requires POST input.' =>
-      '‚±‚Ì‘€ì‚ÍPOST“ü—Í‚Ås‚¤•K—v‚ª‚ ‚è‚Ü‚·B',
-      'Page not found.' => 'ƒy[ƒW‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ',
+      'ã“ã®æ“ä½œã¯POSTå…¥åŠ›ã§è¡Œã†å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚',
+      'Page not found.' => 'ãƒšãƒ¼ã‚¸ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“',
       'Push create if you would like to create the page.' =>
-      'ƒy[ƒW‚ðì¬‚µ‚½‚¢ê‡‚ÍAV‹Kì¬‚ð‰Ÿ‚µ‚Ä‚­‚¾‚³‚¢', # act-new.rb
+      'ãƒšãƒ¼ã‚¸ã‚’ä½œæˆã—ãŸã„å ´åˆã¯ã€æ–°è¦ä½œæˆã‚’æŠ¼ã—ã¦ãã ã•ã„', # act-new.rb
 
-      'Incorrect path arguments.' => '•Ï‚ÈƒpƒX‚ª‚Â‚¢‚Ä‚Ü‚·',
+      'Incorrect path arguments.' => 'å¤‰ãªãƒ‘ã‚¹ãŒã¤ã„ã¦ã¾ã™',
       'Path arguments are not acceptable.' =>
-      '‚È‚É‚©•Ï‚ÈƒpƒX‚ª‚Â‚¢‚¿‚á‚Á‚Ä‚Ü‚·B',
+      'ãªã«ã‹å¤‰ãªãƒ‘ã‚¹ãŒã¤ã„ã¡ã‚ƒã£ã¦ã¾ã™ã€‚',
 
-      'Not found.' => '‚ ‚è‚Ü‚¹‚ñ',
-      'Access here.' => '‚±‚¿‚ç‚ð‚²——‚­‚¾‚³‚¢B',
+      'Not found.' => 'ã‚ã‚Šã¾ã›ã‚“',
+      'Access here.' => 'ã“ã¡ã‚‰ã‚’ã”è¦§ãã ã•ã„ã€‚',
 
       # act-album
-      'Show album in full screen.' => 'ƒAƒ‹ƒoƒ€‚ðƒtƒ‹ƒXƒNƒŠ[ƒ“‚ÅŒ©‚é', # FIXME: not found
+      'Show album in full screen.' => 'ã‚¢ãƒ«ãƒãƒ ã‚’ãƒ•ãƒ«ã‚¹ã‚¯ãƒªãƒ¼ãƒ³ã§è¦‹ã‚‹', # FIXME: not found
 
       # act-archive
-      'Site archive' => 'ƒTƒCƒgƒA[ƒJƒCƒu',
+      'Site archive' => 'ã‚µã‚¤ãƒˆã‚¢ãƒ¼ã‚«ã‚¤ãƒ–',
 
       # act-attach
-      'Files' => '“Y•tƒtƒ@ƒCƒ‹',
-      'Delete' => 'Á‹Ž',
-      'Download' => 'ƒ_ƒEƒ“ƒ[ƒh', # act-files.rb
-      'No such file.' => 'ƒtƒ@ƒCƒ‹‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ',
+      'Files' => 'æ·»ä»˜ãƒ•ã‚¡ã‚¤ãƒ«',
+      'Delete' => 'æ¶ˆåŽ»',
+      'Download' => 'ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰', # act-files.rb
+      'No such file.' => 'ãƒ•ã‚¡ã‚¤ãƒ«ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“',
       'There is a file with the same file name.' =>
-      '“¯–¼‚Ìƒtƒ@ƒCƒ‹‚ª‘¶Ý‚µ‚Ä‚¢‚Ü‚·', # FIXME: not found
+      'åŒåã®ãƒ•ã‚¡ã‚¤ãƒ«ãŒå­˜åœ¨ã—ã¦ã„ã¾ã™', # FIXME: not found
       'Can not use Japanese characters for file name' =>
-      '“ú–{Œê‚Ìƒtƒ@ƒCƒ‹–¼‚ÍŽg‚¦‚Ü‚¹‚ñ', # FIXME: not found
-      'Maximum size exceeded.' => 'ƒtƒ@ƒCƒ‹ƒTƒCƒY‚ÌŒÀŠE‚ð’´‚¦‚Ä‚¢‚Ü‚·B',
-      'Maximum size' => 'Å‘å—e—Ê',
-      'File size' => 'ƒtƒ@ƒCƒ‹ƒTƒCƒY',
-      'The file is saved.' => 'ƒtƒ@ƒCƒ‹‚ðƒZ[ƒu‚µ‚Ü‚µ‚½B',
-      'File attachment completed' => 'ƒtƒ@ƒCƒ‹‚ð“Y•t‚µ‚Ü‚µ‚½',
-      'Attach file' => 'ƒtƒ@ƒCƒ‹“Y•t',
-      'Attach a file' => 'ƒtƒ@ƒCƒ‹‚ð“Y•t‚µ‚Ü‚·',
-      'Confirm file deletion' => 'ƒtƒ@ƒCƒ‹Á‹ŽŠm”F‰æ–Ê',
+      'æ—¥æœ¬èªžã®ãƒ•ã‚¡ã‚¤ãƒ«åã¯ä½¿ãˆã¾ã›ã‚“', # FIXME: not found
+      'Maximum size exceeded.' => 'ãƒ•ã‚¡ã‚¤ãƒ«ã‚µã‚¤ã‚ºã®é™ç•Œã‚’è¶…ãˆã¦ã„ã¾ã™ã€‚',
+      'Maximum size' => 'æœ€å¤§å®¹é‡',
+      'File size' => 'ãƒ•ã‚¡ã‚¤ãƒ«ã‚µã‚¤ã‚º',
+      'The file is saved.' => 'ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚»ãƒ¼ãƒ–ã—ã¾ã—ãŸã€‚',
+      'File attachment completed' => 'ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ·»ä»˜ã—ã¾ã—ãŸ',
+      'Attach file' => 'ãƒ•ã‚¡ã‚¤ãƒ«æ·»ä»˜',
+      'Attach a file' => 'ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ·»ä»˜ã—ã¾ã™',
+      'Confirm file deletion' => 'ãƒ•ã‚¡ã‚¤ãƒ«æ¶ˆåŽ»ç¢ºèªç”»é¢',
       "Push 'Delete' to delete a file" =>
-      'uÁ‹Ž‚·‚év‚ð‰Ÿ‚·‚ÆC–{“–‚Éƒtƒ@ƒCƒ‹‚ðÁ‹Ž‚µ‚Ü‚·D',
-      'Delete' => 'Á‹Ž‚·‚é',
-      'Already deleted.' => '‚·‚Å‚ÉÁ‹Ž‚³‚ê‚Ä‚¢‚é‚æ‚¤‚Å‚·',
-      'Failed to delete.' => 'ƒtƒ@ƒCƒ‹Á‹Ž‚ÉŽ¸”s‚µ‚Ü‚µ‚½B“äB',
-      'The file has been deleted.' => 'Á‹Ž‚µ‚Ü‚µ‚½',
-      'File list' => 'Œ»Ý“Y•t‚³‚ê‚Ä‚¢‚éƒtƒ@ƒCƒ‹',
+      'ã€Œæ¶ˆåŽ»ã™ã‚‹ã€ã‚’æŠ¼ã™ã¨ï¼Œæœ¬å½“ã«ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ¶ˆåŽ»ã—ã¾ã™ï¼Ž',
+      'Delete' => 'æ¶ˆåŽ»ã™ã‚‹',
+      'Already deleted.' => 'ã™ã§ã«æ¶ˆåŽ»ã•ã‚Œã¦ã„ã‚‹ã‚ˆã†ã§ã™',
+      'Failed to delete.' => 'ãƒ•ã‚¡ã‚¤ãƒ«æ¶ˆåŽ»ã«å¤±æ•—ã—ã¾ã—ãŸã€‚è¬Žã€‚',
+      'The file has been deleted.' => 'æ¶ˆåŽ»ã—ã¾ã—ãŸ',
+      'File list' => 'ç¾åœ¨æ·»ä»˜ã•ã‚Œã¦ã„ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«',
       # other
-      '->' => '¨',
-      'Attach' => '“Y•t‚·‚é',	# FIXME: not found
+      '->' => 'â†’',
+      'Attach' => 'æ·»ä»˜ã™ã‚‹',	# FIXME: not found
 
       # act-backup
-      'This is the first page.' => '‚±‚ê‚ÍÅ‰‚Ìƒy[ƒW‚Å‚·B',
-      'Difference from the previous page' => '‘O‰ñ‚©‚ç‚Ì·•ª',
-      'Original data' => 'Œ³ƒf[ƒ^',
-      '<-' => '©',
-      'Newest' => 'ÅV',
-      'Backup list' => 'ƒoƒbƒNƒAƒbƒvˆê——',
+      'This is the first page.' => 'ã“ã‚Œã¯æœ€åˆã®ãƒšãƒ¼ã‚¸ã§ã™ã€‚',
+      'Difference from the previous page' => 'å‰å›žã‹ã‚‰ã®å·®åˆ†',
+      'Original data' => 'å…ƒãƒ‡ãƒ¼ã‚¿',
+      '<-' => 'â†',
+      'Newest' => 'æœ€æ–°',
+      'Backup list' => 'ãƒãƒƒã‚¯ã‚¢ãƒƒãƒ—ä¸€è¦§',
 
       # act-basic-plugin
-#      'New page' => 'V‹Kì¬',
-#      'Edit' => '•ÒW',
-      'newpage' => 'V‹Kì¬',
-      'edit' => '•ÒW',
-      'wysiwyg' => '‚»‚Ìê‚Å•ÒW',
-      'Last modified' => 'ÅIXV',
-      'Generation time' => '¶¬ŽžŠÔ',
-      'seconds' => '•b',
+#      'New page' => 'æ–°è¦ä½œæˆ',
+#      'Edit' => 'ç·¨é›†',
+      'newpage' => 'æ–°è¦ä½œæˆ',
+      'edit' => 'ç·¨é›†',
+      'wysiwyg' => 'ãã®å ´ã§ç·¨é›†',
+      'Last modified' => 'æœ€çµ‚æ›´æ–°',
+      'Generation time' => 'ç”Ÿæˆæ™‚é–“',
+      'seconds' => 'ç§’',
 
       # act-edit
-      'Site Menu' => 'ƒTƒCƒgƒƒjƒ…[',
-      'Site Configuration' => 'ƒTƒCƒgÝ’è',
-      'Group members' => 'ƒOƒ‹[ƒvƒƒ“ƒo[',
-      'Site Archive' => 'ƒTƒCƒgƒA[ƒJƒCƒu',
-      'Mailing List Configuration' => 'ƒ[ƒŠƒ“ƒOƒŠƒXƒgÝ’è',
+      'Site Menu' => 'ã‚µã‚¤ãƒˆãƒ¡ãƒ‹ãƒ¥ãƒ¼',
+      'Site Configuration' => 'ã‚µã‚¤ãƒˆè¨­å®š',
+      'Group members' => 'ã‚°ãƒ«ãƒ¼ãƒ—ãƒ¡ãƒ³ãƒãƒ¼',
+      'Site Archive' => 'ã‚µã‚¤ãƒˆã‚¢ãƒ¼ã‚«ã‚¤ãƒ–',
+      'Mailing List Configuration' => 'ãƒ¡ãƒ¼ãƒªãƒ³ã‚°ãƒªã‚¹ãƒˆè¨­å®š',
 
-      'Functions' => '‹@”\‚Ìà–¾',
-      'Page List' => 'ƒy[ƒWˆê——',
-      'Recent Changes' => 'XV—š—ð',
-      ' ago' => '‘O',
-      'more...' => '‚à‚Á‚Æ‘O‚Ìî•ñ',
-      'min.' => '•ª',
-      'hour' => 'ŽžŠÔ',
-      'day' => '“ú',
-      'month' => 'ƒ–ŒŽ',
-      'year' => '”N',
-      'century' => '¢‹I',
+      'Functions' => 'æ©Ÿèƒ½ã®èª¬æ˜Ž',
+      'Page List' => 'ãƒšãƒ¼ã‚¸ä¸€è¦§',
+      'Recent Changes' => 'æ›´æ–°å±¥æ­´',
+      ' ago' => 'å‰',
+      'more...' => 'ã‚‚ã£ã¨å‰ã®æƒ…å ±',
+      'min.' => 'åˆ†',
+      'hour' => 'æ™‚é–“',
+      'day' => 'æ—¥',
+      'month' => 'ãƒ¶æœˆ',
+      'year' => 'å¹´',
+      'century' => 'ä¸–ç´€',
 
       # act-comment
-      'User' => 'ƒ†[ƒU–¼',
-      'Message' => 'ƒƒbƒZ[ƒW',
-      'Message has been added.' => 'ƒƒbƒZ[ƒW‚ð’Ç‰Á‚µ‚Ü‚µ‚½',
+      'User' => 'ãƒ¦ãƒ¼ã‚¶å',
+      'Message' => 'ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸',
+      'Message has been added.' => 'ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¿½åŠ ã—ã¾ã—ãŸ',
 
       # act-config
-      'Site config'	=> 'ƒTƒCƒgÝ’è',
-      'Site Configuration' => 'ƒTƒCƒgÝ’è',
+      'Site config'	=> 'ã‚µã‚¤ãƒˆè¨­å®š',
+      'Site Configuration' => 'ã‚µã‚¤ãƒˆè¨­å®š',
 
       # act-chronology
-      'Time walker' => 'ŽžŠÔ—·s',
-      'Chronology' => '”N•\',
+      'Time walker' => 'æ™‚é–“æ—…è¡Œ',
+      'Chronology' => 'å¹´è¡¨',
 
       # act-day
-      'One day' => 'ˆê“ú',
+      'One day' => 'ä¸€æ—¥',
 
       # act-describe
-      'Function' => '‹@”\à–¾',
-      'Functions list' => '‹@”\ˆê——',
+      'Function' => 'æ©Ÿèƒ½èª¬æ˜Ž',
+      'Functions list' => 'æ©Ÿèƒ½ä¸€è¦§',
 
       # act-edit.rb
-      'Page is deleted.' => 'ƒy[ƒW‚ðíœ‚µ‚Ü‚µ‚½',
-      'Password does not match.' => 'ƒpƒXƒ[ƒh‚ªˆê’v‚µ‚Ü‚¹‚ñ‚Å‚µ‚½B',
-      'Password' => 'ƒpƒXƒ[ƒh',
+      'Page is deleted.' => 'ãƒšãƒ¼ã‚¸ã‚’å‰Šé™¤ã—ã¾ã—ãŸ',
+      'Password does not match.' => 'ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒä¸€è‡´ã—ã¾ã›ã‚“ã§ã—ãŸã€‚',
+      'Password' => 'ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰',
       'Please find a line like that above, then input password in parentheses.' =>
-      '‚±‚Ì‚æ‚¤‚Ès‚ð’T‚µ‚ÄAŠ‡ŒÊ‚Ì’†‚ÉƒpƒXƒ[ƒh‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B',
+      'ã“ã®ã‚ˆã†ãªè¡Œã‚’æŽ¢ã—ã¦ã€æ‹¬å¼§ã®ä¸­ã«ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚',
 
-      'Page edit conflict' => 'XV‚ªÕ“Ë‚µ‚Ü‚µ‚½B',
+      'Page edit conflict' => 'æ›´æ–°ãŒè¡çªã—ã¾ã—ãŸã€‚',
       'Please save the following content to your text editor.' =>
-      '‰º‹L‚Ì“à—e‚ðƒeƒLƒXƒgƒGƒfƒBƒ^‚È‚Ç‚É•Û‘¶‚µA',
-      'Newest page' => 'ÅV‚Ìƒy[ƒW',
-      ': see this page and re-edit again.' => '‚ðŽQÆŒã‚ÉÄ•ÒW‚µ‚Ä‚­‚¾‚³‚¢B',
-      'Page is saved.' => 'ƒy[ƒW‚ð•Û‘¶‚µ‚Ü‚µ‚½B',
-      'Save' => '•Û‘¶',
-      'Attach' => '“Y•t',
+      'ä¸‹è¨˜ã®å†…å®¹ã‚’ãƒ†ã‚­ã‚¹ãƒˆã‚¨ãƒ‡ã‚£ã‚¿ãªã©ã«ä¿å­˜ã—ã€',
+      'Newest page' => 'æœ€æ–°ã®ãƒšãƒ¼ã‚¸',
+      ': see this page and re-edit again.' => 'ã‚’å‚ç…§å¾Œã«å†ç·¨é›†ã—ã¦ãã ã•ã„ã€‚',
+      'Page is saved.' => 'ãƒšãƒ¼ã‚¸ã‚’ä¿å­˜ã—ã¾ã—ãŸã€‚',
+      'Save' => 'ä¿å­˜',
+      'Attach' => 'æ·»ä»˜',
 
-      'Edit' => '•ÒW',
-      'Attach Files' => 'ƒtƒ@ƒCƒ‹“Y•t',
-      'Attach many files' => '‚à‚Á‚Æ‚½‚­‚³‚ñ“Y•t‚·‚é',
+      'Edit' => 'ç·¨é›†',
+      'Attach Files' => 'ãƒ•ã‚¡ã‚¤ãƒ«æ·»ä»˜',
+      'Attach many files' => 'ã‚‚ã£ã¨ãŸãã•ã‚“æ·»ä»˜ã™ã‚‹',
 
-      'Help' => 'ƒwƒ‹ƒv',
-      'How to qwikWeb' => 'qwikWeb‚ÌŽg‚¢•û',
+      'Help' => 'ãƒ˜ãƒ«ãƒ—',
+      'How to qwikWeb' => 'qwikWebã®ä½¿ã„æ–¹',
 
-      'Site administration' => 'ƒTƒCƒgŠÇ—',
+      'Site administration' => 'ã‚µã‚¤ãƒˆç®¡ç†',
 
-      'Header' => 'Œ©o‚µ',
-      'List' => '‰Óð‘ ',
-      'Ordered list' => '‡˜ƒŠƒXƒg ',
-      'Block quote' => 'ˆø—p ',
-      'Word' => '’è‹` ',
-      'Definition' => 'Œ¾—t‚Ì’è‹` ',
-      'Table' => '•\ ',
-      'Emphasis' => '‹­’²',
-      'Stronger' => '‚à‚Á‚Æ‹­’²',
-      'Link' => 'ƒŠƒ“ƒN',
-      'more help' => '‚à‚Á‚ÆÚ‚µ‚¢‘Ž®',
+      'Header' => 'è¦‹å‡ºã—',
+      'List' => 'ç®‡æ¡æ›¸ ',
+      'Ordered list' => 'é †åºãƒªã‚¹ãƒˆ ',
+      'Block quote' => 'å¼•ç”¨ ',
+      'Word' => 'å®šç¾© ',
+      'Definition' => 'è¨€è‘‰ã®å®šç¾© ',
+      'Table' => 'è¡¨ ',
+      'Emphasis' => 'å¼·èª¿',
+      'Stronger' => 'ã‚‚ã£ã¨å¼·èª¿',
+      'Link' => 'ãƒªãƒ³ã‚¯',
+      'more help' => 'ã‚‚ã£ã¨è©³ã—ã„æ›¸å¼',
 
-      'Text Format' => '‘Ž®ˆê——',
-      'History' => '—š—ð',
-      'Backup' => 'ƒoƒbƒNƒAƒbƒv',
-      'Time machine' => 'ƒ^ƒCƒ€ƒ}ƒV[ƒ“',
-      'Page functions' => 'ƒy[ƒW‚Ì‹@”\ ',
-#      'Experimental functions' => 'ŽÀŒ±’†‚Ì‹@”\ ',
+      'Text Format' => 'æ›¸å¼ä¸€è¦§',
+      'History' => 'å±¥æ­´',
+      'Backup' => 'ãƒãƒƒã‚¯ã‚¢ãƒƒãƒ—',
+      'Time machine' => 'ã‚¿ã‚¤ãƒ ãƒžã‚·ãƒ¼ãƒ³',
+      'Page functions' => 'ãƒšãƒ¼ã‚¸ã®æ©Ÿèƒ½ ',
+#      'Experimental functions' => 'å®Ÿé¨“ä¸­ã®æ©Ÿèƒ½ ',
 
       # act-getpass
-      'Invalid mail address' => 'ƒpƒXƒ[ƒhŒ`Ž®ƒGƒ‰[',
-      'Get Password' => 'ƒpƒXƒ[ƒh“üŽè',
-      'Send Password' => 'ƒpƒXƒ[ƒh‘—M',
-      'You will receive the password by e-mail.' => 'ƒpƒXƒ[ƒh‚ðƒ[ƒ‹‚Å‘—‚è‚Ü‚·',
-      'Please input your mail address.' => 'ƒ[ƒ‹ƒAƒhƒŒƒX‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢',
-      'Mail address' => 'ƒ[ƒ‹ƒAƒhƒŒƒX',
-      'Go back to Login screen' => 'ƒƒOƒCƒ“‰æ–Ê‚É‚à‚Ç‚é',
+      'Invalid mail address' => 'ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰å½¢å¼ã‚¨ãƒ©ãƒ¼',
+      'Get Password' => 'ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰å…¥æ‰‹',
+      'Send Password' => 'ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰é€ä¿¡',
+      'You will receive the password by e-mail.' => 'ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ãƒ¡ãƒ¼ãƒ«ã§é€ã‚Šã¾ã™',
+      'Please input your mail address.' => 'ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„',
+      'Mail address' => 'ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹',
+      'Go back to Login screen' => 'ãƒ­ã‚°ã‚¤ãƒ³ç”»é¢ã«ã‚‚ã©ã‚‹',
 
-      'Send' => '‘—M',
-      'Send' => '‘—M',
+      'Send' => 'é€ä¿¡',
+      'Send' => 'é€ä¿¡',
 
       'You input this e-mail address as user ID.' =>
-      '‚ ‚È‚½‚Íƒ†[ƒUID‚Æ‚µ‚Ä‚±‚Ìƒ[ƒ‹ƒAƒhƒŒƒX‚ð“ü—Í‚µ‚Ü‚µ‚½',
+      'ã‚ãªãŸã¯ãƒ¦ãƒ¼ã‚¶IDã¨ã—ã¦ã“ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å…¥åŠ›ã—ã¾ã—ãŸ',
       'This user with this ID is not a member of this group.' =>
-      '‚±‚Ìƒ†[ƒUID‚ÍA‚±‚ÌƒOƒ‹[ƒv‚É‚ÍŠÜ‚Ü‚ê‚Ä‚¢‚Ü‚¹‚ñ',
+      'ã“ã®ãƒ¦ãƒ¼ã‚¶IDã¯ã€ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã«ã¯å«ã¾ã‚Œã¦ã„ã¾ã›ã‚“',
       'Only the member of this group can get a password.' =>
-      '‚±‚ÌƒOƒ‹[ƒv‚Ìƒƒ“ƒo[‚ÍAƒpƒXƒ[ƒh‚ðŽæ“¾‚Å‚«‚Ü‚·B',
+      'ã“ã®ã‚°ãƒ«ãƒ¼ãƒ—ã®ãƒ¡ãƒ³ãƒãƒ¼ã¯ã€ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å–å¾—ã§ãã¾ã™ã€‚',
 
-      'Your password:' => 'ƒpƒXƒ[ƒh :',
+      'Your password:' => 'ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ :',
       'This is your user name and password: ' =>
-      '‚±‚ÌƒTƒCƒg‚É‚¨‚¯‚éƒ†[ƒU–¼‚ÆƒpƒXƒ[ƒh‚Å‚· : ',
-      'Username' => 'ƒ†[ƒU–¼',
-      'Password' => 'ƒpƒXƒ[ƒh',
+      'ã“ã®ã‚µã‚¤ãƒˆã«ãŠã‘ã‚‹ãƒ¦ãƒ¼ã‚¶åã¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã§ã™ : ',
+      'Username' => 'ãƒ¦ãƒ¼ã‚¶å',
+      'Password' => 'ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰',
       'Please access login page' =>
-      'ƒƒOƒCƒ“ƒy[ƒW‚ÉƒAƒNƒZƒX‚µ‚Ä‚­‚¾‚³‚¢ :',
+      'ãƒ­ã‚°ã‚¤ãƒ³ãƒšãƒ¼ã‚¸ã«ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦ãã ã•ã„ :',
 
       'You can input the user name and password from this URL automatically.' =>
-      '‰º‹LURL‚ÉƒAƒNƒZƒX‚·‚é‚ÆAŽ©“®“I‚Éƒ†[ƒU[–¼‚ÆƒpƒXƒ[ƒh‚ð“ü—Í‚µ‚Ü‚·B',
+      'ä¸‹è¨˜URLã«ã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹ã¨ã€è‡ªå‹•çš„ã«ãƒ¦ãƒ¼ã‚¶ãƒ¼åã¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¾ã™ã€‚',
       'The mail address format is wrong.' =>
-      'ƒ[ƒ‹ƒAƒhƒŒƒX‚ÌŒ`Ž®‚ªŠÔˆá‚Á‚Ä‚Ü‚·B',
-      'Please confirm the input again.' => '‚à‚¤ˆê“x“ü—Í‚ðŠm”F‚µ‚Ä‚­‚¾‚³‚¢B',
-      'Please access again.' => 'Ä“xƒAƒNƒZƒX‚µ‚Ä‚­‚¾‚³‚¢B',
-      'Send Password Error' => 'ƒ[ƒ‹‘—MƒGƒ‰[',
+      'ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®å½¢å¼ãŒé–“é•ã£ã¦ã¾ã™ã€‚',
+      'Please confirm the input again.' => 'ã‚‚ã†ä¸€åº¦å…¥åŠ›ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚',
+      'Please access again.' => 'å†åº¦ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦ãã ã•ã„ã€‚',
+      'Send Password Error' => 'ãƒ¡ãƒ¼ãƒ«é€ä¿¡ã‚¨ãƒ©ãƒ¼',
       'Send failed because of system error.' =>
-      'ƒVƒXƒeƒ€ƒGƒ‰[‚Ì‚½‚ßAƒpƒXƒ[ƒh‘—M‚ÉŽ¸”s‚µ‚Ü‚µ‚½B',
-      'Please contact the administrator.' => 'ƒVƒXƒeƒ€ŠÇ—ŽÒ‚É‚²˜A—‰º‚³‚¢B',
+      'ã‚·ã‚¹ãƒ†ãƒ ã‚¨ãƒ©ãƒ¼ã®ãŸã‚ã€ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰é€ä¿¡ã«å¤±æ•—ã—ã¾ã—ãŸã€‚',
+      'Please contact the administrator.' => 'ã‚·ã‚¹ãƒ†ãƒ ç®¡ç†è€…ã«ã”é€£çµ¡ä¸‹ã•ã„ã€‚',
 
-      'Send Password done' => 'ƒpƒXƒ[ƒh‘—MŠ®—¹',
+      'Send Password done' => 'ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰é€ä¿¡å®Œäº†',
       'I send the password to this mail address.' =>
-      'ƒpƒXƒ[ƒh‚ðˆÈ‰º‚Ìƒ[ƒ‹ƒAƒhƒŒƒX‚É‘—M‚µ‚Ü‚µ‚½B',
-      'Please check your mailbox.' => 'ƒ[ƒ‹ƒ{ƒbƒNƒX‚ðŠm”F‚µ‚Ä‚­‚¾‚³‚¢',
+      'ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ä»¥ä¸‹ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã«é€ä¿¡ã—ã¾ã—ãŸã€‚',
+      'Please check your mailbox.' => 'ãƒ¡ãƒ¼ãƒ«ãƒœãƒƒã‚¯ã‚¹ã‚’ç¢ºèªã—ã¦ãã ã•ã„',
 
       # act-group
-      'Member list' => 'ƒƒ“ƒo[ˆê——',
+      'Member list' => 'ãƒ¡ãƒ³ãƒãƒ¼ä¸€è¦§',
 
       # act-hcomment
-      'Name' => '‚¨–¼‘O',
-      'Comment' => 'ƒRƒƒ“ƒg',
-      'Anonymous' => '–¼–³‚µ‚³‚ñ',
-      'Add a comment.' => 'ƒRƒƒ“ƒg‚ð’Ç‰Á‚µ‚Ü‚µ‚½',
-      'Submit' => '“Še',
-      'Page collision is detected.' => 'XV‚ªÕ“Ë‚µ‚Ü‚µ‚½',
-      'Go back and input again.' => 'Œ³‚Ìƒy[ƒW‚É–ß‚èAÄ“x“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B',
+      'Name' => 'ãŠåå‰',
+      'Comment' => 'ã‚³ãƒ¡ãƒ³ãƒˆ',
+      'Anonymous' => 'åç„¡ã—ã•ã‚“',
+      'Add a comment.' => 'ã‚³ãƒ¡ãƒ³ãƒˆã‚’è¿½åŠ ã—ã¾ã—ãŸ',
+      'Submit' => 'æŠ•ç¨¿',
+      'Page collision is detected.' => 'æ›´æ–°ãŒè¡çªã—ã¾ã—ãŸ',
+      'Go back and input again.' => 'å…ƒã®ãƒšãƒ¼ã‚¸ã«æˆ»ã‚Šã€å†åº¦å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚',
 
       # act-history
-      'Time machine' => 'ƒ^ƒCƒ€ƒ}ƒV[ƒ“',
-      'Move this' => '‚±‚ê‚ð“®‚©‚µ‚Ä‰º‚³‚¢',
+      'Time machine' => 'ã‚¿ã‚¤ãƒ ãƒžã‚·ãƒ¼ãƒ³',
+      'Move this' => 'ã“ã‚Œã‚’å‹•ã‹ã—ã¦ä¸‹ã•ã„',
 
       # act-license
       'You can use the files on this site under [[Creative Commons by 2.1|http://creativecommons.org/licenses/by/2.1/jp/]] license.' =>
-      '‚±‚±‚É’u‚©‚ê‚½ƒtƒ@ƒCƒ‹‚ÍA[[ƒNƒŠƒGƒCƒeƒBƒuEƒRƒ‚ƒ“ƒY ‹A‘® 2.1|http://creativecommons.org/licenses/by/2.1/jp/]]ƒ‰ƒCƒZƒ“ƒX‚Ì‰º‚É—˜—p‚Å‚«‚Ü‚·B',
+      'ã“ã“ã«ç½®ã‹ã‚ŒãŸãƒ•ã‚¡ã‚¤ãƒ«ã¯ã€[[ã‚¯ãƒªã‚¨ã‚¤ãƒ†ã‚£ãƒ–ãƒ»ã‚³ãƒ¢ãƒ³ã‚º å¸°å±ž 2.1|http://creativecommons.org/licenses/by/2.1/jp/]]ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã®ä¸‹ã«åˆ©ç”¨ã§ãã¾ã™ã€‚',
       'You can use the files on this site under [[Creative Commons Attribution-ShareAlike 2.5|http://creativecommons.org/licenses/by-sa/2.5/]] license.' =>
-      '‚±‚±‚É’u‚©‚ê‚½ƒtƒ@ƒCƒ‹‚ÍA[[ƒNƒŠƒGƒCƒeƒBƒuEƒRƒ‚ƒ“ƒY ‹A‘® - “¯ˆêðŒ‹–‘ø 2.5|http://creativecommons.org/licenses/by-sa/2.5/]]ƒ‰ƒCƒZƒ“ƒX‚Ì‰º‚É—˜—p‚Å‚«‚Ü‚·B',
+      'ã“ã“ã«ç½®ã‹ã‚ŒãŸãƒ•ã‚¡ã‚¤ãƒ«ã¯ã€[[ã‚¯ãƒªã‚¨ã‚¤ãƒ†ã‚£ãƒ–ãƒ»ã‚³ãƒ¢ãƒ³ã‚º å¸°å±ž - åŒä¸€æ¡ä»¶è¨±è«¾ 2.5|http://creativecommons.org/licenses/by-sa/2.5/]]ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã®ä¸‹ã«åˆ©ç”¨ã§ãã¾ã™ã€‚',
       'The files you uploaded will be under [[Creative Commons Attribution-ShareAlike 2.5|http://creativecommons.org/licenses/by-sa/2.5/]] license.' =>
-      '‚±‚±‚ÉƒAƒbƒvƒ[ƒh‚³‚ê‚½ƒtƒ@ƒCƒ‹‚ÍA[[ƒNƒŠƒGƒCƒeƒBƒuEƒRƒ‚ƒ“ƒY ‹A‘® - “¯ˆêðŒ‹–‘ø 2.5|http://creativecommons.org/licenses/by-sa/2.5/]]ƒ‰ƒCƒZƒ“ƒX‚Ì‰º‚É’u‚©‚ê‚Ü‚·B',
+      'ã“ã“ã«ã‚¢ãƒƒãƒ—ãƒ­ãƒ¼ãƒ‰ã•ã‚ŒãŸãƒ•ã‚¡ã‚¤ãƒ«ã¯ã€[[ã‚¯ãƒªã‚¨ã‚¤ãƒ†ã‚£ãƒ–ãƒ»ã‚³ãƒ¢ãƒ³ã‚º å¸°å±ž - åŒä¸€æ¡ä»¶è¨±è«¾ 2.5|http://creativecommons.org/licenses/by-sa/2.5/]]ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã®ä¸‹ã«ç½®ã‹ã‚Œã¾ã™ã€‚',
 
       # act-login
-      'Log out' => 'ƒƒOƒAƒEƒg',
-      'Log in by Session' => 'Session‚É‚æ‚éƒƒOƒCƒ“', # FIXME: not found
-      'Success' => '¬Œ÷',
-      'Go next' => 'ŽŸ‚Ö',
-      'Session ID Authentication' => 'Session ID ”FØ', # FIXME: not found
-      'or, Access here.' => '‚Ü‚½‚ÍA‚±‚¿‚ç‚ð‚²—˜—p‰º‚³‚¢B',
-      'Log in using Basic Authentication.' => 'Basic”FØ‚ÅƒƒOƒCƒ“‚µ‚Ü‚µ‚½B',
-      'Log in by Basic Authentication.' => 'Basic”FØ‚ÅƒƒOƒCƒ“',
-      'Logging in by Basic Authentication.' => 'Basic”FØ‚ÅƒƒOƒCƒ“‚µ‚Ü‚·B',
-      'Log in by cookie.' => 'cookie‚É‚æ‚éƒƒOƒCƒ“',
-      'You are already logged in by cookie.' => 'Œ»Ýcookie‚ÅƒƒOƒCƒ“‚µ‚Ä‚¢‚Ü‚·B',
-      'You can log in by TypeKey.' => 'TypeKey‚Å‚àƒƒOƒCƒ“‚Å‚«‚Ü‚·B', # FIXME: not found
-      'Login Error' => 'ƒƒOƒCƒ“ƒGƒ‰[',
+      'Log out' => 'ãƒ­ã‚°ã‚¢ã‚¦ãƒˆ',
+      'Log in by Session' => 'Sessionã«ã‚ˆã‚‹ãƒ­ã‚°ã‚¤ãƒ³', # FIXME: not found
+      'Success' => 'æˆåŠŸ',
+      'Go next' => 'æ¬¡ã¸',
+      'Session ID Authentication' => 'Session ID èªè¨¼', # FIXME: not found
+      'or, Access here.' => 'ã¾ãŸã¯ã€ã“ã¡ã‚‰ã‚’ã”åˆ©ç”¨ä¸‹ã•ã„ã€‚',
+      'Log in using Basic Authentication.' => 'Basicèªè¨¼ã§ãƒ­ã‚°ã‚¤ãƒ³ã—ã¾ã—ãŸã€‚',
+      'Log in by Basic Authentication.' => 'Basicèªè¨¼ã§ãƒ­ã‚°ã‚¤ãƒ³',
+      'Logging in by Basic Authentication.' => 'Basicèªè¨¼ã§ãƒ­ã‚°ã‚¤ãƒ³ã—ã¾ã™ã€‚',
+      'Log in by cookie.' => 'cookieã«ã‚ˆã‚‹ãƒ­ã‚°ã‚¤ãƒ³',
+      'You are already logged in by cookie.' => 'ç¾åœ¨cookieã§ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ã„ã¾ã™ã€‚',
+      'You can log in by TypeKey.' => 'TypeKeyã§ã‚‚ãƒ­ã‚°ã‚¤ãƒ³ã§ãã¾ã™ã€‚', # FIXME: not found
+      'Login Error' => 'ãƒ­ã‚°ã‚¤ãƒ³ã‚¨ãƒ©ãƒ¼',
       'Invalid ID (E-mail) or Password.' =>
-      'ƒ†[ƒUID(E-mail)‚à‚µ‚­‚ÍƒpƒXƒ[ƒh‚ªˆá‚¢‚Ü‚·',
+      'ãƒ¦ãƒ¼ã‚¶ID(E-mail)ã‚‚ã—ãã¯ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé•ã„ã¾ã™',
 
-      'Already logged in.' => 'ƒƒOƒCƒ“Ï‚Ý',
+      'Already logged in.' => 'ãƒ­ã‚°ã‚¤ãƒ³æ¸ˆã¿',
 
       'Please confirm the mail again.' =>
-      '“ü—Í‚ÉŠÔˆá‚¢‚ª‚È‚¢‚©‚Ç‚¤‚©‚à‚¤ˆê“xƒ[ƒ‹‚ð‚²Šm”F‚­‚¾‚³‚¢B',
+      'å…¥åŠ›ã«é–“é•ã„ãŒãªã„ã‹ã©ã†ã‹ã‚‚ã†ä¸€åº¦ãƒ¡ãƒ¼ãƒ«ã‚’ã”ç¢ºèªãã ã•ã„ã€‚',
 
       # FIXME: not found
       '(Please do not use copy and paste. Please input the password from the keyboard again.)' =>
-      '(ƒRƒs[&ƒy[ƒXƒg‚¾‚ÆƒGƒ‰[‚É‚È‚éê‡‚ª‚ ‚è‚Ü‚·B‚»‚Ìê‡‚Í‚¨Žè”‚Å‚·‚ªƒL[ƒ{[ƒh‚©‚ç“ü—Í‚µ‚Ä‚Ý‚Ä‚­‚¾‚³‚¢)',
-      'Can not log out.' => 'ƒƒOƒAƒEƒg‚Å‚«‚Ü‚¹‚ñ',
+      '(ã‚³ãƒ”ãƒ¼&ãƒšãƒ¼ã‚¹ãƒˆã ã¨ã‚¨ãƒ©ãƒ¼ã«ãªã‚‹å ´åˆãŒã‚ã‚Šã¾ã™ã€‚ãã®å ´åˆã¯ãŠæ‰‹æ•°ã§ã™ãŒã‚­ãƒ¼ãƒœãƒ¼ãƒ‰ã‹ã‚‰å…¥åŠ›ã—ã¦ã¿ã¦ãã ã•ã„)',
+      'Can not log out.' => 'ãƒ­ã‚°ã‚¢ã‚¦ãƒˆã§ãã¾ã›ã‚“',
       'You can not log out in Basic Authentication mode.' =>
-      'Basic”FØ‚Ìê‡‚ÍƒƒOƒAƒEƒg‚Å‚«‚Ü‚¹‚ñB',
+      'Basicèªè¨¼ã®å ´åˆã¯ãƒ­ã‚°ã‚¢ã‚¦ãƒˆã§ãã¾ã›ã‚“ã€‚',
       'Please close browser and access again.' =>
-      'ˆê’Uƒuƒ‰ƒEƒU‚ð•Â‚¶‚ÄAÄ“xƒAƒNƒZƒX‚µ‚Ä‚­‚¾‚³‚¢B',
-      'Terminal Number is deleted.' => '’[––”Ô†‚ðíœ‚µ‚Ü‚µ‚½',
-      'Basic Authentication' => 'Basic”FØ',
-      'For mobile phone users' => 'Œg‘Ñ“d˜b‚Ì•û‚Í‚±‚¿‚ç‚Ö',
-      'Log out done.' => 'ƒƒOƒAƒEƒgŠ®—¹',
-      'Confirm' => 'Šm”F',
+      'ä¸€æ—¦ãƒ–ãƒ©ã‚¦ã‚¶ã‚’é–‰ã˜ã¦ã€å†åº¦ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦ãã ã•ã„ã€‚',
+      'Terminal Number is deleted.' => 'ç«¯æœ«ç•ªå·ã‚’å‰Šé™¤ã—ã¾ã—ãŸ',
+      'Basic Authentication' => 'Basicèªè¨¼',
+      'For mobile phone users' => 'æºå¸¯é›»è©±ã®æ–¹ã¯ã“ã¡ã‚‰ã¸',
+      'Log out done.' => 'ãƒ­ã‚°ã‚¢ã‚¦ãƒˆå®Œäº†',
+      'Confirm' => 'ç¢ºèª',
       'Push "Log out".' =>
-      'uƒƒOƒAƒEƒg‚·‚év‚ð‰Ÿ‚·‚ÆA–{“–‚ÉƒƒOƒAƒEƒg‚µ‚Ü‚·B',
-      'Log out' => 'ƒƒOƒAƒEƒg‚·‚é',
+      'ã€Œãƒ­ã‚°ã‚¢ã‚¦ãƒˆã™ã‚‹ã€ã‚’æŠ¼ã™ã¨ã€æœ¬å½“ã«ãƒ­ã‚°ã‚¢ã‚¦ãƒˆã—ã¾ã™ã€‚',
+      'Log out' => 'ãƒ­ã‚°ã‚¢ã‚¦ãƒˆã™ã‚‹',
 
-      'Log in to ' => 'ƒƒOƒCƒ“‚µ‚Ü‚· : ',
+      'Log in to ' => 'ãƒ­ã‚°ã‚¤ãƒ³ã—ã¾ã™ : ',
       'Please input ID (E-mail) and password.' =>
-      'ƒ†[ƒUID‚ÆƒpƒXƒ[ƒh‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢',
-      'ID' => 'ƒ†[ƒUID',
-      'Password' => 'ƒpƒXƒ[ƒh',
+      'ãƒ¦ãƒ¼ã‚¶IDã¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„',
+      'ID' => 'ãƒ¦ãƒ¼ã‚¶ID',
+      'Password' => 'ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰',
 
-      'If you have no password,' => 'ƒpƒXƒ[ƒh‚ð‚¨Ž‚¿‚Å‚È‚¢•û‚Í',
-      'Access here' => '‚±‚¿‚ç‚ð‚²——‰º‚³‚¢',
-      'If you have no password' => 'ƒpƒXƒ[ƒh‚ð‚Ü‚¾Ž‚Á‚Ä‚È‚¢?',
+      'If you have no password,' => 'ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ãŠæŒã¡ã§ãªã„æ–¹ã¯',
+      'Access here' => 'ã“ã¡ã‚‰ã‚’ã”è¦§ä¸‹ã•ã„',
+      'If you have no password' => 'ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ã¾ã æŒã£ã¦ãªã„?',
       'For mobile phone users, please use' => # FIXME: not found
-      'Œg‘Ñ“d˜b‚Ì•û‚ÍA‚±‚¿‚ç‚ð‚²—˜—p‰º‚³‚¢',
-      'You can also use TypeKey' => 'TypeKey‚àŽg‚¦‚Ü‚·', # FIXME: not found
-      'Log in by TypeKey' => 'TypeKey‚ÅƒƒOƒCƒ“',
+      'æºå¸¯é›»è©±ã®æ–¹ã¯ã€ã“ã¡ã‚‰ã‚’ã”åˆ©ç”¨ä¸‹ã•ã„',
+      'You can also use TypeKey' => 'TypeKeyã‚‚ä½¿ãˆã¾ã™', # FIXME: not found
+      'Log in by TypeKey' => 'TypeKeyã§ãƒ­ã‚°ã‚¤ãƒ³',
       'Please send mail address for authentication.' =>
-      '”FØ‚Ì‚½‚ßAƒ[ƒ‹ƒAƒhƒŒƒX‚ð‘—M‚µ‚Ä‚­‚¾‚³‚¢',
+      'èªè¨¼ã®ãŸã‚ã€ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’é€ä¿¡ã—ã¦ãã ã•ã„',
 
       # act-member
-      'Add a member' => 'ƒƒ“ƒo[’Ç‰Á',
-      'Mail address to add' => '’Ç‰Á‚·‚éƒ[ƒ‹ƒAƒhƒŒƒX',
-      'Add' => '’Ç‰Á',
-      'Invalid Mail' => '–³Œø‚Èƒ[ƒ‹ƒAƒhƒŒƒX',
-      'Already exists' => '‚·‚Å‚É‘¶Ý‚µ‚Ä‚¢‚Ü‚·',
-      'Member added' => 'ƒƒ“ƒo[‚Í’Ç‰Á‚³‚ê‚Ü‚µ‚½',
-      'Member list' => 'ƒƒ“ƒo[ˆê——',
-      'Member' => 'ƒƒ“ƒo[',
+      'Add a member' => 'ãƒ¡ãƒ³ãƒãƒ¼è¿½åŠ ',
+      'Mail address to add' => 'è¿½åŠ ã™ã‚‹ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹',
+      'Add' => 'è¿½åŠ ',
+      'Invalid Mail' => 'ç„¡åŠ¹ãªãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹',
+      'Already exists' => 'ã™ã§ã«å­˜åœ¨ã—ã¦ã„ã¾ã™',
+      'Member added' => 'ãƒ¡ãƒ³ãƒãƒ¼ã¯è¿½åŠ ã•ã‚Œã¾ã—ãŸ',
+      'Member list' => 'ãƒ¡ãƒ³ãƒãƒ¼ä¸€è¦§',
+      'Member' => 'ãƒ¡ãƒ³ãƒãƒ¼',
 
       # act-mlsubmitform
-      'Mlcommit' => '“Še‚·‚éB',
+      'Mlcommit' => 'æŠ•ç¨¿ã™ã‚‹ã€‚',
 
       # act-pagelist
-      'Recent change' => 'ÅV‚ÌXV',
+      'Recent change' => 'æœ€æ–°ã®æ›´æ–°',
 
       # act-plan
-      'Plan' => '—\’è',
-      'New plan' => 'V‚µ‚¢—\’è',
-      'Create a new plan' => 'V‚µ‚¢—\’è‚Ì“o˜^',
-      'Please input like this' => '‚±‚Ì‚æ‚¤‚É“ü—Í‚µ‚Ä‚­‚¾‚³‚¢',
-      'Already exists.' => '‚·‚Å‚É‚ ‚è‚Ü‚µ‚½',
+      'Plan' => 'äºˆå®š',
+      'New plan' => 'æ–°ã—ã„äºˆå®š',
+      'Create a new plan' => 'æ–°ã—ã„äºˆå®šã®ç™»éŒ²',
+      'Please input like this' => 'ã“ã®ã‚ˆã†ã«å…¥åŠ›ã—ã¦ãã ã•ã„',
+      'Already exists.' => 'ã™ã§ã«ã‚ã‚Šã¾ã—ãŸ',
 
       # act-schedule
-      'Schedule' => 'ƒXƒPƒWƒ…[ƒ‹',
-      'Date' => '“ú•t',
-      'Schedule edit done.' => 'ƒXƒPƒWƒ…[ƒ‹‚ð“ü—Í‚µ‚Ü‚µ‚½B',
+      'Schedule' => 'ã‚¹ã‚±ã‚¸ãƒ¥ãƒ¼ãƒ«',
+      'Date' => 'æ—¥ä»˜',
+      'Schedule edit done.' => 'ã‚¹ã‚±ã‚¸ãƒ¥ãƒ¼ãƒ«ã‚’å…¥åŠ›ã—ã¾ã—ãŸã€‚',
 
       # act-slogin
-      'Session ID is registered.' => 'Session ID‚ð“o˜^‚µ‚Ü‚µ‚½B', # FIXME: not found
+      'Session ID is registered.' => 'Session IDã‚’ç™»éŒ²ã—ã¾ã—ãŸã€‚', # FIXME: not found
 
       # act-style
-      'Access Failed' => 'ƒAƒNƒZƒX‚Å‚«‚Ü‚¹‚ñ‚Å‚µ‚½',
+      'Access Failed' => 'ã‚¢ã‚¯ã‚»ã‚¹ã§ãã¾ã›ã‚“ã§ã—ãŸ',
 
       # act-map
-      'Show map in full screen.' => '’n}‚ðƒtƒ‹ƒXƒNƒŠ[ƒ“‚ÅŒ©‚é',
+      'Show map in full screen.' => 'åœ°å›³ã‚’ãƒ•ãƒ«ã‚¹ã‚¯ãƒªãƒ¼ãƒ³ã§è¦‹ã‚‹',
 
       # act-mcomment
-      'Failed' => 'Ž¸”s‚µ‚Ü‚µ‚½',
+      'Failed' => 'å¤±æ•—ã—ã¾ã—ãŸ',
 
       # act-mdlb
-      'Please specify file.' => 'ƒtƒ@ƒCƒ‹‚ðŽw’è‚µ‚Ä‚­‚¾‚³‚¢B',
-      'Please contact the administrator.' => 'ŠÇ—ŽÒ‚É˜A—‚µ‚Ä‚­‚¾‚³‚¢B',
+      'Please specify file.' => 'ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚',
+      'Please contact the administrator.' => 'ç®¡ç†è€…ã«é€£çµ¡ã—ã¦ãã ã•ã„ã€‚',
       'The file is saved with this filename.' =>
-      '‚±‚Ìƒtƒ@ƒCƒ‹–¼‚ÅƒZ[ƒu‚³‚ê‚Ü‚µ‚½B',
+      'ã“ã®ãƒ•ã‚¡ã‚¤ãƒ«åã§ã‚»ãƒ¼ãƒ–ã•ã‚Œã¾ã—ãŸã€‚',
       'The image is also saved.' =>
-      '‰æ‘œƒtƒ@ƒCƒ‹‚àƒZ[ƒu‚³‚ê‚Ü‚µ‚½B',
-      'Model file' => 'ƒ‚ƒfƒ‹ƒtƒ@ƒCƒ‹',
-      'Image file' => '‰æ‘œƒtƒ@ƒCƒ‹',
+      'ç”»åƒãƒ•ã‚¡ã‚¤ãƒ«ã‚‚ã‚»ãƒ¼ãƒ–ã•ã‚Œã¾ã—ãŸã€‚',
+      'Model file' => 'ãƒ¢ãƒ‡ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«',
+      'Image file' => 'ç”»åƒãƒ•ã‚¡ã‚¤ãƒ«',
 
       # act-mdblb-model
-#      'Title' => 'ƒ^ƒCƒgƒ‹',
-      'Author' => 'ìŽÒ',
-#      'Comment' => 'ƒRƒƒ“ƒg',
-      'Download' => 'ƒ_ƒEƒ“ƒ[ƒh',
+#      'Title' => 'ã‚¿ã‚¤ãƒˆãƒ«',
+      'Author' => 'ä½œè€…',
+#      'Comment' => 'ã‚³ãƒ¡ãƒ³ãƒˆ',
+      'Download' => 'ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰',
 
       # act-new
-      'Push create.' => 'V‹Kì¬‚ð‰Ÿ‚µ‚Ä‚­‚¾‚³‚¢B',
-      'New page' => 'V‹Kì¬',
-      'Title' => 'ƒ^ƒCƒgƒ‹',
-      'PageKey' => 'ƒy[ƒWƒL[',
-      'Already exists' => '‚·‚Å‚É‘¶Ý‚µ‚Ä‚¢‚Ü‚·',
-      ' already exists.' => '‚Í‚·‚Å‚É‘¶Ý‚µ‚Ä‚¢‚Ü‚·B',
-      'Please specify another title.' => 'ˆá‚¤ƒ^ƒCƒgƒ‹‚ðŽw’è‚µ‚Ä‚­‚¾‚³‚¢B',
-      'Created.' => 'ì¬‚µ‚Ü‚µ‚½',
-      'Edit new page' => 'V‹Kƒy[ƒW‚ð•ÒW',
+      'Push create.' => 'æ–°è¦ä½œæˆã‚’æŠ¼ã—ã¦ãã ã•ã„ã€‚',
+      'New page' => 'æ–°è¦ä½œæˆ',
+      'Title' => 'ã‚¿ã‚¤ãƒˆãƒ«',
+      'PageKey' => 'ãƒšãƒ¼ã‚¸ã‚­ãƒ¼',
+      'Already exists' => 'ã™ã§ã«å­˜åœ¨ã—ã¦ã„ã¾ã™',
+      ' already exists.' => 'ã¯ã™ã§ã«å­˜åœ¨ã—ã¦ã„ã¾ã™ã€‚',
+      'Please specify another title.' => 'é•ã†ã‚¿ã‚¤ãƒˆãƒ«ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚',
+      'Created.' => 'ä½œæˆã—ã¾ã—ãŸ',
+      'Edit new page' => 'æ–°è¦ãƒšãƒ¼ã‚¸ã‚’ç·¨é›†',
 
       # etc.
-      'Show history' => '‰ß‹Ž‚Ì•Ï‘J‚ð’H‚é',
-      'Show backup' => '‚¢‚Ü‚Ü‚Å‚Ì—š—ð',
+      'Show history' => 'éŽåŽ»ã®å¤‰é·ã‚’è¾¿ã‚‹',
+      'Show backup' => 'ã„ã¾ã¾ã§ã®å±¥æ­´',
 
       # act-presen
-      'Presentation mode' => 'ƒvƒŒƒ[ƒ“ƒ‚[ƒh',
-      'Presentation mode' => 'ƒvƒŒƒ[ƒ“ƒ‚[ƒh',
+      'Presentation mode' => 'ãƒ—ãƒ¬ã‚¼ãƒ³ãƒ¢ãƒ¼ãƒ‰',
+      'Presentation mode' => 'ãƒ—ãƒ¬ã‚¼ãƒ³ãƒ¢ãƒ¼ãƒ‰',
       # other
-      'Present' => 'ƒvƒŒƒ[ƒ“',
-      'presentation' => 'ƒvƒŒƒ[ƒ“ƒe[ƒVƒ‡ƒ“',
+      'Present' => 'ãƒ—ãƒ¬ã‚¼ãƒ³',
+      'presentation' => 'ãƒ—ãƒ¬ã‚¼ãƒ³ãƒ†ãƒ¼ã‚·ãƒ§ãƒ³',
 
       # act-search
-      'Search' => 'ŒŸõ',
-      'Search result' => 'ŒŸõŒ‹‰Ê',
-      'No match.' => 'Œ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½B',
+      'Search' => 'æ¤œç´¢',
+      'Search result' => 'æ¤œç´¢çµæžœ',
+      'No match.' => 'è¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸã€‚',
 
       # act-sendpass
-      'Succeeded.' => '¬Œ÷‚µ‚Ü‚µ‚½',
-      'Failed.' => 'Ž¸”s‚µ‚Ü‚µ‚½',
-      'Wrong format.' => 'Œ`Ž®‚ªˆá‚¢‚Ü‚·',
-      'Not a member.' => 'ƒƒ“ƒo[‚Å‚Í‚ ‚è‚Ü‚¹‚ñ',
+      'Succeeded.' => 'æˆåŠŸã—ã¾ã—ãŸ',
+      'Failed.' => 'å¤±æ•—ã—ã¾ã—ãŸ',
+      'Wrong format.' => 'å½¢å¼ãŒé•ã„ã¾ã™',
+      'Not a member.' => 'ãƒ¡ãƒ³ãƒãƒ¼ã§ã¯ã‚ã‚Šã¾ã›ã‚“',
       'You can send password for the members.' =>
-      'ƒƒ“ƒo[‚ÉƒpƒXƒ[ƒh‚ð‘—M‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B',
+      'ãƒ¡ãƒ³ãƒãƒ¼ã«ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’é€ä¿¡ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚',
       'Please select members to send password.' =>
-      'ƒpƒXƒ[ƒh‚ð‘—‚éƒƒ“ƒo[‚ð‘I‘ð‚µ‚Ä‚­‚¾‚³‚¢B',
+      'ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’é€ã‚‹ãƒ¡ãƒ³ãƒãƒ¼ã‚’é¸æŠžã—ã¦ãã ã•ã„ã€‚',
 
       # act-table-edit
-      'You can only use a table.' => 'table‚µ‚©Žg‚¦‚Ü‚¹‚ñB',
-      'You can only use text.' => 'text‚µ‚©Žg‚¦‚Ü‚¹‚ñB',
-      'Update' => 'XV',
-      'Edit done.' => '•ÒWŠ®—¹',
+      'You can only use a table.' => 'tableã—ã‹ä½¿ãˆã¾ã›ã‚“ã€‚',
+      'You can only use text.' => 'textã—ã‹ä½¿ãˆã¾ã›ã‚“ã€‚',
+      'Update' => 'æ›´æ–°',
+      'Edit done.' => 'ç·¨é›†å®Œäº†',
 
       # act-textarea
-      'Edit text done.' => 'ƒeƒLƒXƒg‚ð•ÒW‚µ‚Ü‚µ‚½',
+      'Edit text done.' => 'ãƒ†ã‚­ã‚¹ãƒˆã‚’ç·¨é›†ã—ã¾ã—ãŸ',
 
       # act-takahashi
-      'Show in full screen.' => 'ƒtƒ‹ƒXƒNƒŠ[ƒ“‚ÅŒ©‚é', # FIXME: not found
+      'Show in full screen.' => 'ãƒ•ãƒ«ã‚¹ã‚¯ãƒªãƒ¼ãƒ³ã§è¦‹ã‚‹', # FIXME: not found
 
       # act-toc
-      'contents' => '–ÚŽŸ',
-      'Contents' => '–ÚŽŸ',
+      'contents' => 'ç›®æ¬¡',
+      'Contents' => 'ç›®æ¬¡',
 
       # act-typekey
-      'Cannot use.' => 'Žg‚¦‚Ü‚¹‚ñB',
+      'Cannot use.' => 'ä½¿ãˆã¾ã›ã‚“ã€‚',
       'There is no site token for TypeKey.' =>
-      'TypeKey—p‚ÌƒTƒCƒgƒg[ƒNƒ“‚ª‚ ‚è‚Ü‚¹‚ñB',
-      'Verify failed.' => '”FØ‚Å‚«‚Ü‚¹‚ñ‚Å‚µ‚½B',
-      'Time out.' => 'ŽžŠÔØ‚ê‚Å‚·B',
+      'TypeKeyç”¨ã®ã‚µã‚¤ãƒˆãƒˆãƒ¼ã‚¯ãƒ³ãŒã‚ã‚Šã¾ã›ã‚“ã€‚',
+      'Verify failed.' => 'èªè¨¼ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚',
+      'Time out.' => 'æ™‚é–“åˆ‡ã‚Œã§ã™ã€‚',
 
       # act-wysiwyg
-      'Edit in this page' => '‚»‚Ìê‚Å•ÒW',
-      'Auto-save' => 'Ž©“®•Û‘¶',
-#       'This is an experimental function.' => '‚±‚Ì‹@”\‚Í‚Ü‚¾ŽÀŒ±’†‚Å‚·B',
+      'Edit in this page' => 'ãã®å ´ã§ç·¨é›†',
+      'Auto-save' => 'è‡ªå‹•ä¿å­˜',
+#       'This is an experimental function.' => 'ã“ã®æ©Ÿèƒ½ã¯ã¾ã å®Ÿé¨“ä¸­ã§ã™ã€‚',
 #       'The contents will be translated to html.' =>
-#       'ƒy[ƒW‚Ì“à—e‚ÍA‘S‚ÄHTML‚É•ÏŠ·‚³‚ê‚Ü‚·B',
+#       'ãƒšãƒ¼ã‚¸ã®å†…å®¹ã¯ã€å…¨ã¦HTMLã«å¤‰æ›ã•ã‚Œã¾ã™ã€‚',
 #       'Please use this function only if you understand what will happen.' =>
-#       '‰½‚ª‹N‚é‚Ì‚©‚ð—‰ð‚³‚ê‚Ä‚¢‚éê‡‚Ì‚ÝA‚¨Žg‚¢‰º‚³‚¢B',
+#       'ä½•ãŒèµ·ã‚‹ã®ã‹ã‚’ç†è§£ã•ã‚Œã¦ã„ã‚‹å ´åˆã®ã¿ã€ãŠä½¿ã„ä¸‹ã•ã„ã€‚',
 
       # act-wema
-      'How to use post-its' => '•â³‚ÌŽg‚¢•û',
-      'New post-it is created.' => '•tâ³‚ðV‹K‚Éì¬‚µ‚Ü‚µ‚½',
-      'Edit done.' => '•ÒW‚µ‚Ü‚µ‚½',
-      'No action.' => '‰½‚à‚µ‚Ü‚¹‚ñ‚Å‚µ‚½',
-      'Delete a Post-it.' => '•tâ³‚ðÁ‹Ž‚µ‚Ü‚µ‚½',
-      'Set position.' => 'ˆÊ’u‚ðƒZƒbƒg‚µ‚Ü‚µ‚½',
-      'Post-it' => '•â³',
-      'New Post-it' => 'V‹K•â³',
-      'Help' => 'Žg‚¢•û',
-      'Draw Line' => 'ü‚ðˆø‚­',
-      'Text color' => '•¶ŽšF',
-      'Background' => '”wŒiF',
+      'How to use post-its' => 'é™„ç®‹ã®ä½¿ã„æ–¹',
+      'New post-it is created.' => 'ä»˜ç®‹ã‚’æ–°è¦ã«ä½œæˆã—ã¾ã—ãŸ',
+      'Edit done.' => 'ç·¨é›†ã—ã¾ã—ãŸ',
+      'No action.' => 'ä½•ã‚‚ã—ã¾ã›ã‚“ã§ã—ãŸ',
+      'Delete a Post-it.' => 'ä»˜ç®‹ã‚’æ¶ˆåŽ»ã—ã¾ã—ãŸ',
+      'Set position.' => 'ä½ç½®ã‚’ã‚»ãƒƒãƒˆã—ã¾ã—ãŸ',
+      'Post-it' => 'é™„ç®‹',
+      'New Post-it' => 'æ–°è¦é™„ç®‹',
+      'Help' => 'ä½¿ã„æ–¹',
+      'Draw Line' => 'ç·šã‚’å¼•ã',
+      'Text color' => 'æ–‡å­—è‰²',
+      'Background' => 'èƒŒæ™¯è‰²',
 
       # act-site-backup
-      'Site backup' => 'ƒTƒCƒgƒoƒbƒNƒAƒbƒv',
+      'Site backup' => 'ã‚µã‚¤ãƒˆãƒãƒƒã‚¯ã‚¢ãƒƒãƒ—',
 
       # act-files
-      'Attached files total:' => '“Y•tƒtƒ@ƒCƒ‹‡Œv:',
-      'Exceeded limit.' => 'Å‘å—e—Ê‚ð’´‚¦‚Ü‚µ‚½',
-      '%s left' => 'Žc‚è%s',
-      'Total file size exceeded.' => '‘ƒtƒ@ƒCƒ‹ƒTƒCƒY‚ÌŒÀŠE‚ð’´‚¦‚Ä‚¢‚Ü‚·B',
-      'Reaching limit.' => '—e—Ê‚ª­‚È‚­‚È‚Á‚Ä‚«‚Ä‚¢‚Ü‚·B',
-      'Maximum total size' => '“Y•tƒtƒ@ƒCƒ‹‚ÌÅ‘å',
-      'Current total size' => 'Œ»Ý‚Ì“Y•tƒtƒ@ƒCƒ‹‚Ì‡Œv',
+      'Attached files total:' => 'æ·»ä»˜ãƒ•ã‚¡ã‚¤ãƒ«åˆè¨ˆ:',
+      'Exceeded limit.' => 'æœ€å¤§å®¹é‡ã‚’è¶…ãˆã¾ã—ãŸ',
+      '%s left' => 'æ®‹ã‚Š%s',
+      'Total file size exceeded.' => 'ç·ãƒ•ã‚¡ã‚¤ãƒ«ã‚µã‚¤ã‚ºã®é™ç•Œã‚’è¶…ãˆã¦ã„ã¾ã™ã€‚',
+      'Reaching limit.' => 'å®¹é‡ãŒå°‘ãªããªã£ã¦ãã¦ã„ã¾ã™ã€‚',
+      'Maximum total size' => 'æ·»ä»˜ãƒ•ã‚¡ã‚¤ãƒ«ã®æœ€å¤§',
+      'Current total size' => 'ç¾åœ¨ã®æ·»ä»˜ãƒ•ã‚¡ã‚¤ãƒ«ã®åˆè¨ˆ',
 
 
       # Add you catalog here.

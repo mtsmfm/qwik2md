@@ -23,7 +23,7 @@ Content-Type: multipart/alternative;
 Content-Type: text/plain; charset='iso-2022-jp'
 Content-Transfer-Encoding: 7bit
 
-Ç≈Ç∑ÅB
+„Åß„Åô„ÄÇ
 --============_-1089260510==_ma============
 Content-Type: text/html; charset='iso-2022-jp'
 Content-Transfer-Encoding: 7bit
@@ -32,7 +32,7 @@ Content-Transfer-Encoding: 7bit
 <html><head><style type=\"text/css\"><!--
 blockquote, dl, ul, ol, li { padding-top: 0 ; padding-bottom: 0 }
  --></style><title>George Legady</title></head><body>
-<div>Ç≈Ç∑ÅB<br>
+<div>„Åß„Åô„ÄÇ<br>
 </div>
 </body>
 </html>
@@ -47,6 +47,6 @@ blockquote, dl, ul, ol, li { padding-top: 0 ; padding-bottom: 0 }
 
     page = @site['HtmlMail']
     ok_eq('HtmlMail', page.get_title)
-    ok_eq("* HtmlMail\n{{mail(bob@example.net,0)\nÇ≈Ç∑ÅB\n}}\n", page.load)
+    ok_eq("* HtmlMail\n{{mail(bob@example.net,0)\n„Åß„Åô„ÄÇ\n}}\n", page.load)
   end
 end

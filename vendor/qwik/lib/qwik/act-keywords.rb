@@ -29,13 +29,13 @@ You see the keyword list of TextFormat.
     }
 
     D_PluginKeywords_ja = {
-      :dt => 'ƒL[ƒ[ƒh•\¦ƒvƒ‰ƒOƒCƒ“',
-      :dd => 'ƒy[ƒW“à‚ÌƒL[ƒ[ƒh‚Ìˆê——‚ª•\¦‚³‚ê‚Ü‚·B',
-      :dc => "* —á
-FrontPage‚ÌƒL[ƒ[ƒhˆê——‚ª•\¦‚³‚ê‚Ü‚·B
+      :dt => 'ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰è¡¨ç¤ºãƒ—ãƒ©ã‚°ã‚¤ãƒ³',
+      :dd => 'ãƒšãƒ¼ã‚¸å†…ã®ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰ã®ä¸€è¦§ãŒè¡¨ç¤ºã•ã‚Œã¾ã™ã€‚',
+      :dc => "* ä¾‹
+FrontPageã®ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰ä¸€è¦§ãŒè¡¨ç¤ºã•ã‚Œã¾ã™ã€‚
  {{keywords}}
 {{keywords}}
-TextFormatƒy[ƒW‚Ìˆê——‚ª•\¦‚³‚ê‚Ü‚·B
+TextFormatãƒšãƒ¼ã‚¸ã®ä¸€è¦§ãŒè¡¨ç¤ºã•ã‚Œã¾ã™ã€‚
  {{keywords(TextFormat)}}
 {{keywords(TextFormat)}}
 "
@@ -74,8 +74,8 @@ TextFormatƒy[ƒW‚Ìˆê——‚ª•\¦‚³‚ê‚Ü‚·B
     RE_SJIS = Regexp.new(PATTERN_SJIS, 0, 'n')
     RE_EUC = Regexp.new(PATTERN_EUC, 0, 'n')
 
-    HIRAGANA = "[‚Ÿ-‚ñ[`]"
-    KANJI = "[ˆŸ-ê¢]"
+    HIRAGANA = "[ã-ã‚“ãƒ¼ï½]"
+    KANJI = "[äºœ-ç‘¤]"
 
     def self.nodes_get(content)
       content.set_sjis
@@ -88,10 +88,10 @@ TextFormatƒy[ƒW‚Ìˆê——‚ª•\¦‚³‚ê‚Ü‚·B
 	feature = n.getFeature.set_euc.to_sjis
 	if ! surface.empty? &&
 	    RE_SJIS =~ surface &&
-	    /\A([‚Ÿ-‚ñ[`]+)\z/s !~ surface &&
-	    /\A[D-¨AB]/s !~ surface &&
-	    /\A[C©]/s !~ surface
-#	    /\A[@‚O-‚X¨uvijAB]/s !~ surface
+	    /\A([ã-ã‚“ãƒ¼ï½]+)\z/s !~ surface &&
+	    /\A[ï¼-â†’ã€ã€‚]/s !~ surface &&
+	    /\A[ï¼Œâ†]/s !~ surface
+#	    /\A[ã€€ï¼-ï¼™â†’ã€Œã€ï¼ˆï¼‰ã€ã€‚]/s !~ surface
 	  nodes << [surface, feature]
 	end
 	n = n.next
@@ -113,24 +113,24 @@ if defined?($test) && $test
 
     def test_keywords
       c = Qwik::Action
-#      eq ["‚ "], c.nodes_get("‚ ")
-#      eq ["‚±‚ê", "‚Í", "ƒeƒXƒg", "‚Å‚·", "B"],
-#	c.nodes_get("‚±‚ê‚ÍƒeƒXƒg‚Å‚·B")
-#      eq ["¡“ú", "‚à", "‚µ", "‚È‚¢", "‚Æ", "‚Ë"],
-#	c.nodes_get("¡“ú‚à‚µ‚È‚¢‚Æ‚Ë")
-#      eq ["‘¾˜Y", "‚Í", "‚±‚Ì", "–{", "‚ğ", "“ñ˜Y", "‚ğ", "Œ©", "‚½",
-#	"—«", "‚É", "“n‚µ", "‚½", "B"],
-#	c.nodes_get("‘¾˜Y‚Í‚±‚Ì–{‚ğ“ñ˜Y‚ğŒ©‚½—«‚É“n‚µ‚½B")
+#      eq ["ã‚"], c.nodes_get("ã‚")
+#      eq ["ã“ã‚Œ", "ã¯", "ãƒ†ã‚¹ãƒˆ", "ã§ã™", "ã€‚"],
+#	c.nodes_get("ã“ã‚Œã¯ãƒ†ã‚¹ãƒˆã§ã™ã€‚")
+#      eq ["ä»Šæ—¥", "ã‚‚", "ã—", "ãªã„", "ã¨", "ã­"],
+#	c.nodes_get("ä»Šæ—¥ã‚‚ã—ãªã„ã¨ã­")
+#      eq ["å¤ªéƒ", "ã¯", "ã“ã®", "æœ¬", "ã‚’", "äºŒéƒ", "ã‚’", "è¦‹", "ãŸ",
+#	"å¥³æ€§", "ã«", "æ¸¡ã—", "ãŸ", "ã€‚"],
+#	c.nodes_get("å¤ªéƒã¯ã“ã®æœ¬ã‚’äºŒéƒã‚’è¦‹ãŸå¥³æ€§ã«æ¸¡ã—ãŸã€‚")
     end
 
     def test_plg_keywords
       return unless $have_mecab
 
       page = @site.create('2')
-      page.store("š")
+      page.store("å­—")
 
       ok_wi [:div, {:class=>"keywords"},
-	[:a, {:style=>"font-size:12.00px;", :href=>"%8E%9A.search"}, "š"]],
+	[:a, {:style=>"font-size:12.00px;", :href=>"%8E%9A.search"}, "å­—"]],
 	"{{keywords(2)}}"
     end
   end

@@ -223,19 +223,19 @@ if defined?($test) && $test
   class TestUtilCharset < Test::Unit::TestCase
     def test_kconv
       # test_sjistoeuc
-      assert_equal "\244\242", '‚ '.sjistoeuc
-      assert_equal 'EUC-JP', '‚ '.sjistoeuc.charset
+      assert_equal "\244\242", 'ã‚'.sjistoeuc
+      assert_equal 'EUC-JP', 'ã‚'.sjistoeuc.charset
 
       # test_euctosjis
-      assert_equal '‚ ', "\244\242".euctosjis
+      assert_equal 'ã‚', "\244\242".euctosjis
       assert_equal 'Shift_JIS', "\244\242".euctosjis.charset
 
       # test_sjistojis
-      assert_equal "\e$B$\"\e(B", '‚ '.sjistojis
-      assert_equal 'ISO-2022-JP', '‚ '.sjistojis.charset
+      assert_equal "\e$B$\"\e(B", 'ã‚'.sjistojis
+      assert_equal 'ISO-2022-JP', 'ã‚'.sjistojis.charset
 
       # test_jistosjis
-      assert_equal '‚ ', "\e$B$\"\e(B".jistosjis
+      assert_equal 'ã‚', "\e$B$\"\e(B".jistosjis
       assert_equal 'Shift_JIS', "\e$B$\"\e(B".jistosjis.charset
 
       # test_euctojis
@@ -247,17 +247,17 @@ if defined?($test) && $test
       assert_equal 'EUC-JP', "\e$B$\"\e(B".jistoeuc.charset
 
       # test_some_characters
-      assert_equal "\e$B4A;z\e(B", 'Š¿š'.sjistojis
+      assert_equal "\e$B4A;z\e(B", 'æ¼¢å­—'.sjistojis
     end
 
     def test_iconv
-      assert_equal 'š', 'š'.sjistou8.u8tosjis
-      assert_equal 'š', 'š'.sjistoeuc.euctou8.u8toeuc.euctosjis
-      assert_equal 'š', 'š'.sjistojis.jistou8.u8tojis.jistosjis
+      assert_equal 'å­—', 'å­—'.sjistou8.u8tosjis
+      assert_equal 'å­—', 'å­—'.sjistoeuc.euctou8.u8toeuc.euctosjis
+      assert_equal 'å­—', 'å­—'.sjistojis.jistou8.u8tojis.jistosjis
 
       # test_sjistou8
-      assert_equal "\343\201\202", '‚ '.sjistou8
-      assert_equal 'UTF-8', '‚ '.sjistou8.charset
+      assert_equal "\343\201\202", 'ã‚'.sjistou8
+      assert_equal 'UTF-8', 'ã‚'.sjistou8.charset
 
       assert_equal "\342\200\276", '~'.sjistou8
 
@@ -266,8 +266,8 @@ if defined?($test) && $test
       assert_equal 'Shift_JIS', "\343\201\202".u8tosjis.charset
 
       # test_sjistoeuc
-      assert_equal "\244\242", '‚ '.sjistoeuc
-      assert_equal 'EUC-JP', '‚ '.sjistoeuc.charset
+      assert_equal "\244\242", 'ã‚'.sjistoeuc
+      assert_equal 'EUC-JP', 'ã‚'.sjistoeuc.charset
 
       # test_euctou8
       assert_equal "\343\201\202", "\244\242".euctou8
@@ -278,8 +278,8 @@ if defined?($test) && $test
       assert_equal 'EUC-JP', "\343\201\202".u8toeuc.charset
 
       # test_sjistojis
-      assert_equal "\e$B$\"\e(B", "‚ ".sjistojis
-      assert_equal 'ISO-2022-JP', "‚ ".sjistojis.charset
+      assert_equal "\e$B$\"\e(B", "ã‚".sjistojis
+      assert_equal 'ISO-2022-JP', "ã‚".sjistojis.charset
 
       # test_jistou8
       assert_equal "\343\201\202", "\e$B$\"\e(B".jistou8
@@ -296,8 +296,8 @@ if defined?($test) && $test
       assert_equal "?\202\240", "\202\343\201\202".u8tosjis
 
       # test_annoying_character
-      assert_equal "\343\200\234", '`'.sjistou8
-      assert_equal '`', "\343\200\234".u8tosjis
+      assert_equal "\343\200\234", 'ï½'.sjistou8
+      assert_equal 'ï½', "\343\200\234".u8tosjis
     end
 
     def test_charset
@@ -308,7 +308,7 @@ if defined?($test) && $test
 
       # test_guess
       assert_equal 'UTF-8', "\343\201\202".guess_charset
-      assert_equal 'Shift_JIS', "\202\240".guess_charset	# ‚ 
+      assert_equal 'Shift_JIS', "\202\240".guess_charset	# ã‚
 #      assert_equal 'EUC-JP', "\244\242".guess_charset
       assert_equal 'ISO-2022-JP', "\e$B$\"\e(B".guess_charset
 
@@ -324,8 +324,8 @@ if defined?($test) && $test
       # $KCODE = 'u'
       assert_equal "~", "~".to_utf8
       assert_equal "\342\200\276", "~".set_sjis.to_utf8	# annoying...
-      #assert_equal "\343\200\234", "`".to_utf8
-      #assert_equal "\343\200\234", "`".set_sjis.to_utf8
+      #assert_equal "\343\200\234", "ï½".to_utf8
+      #assert_equal "\343\200\234", "ï½".set_sjis.to_utf8
     end
   end
 end

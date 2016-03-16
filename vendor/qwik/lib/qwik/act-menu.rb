@@ -42,9 +42,9 @@ module Qwik
     }
 
     D_PluginMenu_ja = {
-      :dt => 'ƒƒjƒ…[Eƒvƒ‰ƒOƒCƒ“',
-      :dd => 'ƒvƒ‹ƒ_ƒEƒ“Œ^ƒƒjƒ…[‚ðì‚ê‚Ü‚·B',
-      :dc => "* —á
+      :dt => 'ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒ»ãƒ—ãƒ©ã‚°ã‚¤ãƒ³',
+      :dd => 'ãƒ—ãƒ«ãƒ€ã‚¦ãƒ³åž‹ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’ä½œã‚Œã¾ã™ã€‚',
+      :dc => "* ä¾‹
 {{hmenu
 - [[Yahoo!|http://www.yahoo.co.jp/]]
 -- [[map|http://map.yahoo.co.jp/]]

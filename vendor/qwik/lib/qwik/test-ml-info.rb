@@ -136,7 +136,7 @@ Content-Type: Multipart/Mixed;
 Content-Type: Text/Plain; charset=iso-2022-jp
 Content-Transfer-Encoding: 7bit
 
-‚Ä‚·‚Æ
+ã¦ã™ã¨
 ----Next_Part(Wed_Oct_16_19:21:12_2002_747)--
 Content-Type: Text/Plain; charset=us-ascii
 Content-Transfer-Encoding: 7bit
@@ -182,7 +182,7 @@ EOF
       message = <<'EOF'
 Content-Type: text/plain; charset=ISO-2022-JP
 
-“ú–{Œê‚Å‚·‚æ
+æ—¥æœ¬èªã§ã™ã‚ˆ
 EOF
       sendmail(from, 'test@example.com',
 	       "=?iso-2022-jp?B?GyRCJEYkOSRIGyhC?="){message}

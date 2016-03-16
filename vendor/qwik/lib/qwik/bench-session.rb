@@ -19,7 +19,7 @@ class BenchSession < Test::Unit::TestCase
     repeat.times {
       res = session('/test/TextFormat.html')
       body = res.body.format_xml
-     #ok_title("‘Ž®ˆê——Ú×”Å")
+     #ok_title("æ›¸å¼ä¸€è¦§è©³ç´°ç‰ˆ")
     }
   end
 end

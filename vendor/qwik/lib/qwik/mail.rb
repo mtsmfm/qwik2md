@@ -312,15 +312,15 @@ AAAAAElFTkSuQmCC
 'Date: Mon, 3 Feb 2001 12:34:56 +0900
 From: "Test User" <user@e.com>
 To: "Test Mailing List" <test@example.com>
-Subject: Re: [test:1] ƒeƒXƒg 
+Subject: Re: [test:1] ãƒ†ã‚¹ãƒˆ 
 
-‚±‚ê‚ÍƒeƒXƒg‚Å‚·B
+ã“ã‚Œã¯ãƒ†ã‚¹ãƒˆã§ã™ã€‚
 '
       mail = gen_mail { str }
-      eq "‚±‚ê‚ÍƒeƒXƒg‚Å‚·B\n".set_sourcecode_charset.to_mail_charset, mail.body
+      eq "ã“ã‚Œã¯ãƒ†ã‚¹ãƒˆã§ã™ã€‚\n".set_sourcecode_charset.to_mail_charset, mail.body
       eq str.set_sourcecode_charset.to_mail_charset, mail.bare
-      eq "Re: [test:1] ƒeƒXƒg ".set_sourcecode_charset.to_mail_charset, mail['Subject']
-      eq "‚±‚ê‚ÍƒeƒXƒg‚Å‚·B\n".set_sourcecode_charset.to_mail_charset, mail.get_body
+      eq "Re: [test:1] ãƒ†ã‚¹ãƒˆ ".set_sourcecode_charset.to_mail_charset, mail['Subject']
+      eq "ã“ã‚Œã¯ãƒ†ã‚¹ãƒˆã§ã™ã€‚\n".set_sourcecode_charset.to_mail_charset, mail.get_body
     end
 
     def test_for_confirm

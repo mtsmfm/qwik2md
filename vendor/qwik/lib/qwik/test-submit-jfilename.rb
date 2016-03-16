@@ -94,7 +94,7 @@ This is a multi-part message in MIME format.
 Content-Type: text/plain; charset=ISO-2022-JP
 Content-Transfer-Encoding: 7bit
 
-“¯‚¶•û–@‚Å“]‘—‚µ‚Ü‚·B
+åŒã˜æ–¹æ³•ã§è»¢é€ã—ã¾ã™ã€‚
 
 --------------080009010806060401020001
 Content-Type: message/rfc822;
@@ -113,7 +113,7 @@ To: i-u@a.jp
 Content-Type: text/plain; charset='ISO-2022-JP'
 Content-Transfer-Encoding: 7bit
 
-‚¨‚Í‚æ‚¤‚²‚´‚¢‚Ü‚·B
+ãŠã¯ã‚ˆã†ã”ã–ã„ã¾ã™ã€‚
 
 --------------080009010806060401020001--
 " }

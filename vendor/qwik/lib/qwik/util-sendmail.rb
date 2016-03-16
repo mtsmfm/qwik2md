@@ -203,8 +203,8 @@ content
       mail = {
 	:from    => 'from@example.com',
 	:to      => 'to@example.com',
-	:subject => '‘è–¼',
-	:content => '–{•¶',
+	:subject => 'é¡Œå',
+	:content => 'æœ¬æ–‡',
       }
       assert_equal "From: from@example.com
 To: to@example.com

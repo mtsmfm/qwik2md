@@ -20,20 +20,20 @@ class TestLibXml < Test::Unit::TestCase
   def test_parser
     str = <<'EOT'
 <html><head id='header'><title>FrontPage - example.com/test</title><link href="/.theme/qwikgreen/qwikgreen.css" rel='stylesheet' media="screen,tv,print" type="text/css"/><link href="/.theme/base.css" rel='stylesheet' media="screen,tv,print" type="text/css"/></head><body><div class='container'><div class='main'><div class='adminmenu' id='adminmenu'><p><span class='loginstatus'>user | <em>user@e.com</em> (<a href=".logout">.logout</a>)</span></p>
-<ul><li><a href=".new">�V�K�쐬</a></li>
-<li><a href="FrontPage.edit">�ҏW</a></li>
+<ul><li><a href=".new">新規作成</a></li>
+<li><a href="FrontPage.edit">編集</a></li>
 </ul>
 </div><h1 id="view_title">FrontPage</h1><div id='body'><div class='day'><h2>FrontPage</h2><div class='body'><div class='section'>
-<p>����͐V�KqwikWeb�T�C�g�̓����ƂȂ�y�[�W�ł��B</p>
-<h3>�g����</h3>
-<p>�y�[�W�̏�̕��ɂ���u�ҏW�v�Ƃ��������N�����ǂ�ƁA���̃y�[�W�̕ҏW���[�h�ɂȂ�܂��B</p>
-<p>�\�����ꂽ�e�L�X�g�̓��e��ύX���A�uSave�v�{�^�����N���b�N����ƁA���̃y�[�W�̓��e���ύX����܂��B</p>
-<h3>�L�q���@</h3>
-<p>�y�[�W�̓��e�̓e�L�X�g�ŏ�����Ă���A�������̋L���ɂ���Č��o���Ȃǂ̎w������܂��B�ڂ������́A<a href="/test/TextFormat.html">TextFormat</a>�������������B</p>
+<p>これは新規qwikWebサイトの入口となるページです。</p>
+<h3>使い方</h3>
+<p>ページの上の方にある「編集」というリンクをたどると、このページの編集モードになります。</p>
+<p>表示されたテキストの内容を変更し、「Save」ボタンをクリックすると、このページの内容が変更されます。</p>
+<h3>記述方法</h3>
+<p>ページの内容はテキストで書かれており、いくつかの記号によって見出しなどの指定をします。詳しい情報は、<a href="/test/TextFormat.html">TextFormat</a>をご覧下さい。</p>
 <h3>qwikWeb</h3>
-<p>�ڂ����́A<a href="http://example.com/" class='external'>qwikWeb</a>�z�[���y�[�W���������������B</p>
+<p>詳しくは、<a href="http://example.com/" class='external'>qwikWeb</a>ホームページをご覧ください。</p>
 <h3>QuickML</h3>
-<p>���[�����O���X�g�@�\�̎g�����́A<a href="http://www.quickml.com/" class='external'>QuickML</a>�z�[���y�[�W���������������B</p>
+<p>メーリングリスト機能の使い方は、<a href="http://www.quickml.com/" class='external'>QuickML</a>ホームページをご覧ください。</p>
 </div></div></div></div><div id="body_leave"><div class='day'><div class='comment'><div class='caption'><div class="page_attribute"><p><div class='qrcode'><a href="http://example.com/test/" class='external'><img src=".attach/qrcode-test.png" alt="http://example.com/test/"/><br/>http://example.com/test/</a></div><div>last modified: 2004-05-20</div></p>
 </div></div></div><div class="body_leave"></div></div></div></div><div class='sidebar' id='sidemenu'><h2>menu</h2>
 <ul><li><a href="/test/FrontPage.html">FrontPage</a></li>

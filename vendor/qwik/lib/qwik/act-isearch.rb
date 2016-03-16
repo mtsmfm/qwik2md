@@ -13,10 +13,10 @@ module Qwik
 #{{isearch}}
 #You can also make incremenatl search form.
 
-#* ƒCƒ“ƒNƒŠƒƒ“ƒ^ƒ‹EƒT[ƒ`
+#* ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ã‚¿ãƒ«ãƒ»ã‚µãƒ¼ãƒ
 # {{isearch}}
 #{{isearch}}
-#“¯—l‚ÉAƒCƒ“ƒNƒŠƒƒ“ƒ^ƒ‹EƒT[ƒ`‚ðs‚¤ŒŸõ‘‹‚Å‚·B
+#åŒæ§˜ã«ã€ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ã‚¿ãƒ«ãƒ»ã‚µãƒ¼ãƒã‚’è¡Œã†æ¤œç´¢çª“ã§ã™ã€‚
 
     # ============================== isearch
     def plg_isearch(focus=false)
@@ -100,8 +100,8 @@ if defined?($test) && $test
 #	    "//div[@class='search_result']"
 
       page = @site.create_new	# 2.txt
-      page.store "Š¿Žš"
-      res = session "/test/.isearch?q=Žš"
+      page.store "æ¼¢å­—"
+      res = session "/test/.isearch?q=å­—"
 #      ok_in [:ul, [:li, [:a, {:href=>'2.html'}, '2']]],
 #	    "//div[@class='search_result']"
     end

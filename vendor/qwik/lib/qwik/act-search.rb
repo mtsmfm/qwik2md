@@ -18,9 +18,9 @@ module Qwik
     }
 
     D_PluginSearch_ja = {
-      :dt => 'ŒŸõƒvƒ‰ƒOƒCƒ“',
-      :dd => 'ŒŸõ‘‹‚ðì‚ê‚Ü‚·B',
-      :dc => '* —á
+      :dt => 'æ¤œç´¢ãƒ—ãƒ©ã‚°ã‚¤ãƒ³',
+      :dd => 'æ¤œç´¢çª“ã‚’ä½œã‚Œã¾ã™ã€‚',
+      :dc => '* ä¾‹
  {{search}}
 {{search}}
 '
@@ -161,18 +161,18 @@ if defined?($test) && $test
 	    "//div[@class='search_result']")
 
       page = @site.create_new	# 2.txt
-      page.store("Š¿Žš")
-      res = session("/test/.search?q=Žš")
+      page.store("æ¼¢å­—")
+      res = session("/test/.search?q=å­—")
       ok_in([:ul, [:li,
 		[:h3, [:a, {:href=>'2.html'}, '2']], 
-		[:span, {:class=>'content'}, "Š¿Žš"],
+		[:span, {:class=>'content'}, "æ¼¢å­—"],
 		[:div, [:a, {:href=>'2.html'}, '2.html']]]],
 	    "//div[@class='search_result']")
 
-      res = session("/test/Žš.search")		# Both OK.
+      res = session("/test/å­—.search")		# Both OK.
       ok_in([:ul, [:li,
 		[:h3, [:a, {:href=>'2.html'}, '2']],
-		[:span, {:class=>'content'}, "Š¿Žš"],
+		[:span, {:class=>'content'}, "æ¼¢å­—"],
 		[:div, [:a, {:href=>'2.html'}, '2.html']]]],
 	    "//div[@class='search_result']")
     end

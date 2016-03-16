@@ -32,17 +32,17 @@ user
 ' }
 
 #    ok_eq('quoted-printable', mail['Content-Transfer-Encoding'])
-#    ok_eq('Gmail‚ªJISƒGƒ“ƒR[ƒfƒBƒ“ƒO‚Éd—l•ÏX',
+#    ok_eq('GmailãŒJISã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã«ä»•æ§˜å¤‰æ›´',
 #		 mail.get_clean_subject)
-#    ok_eq("‚±‚ñ‚É‚¿‚ÍB\n\n-- \nuser\n".set_sourcecode_charset.to_mail_charset, mail.decoded_body)
+#    ok_eq("ã“ã‚“ã«ã¡ã¯ã€‚\n\n-- \nuser\n".set_sourcecode_charset.to_mail_charset, mail.decoded_body)
 =begin
     page = @site['1']
-    ok_eq('Gmail‚ªJISƒGƒ“ƒR[ƒfƒBƒ“ƒO‚Éd—l•ÏX', page.get_title)
-    ok_eq("* Gmail‚ªJISƒGƒ“ƒR[ƒfƒBƒ“ƒO‚Éd—l•ÏX\n{{mail(user@gmail.com,0)\n‚±‚ñ‚É‚¿‚ÍB\n\n-- \nuser\n}}\n", page.load)
+    ok_eq('GmailãŒJISã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã«ä»•æ§˜å¤‰æ›´', page.get_title)
+    ok_eq("* GmailãŒJISã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã«ä»•æ§˜å¤‰æ›´\n{{mail(user@gmail.com,0)\nã“ã‚“ã«ã¡ã¯ã€‚\n\n-- \nuser\n}}\n", page.load)
 
     page = @site['1']
-    ok_eq('ƒeƒXƒg', page.get_title)
-    ok_eq("* ƒeƒXƒg\n{{mail(bob@example.net,0)\n}}\n", page.get)
+    ok_eq('ãƒ†ã‚¹ãƒˆ', page.get_title)
+    ok_eq("* ãƒ†ã‚¹ãƒˆ\n{{mail(bob@example.net,0)\n}}\n", page.get)
 #    ok_eq(true, @site.files('1').exist?('1x1.png'))
 =end
   end
@@ -65,12 +65,12 @@ Content-Transfer-Encoding: quoted-printable
 user
 ' }
     ok_eq('quoted-printable', mail['Content-Transfer-Encoding'])
-    ok_eq('[qwik-users:217] Gmail‚ªJISƒGƒ“ƒR[ƒfƒBƒ“ƒO‚Éd—l•ÏX'.set_sourcecode_charset.to_mail_charset, mail['Subject'])
-    ok_eq('Gmail‚ªJISƒGƒ“ƒR[ƒfƒBƒ“ƒO‚Éd—l•ÏX',
+    ok_eq('[qwik-users:217] GmailãŒJISã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã«ä»•æ§˜å¤‰æ›´'.set_sourcecode_charset.to_mail_charset, mail['Subject'])
+    ok_eq('GmailãŒJISã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã«ä»•æ§˜å¤‰æ›´',
 	  mail.get_clean_subject)
-    ok_eq("‚±‚ñ‚É‚¿‚ÍB\n\n-- \nuser\n".set_sourcecode_charset.to_mail_charset, mail.decoded_body)
+    ok_eq("ã“ã‚“ã«ã¡ã¯ã€‚\n\n-- \nuser\n".set_sourcecode_charset.to_mail_charset, mail.decoded_body)
     page = @site['1']
-    ok_eq('Gmail‚ªJISƒGƒ“ƒR[ƒfƒBƒ“ƒO‚Éd—l•ÏX', page.get_title)
-    ok_eq("* Gmail‚ªJISƒGƒ“ƒR[ƒfƒBƒ“ƒO‚Éd—l•ÏX\n{{mail(user@gmail.com,0)\n‚±‚ñ‚É‚¿‚ÍB\n\n-- \nuser\n}}\n", page.load)
+    ok_eq('GmailãŒJISã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã«ä»•æ§˜å¤‰æ›´', page.get_title)
+    ok_eq("* GmailãŒJISã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã«ä»•æ§˜å¤‰æ›´\n{{mail(user@gmail.com,0)\nã“ã‚“ã«ã¡ã¯ã€‚\n\n-- \nuser\n}}\n", page.load)
   end
 end
