@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+git_path = File.expand_path('../../.git', __FILE__)
+
+if File.exist?(git_path)
+  $:.unshift(File.expand_path('../../lib', __FILE__))
+  $:.unshift(File.expand_path('../../vendor/qwik/lib', __FILE__))
+end
+
+require "qwik2md"
+require "optparse"
+
+OptionParser.new {|opts|
+  opts.banner = "Usage: qwik2md [options] <file>"
+}.parse!
+
+puts Qwik2md.convert(ARGF.read)
