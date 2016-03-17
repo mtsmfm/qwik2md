@@ -54,7 +54,7 @@ module Qwik
     end
 
     def self.parse_title_line(line)
-      return nil unless /\A\*/s =~ line		# must begin with '*'.
+      return nil unless /\A\*/ =~ line		# must begin with '*'.
       title = $'	# the rest of the line.
       return nil if title[0] == ?*	# must be h2 level.
       return parse_title(title)
@@ -68,7 +68,7 @@ module Qwik
       return nil if title.empty?	# The title should not be empty.
 
       # If the title has a tag,
-      if /\A\[(.+?)\]/s =~ title
+      if /\A\[(.+?)\]/ =~ title
 	tag = $1
 	return [title, tags] if $'.empty?
 
@@ -185,12 +185,12 @@ if defined?($test) && $test
     end
 
     def ok_title(e, s)
-      title, tags = Qwik::Page.get_title(s)      
+      title, tags = Qwik::Page.get_title(s)
       ok_eq(e, title)
     end
 
     def ok_get_title(e, s)
-      res = Qwik::Page.get_title(s)      
+      res = Qwik::Page.get_title(s)
       ok_eq(e, res)
     end
 
