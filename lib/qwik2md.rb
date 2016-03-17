@@ -1,9 +1,9 @@
 require "qwik2md/version"
+
 require "qwik/parser-emode"
 require "qwik/tokenizer"
 require "qwik/parser"
 require 'qwik/wabisabi-format-xml'
-require 'reverse_markdown'
 require 'qwik/action'
 require 'qwik/loadlib'
 require 'qwik/config'
@@ -15,12 +15,16 @@ require 'qwik/test-module-path'
 require 'webrick'
 require 'logger'
 
+require 'reverse_markdown'
+require 'charlock_holmes'
+
 Qwik::LoadLibrary.load_libs_here('qwik/act-*')
 
 module Qwik2md
   class Action
-    def initialize(dir)
+    def initialize(dir, base)
       @dir = dir
+      @base = base
     end
 
     def resolve_all_plugin(tree)
@@ -58,7 +62,9 @@ module Qwik2md
     end
 
     def req
-      @req ||= Qwik::Request.new(config)
+      @req ||= Qwik::Request.new(config).tap do |req|
+        req.base = @base
+      end
     end
 
     def res
@@ -95,14 +101,16 @@ module Qwik2md
   end
 
   class << self
-    def convert(qwik_str)
-      Converter.new(qwik_str).convert
+    def convert(qwik_str, base:)
+      Converter.new(qwik_str, base: base).convert
     end
   end
 
   class Converter
-    def initialize(qwik_str)
-      @qwik_str = qwik_str
+    def initialize(qwik_str, base:)
+      detection = CharlockHolmes::EncodingDetector.detect(qwik_str)
+      @qwik_str = CharlockHolmes::Converter.convert(qwik_str, detection[:encoding], 'UTF-8')
+      @base = base
     end
 
     def convert
@@ -123,7 +131,7 @@ module Qwik2md
 
       tokens = Qwik::TextTokenizer.tokenize(str)
       tree = Qwik::TextParser.make_tree(tokens)
-      action = Action.new(dir)
+      action = Action.new(dir, @base)
       tree = action.resolve_all_plugin(tree)
       tree.format_xml
     end

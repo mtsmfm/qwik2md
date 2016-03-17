@@ -9,9 +9,17 @@ end
 
 require "qwik2md"
 require "optparse"
+require "pathname"
 
+options = {}
 OptionParser.new {|opts|
   opts.banner = "Usage: qwik2md [options] <file>"
+
+  opts.on("-bBASE", "--base=BASE", "Base path for files (ex. `-b path/to/base` will convert `{{file(a.jpg)}}` to `path/to/base.files/a.jpg`)") do |b|
+    options[:base] = b
+  end
 }.parse!
 
-puts Qwik2md.convert(ARGF.read)
+file = Pathname.new(ARGV[0])
+base = options.fetch(:base, file.dirname.join(file.basename('.*')))
+puts Qwik2md.convert(ARGF.read, base: base)

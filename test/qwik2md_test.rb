@@ -20,4 +20,17 @@ class Qwik2mdTest < Minitest::Test
 
     assert_equal expected, actual
   end
+
+  def test_image
+    expected = <<~MD
+       [![a.jpg](.theme/i/broken.gif)
+      a.jpg](Page1.files/a.jpg)
+    MD
+
+    actual = Qwik2md.convert(<<~QWIK, filename: 'Page1').gsub(/ +\n/, "\n")
+      {{file(a.jpg)}}
+    QWIK
+
+    assert_equal expected, actual
+  end
 end

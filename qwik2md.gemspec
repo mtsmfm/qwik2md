@@ -22,6 +22,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "algorithm-diff", "~> 0.1"
   spec.add_dependency "iconv", "~> 1.0"
   spec.add_dependency "reverse_markdown", "~> 1.0"
+  spec.add_dependency "charlock_holmes", "~> 0.7"
 
   spec.add_development_dependency "bundler", "~> 1.11"
   spec.add_development_dependency "rake", "~> 10.0"
