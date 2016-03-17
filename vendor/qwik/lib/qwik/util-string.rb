@@ -47,25 +47,25 @@ class String
   # ============================== escape
   # Copied from cgi.rb
   def escape
-    return self.gsub(/([^ a-zA-Z0-9_.-]+)/n) {
+    return self.gsub(/([^ a-zA-Z0-9_.-]+)/) {
       '%' + $1.unpack('H2' * $1.size).join('%').upcase
     }.tr(' ', "+")
   end
 
   def unescape
-    return self.tr("+", ' ').gsub(/((?:%[0-9a-fA-F]{2})+)/n) {
+    return self.tr("+", ' ').gsub(/((?:%[0-9a-fA-F]{2})+)/) {
       [$1.delete('%')].pack('H*')
     }
   end
 
   def unescapeHTML
-    return self.gsub(/&(.*?);/n) {
+    return self.gsub(/&(.*?);/) {
       match = $1.dup
       case match
-      when /\Aamp\z/ni	then "&"
-      when /\Aquot\z/ni	then "'"
-      when /\Agt\z/ni	then ">"
-      when /\Alt\z/ni	then "<"
+      when /\Aamp\z/i	then "&"
+      when /\Aquot\z/i	then "'"
+      when /\Agt\z/i	then ">"
+      when /\Alt\z/i	then "<"
       else
 	"&#{match};"
       end

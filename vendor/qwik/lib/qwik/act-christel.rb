@@ -74,7 +74,7 @@ http://qwik.jp/.theme/i/login_qwik_logo.gif
     def plg_christel(width = 320)
       width = width.to_i.to_s
       content = yield
-      message, image_url = content.to_a
+      message, image_url = Array(content)
       message.chomp!
       image_url.chomp! if image_url
       query_str = {

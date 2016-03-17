@@ -12,17 +12,14 @@ module Qwik
   class Filename
     def self.encode(str)
       str = str.to_filename_charset
-      str = str.gsub(/\342\200\276/n) {
-	'~'
-      }
-      str = str.gsub(/([^ 0-9A-Za-z_.\/-]+)/n) {
+      str = str.gsub(/([^ 0-9A-Za-z_.\/-]+)/) {
 	'=' + $1.unpack('H2' * $1.size).join('=').upcase
       }
       return str
     end
 
     def self.decode(str)
-      str = str.gsub(/((?:=[0-9a-fA-F]{2})+)/n) {
+      str = str.gsub(/((?:=[0-9a-fA-F]{2})+)/) {
 	[$1.delete('=')].pack('H*')
       }
       str = str.to_filename_charset
