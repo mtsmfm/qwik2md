@@ -5,7 +5,7 @@
 require 'webrick/log'
 
 $LOAD_PATH.unshift '..' unless $LOAD_PATH.include? '..'
-require 'qwik/testunit'
+
 require 'qwik/test-module-path'
 require 'qwik/test-module-public'
 require 'qwik/request'
@@ -241,13 +241,13 @@ module TestSession
     return assert_equal(e, nil) if elem.nil?
     return assert_equal(e, elem.inside.get_single)
   end
-  
+
   def ok_title(e, res=@res)
     elem = res.body.get_path('//title')
     return assert_equal(e, nil) if elem.nil?
     return assert_equal(e, elem.inside.get_single[0])
   end
-  
+
   def assert_text(e, tag, res=@res)
     elem = res.body.get_tag(tag)
     return assert_equal(e, nil) if elem.nil?

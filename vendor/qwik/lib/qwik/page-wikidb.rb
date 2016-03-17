@@ -94,7 +94,7 @@ module Qwik
 
     def self.parse(str)
       array = []
-      str.each {|line|
+      str.each_line {|line|
 	firstchar = line[0, 1]
 	next unless SIGNATURE.include?(firstchar)
 	ar = line.chomp.split(firstchar)
