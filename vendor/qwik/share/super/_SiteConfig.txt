@@ -1,30 +1,30 @@
-* �ݒ�
+* 設定
 :open:false
-�����true�ɂ���ƁA���JWiki�ɂȂ�܂��B
+これをtrueにすると、公開Wikiになります。
 :theme:qwikgreen
-�e�[�}��ύX���܂��Bqwikgreen, qwikcyan, qwikborder����I�ׂ܂��B
+テーマを変更します。qwikgreen, qwikcyan, qwikborderから選べます。
 :sitename:
-�^�C�g���ɕ\�������T�C�g�����w��ł��܂��B
+タイトルに表示されるサイト名を指定できます。
 :reportmail:daily
-���|�[�g���[�����M�Ԋu��hourly, daily, weekly����I�ׂ܂��Bfalse�ɂ���Ƒ����Ȃ��Ȃ�܂��B
+レポートメール送信間隔をhourly, daily, weeklyから選べます。falseにすると送られなくなります。
 :redirect:false
-�O���ւ̃����N�����_�C���N�g���邩�ǂ�����I�ׂ܂��Btrue�ɂ���ƁAredirect���Ă���O�������N�֔�Ԃ悤�ɂȂ�܂��B
-* ���x�Ȑݒ�
-�ȉ��͍��x�Ȑݒ�ł��B�ڂ����ݒ���@�̓\�[�X���Q�Ƃ��Ă��������B
+外部へのリンクをリダイレクトするかどうかを選べます。trueにすると、redirectしてから外部リンクへ飛ぶようになります。
+* 高度な設定
+以下は高度な設定です。詳しい設定方法はソースを参照してください。
 :aid:	q02-22
-Amazon Associate ID�ł��B
+Amazon Associate IDです。
 :ml_life_time:	2678400
-60 * 60 * 24 * 31�A1�����B
+60 * 60 * 24 * 31、1ヶ月。
 :reportfrom:
-�y�[�W�̕ҏW�L�^��from�ł��B
+ページの編集記録のfromです。
 :titlelink:	false
-section title�ɁA����section�ւ̃����N��t�^���邩�ǂ����ł��B
+section titleに、そのsectionへのリンクを付与するかどうかです。
 :siteurl:
-site��URL���̂��w��ł��܂��B�O��URL����qwikWeb�̃T�[�r�X���g���܂��B
+siteのURL自体を指定できます。外部URLからqwikWebのサービスを使えます。
 :siteml:
-site�ɑΉ�����ML�̃A�h���X�ł��B
+siteに対応するMLのアドレスです。
 :max_file_size:	10485760
-�T�C�g�ɓY�t�ł���t�@�C���̑傫���̏���ł��B10 * 1024 * 1024�A10MB�B
+サイトに添付できるファイルの大きさの上限です。10 * 1024 * 1024、10MB。
 :page_title_first:	true
 #:page_title_first:	false
-�y�[�W�̃^�C�g�����A�y�[�W�^�C�g���A�T�C�g���̏��ɂ��܂��B
+ページのタイトルを、ページタイトル、サイト名の順にします。
