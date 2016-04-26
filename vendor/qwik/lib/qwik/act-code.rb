@@ -67,7 +67,7 @@ void main(){
       content = ''
       content = yield if block_given?
       pre = [:pre]
-      content.each_with_index {|line, index|
+      content.each_line.with_index {|line, index|
 	line.chomp!
 	linenum = index + base_linenum.to_i
 	klass = 'line '

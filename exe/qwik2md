@@ -20,6 +20,6 @@ OptionParser.new {|opts|
   end
 }.parse!
 
-file = Pathname.new(ARGV[0])
+file = Pathname.new(ARGV[0].to_s)
 base = options.fetch(:base, file.dirname.join(file.basename('.*')))
 puts Qwik2md.convert(ARGF.read, base: base)
